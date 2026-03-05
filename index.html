@@ -64,15 +64,10 @@
     border-bottom: 1px solid var(--warm-gray);
   }
   .logo {
-    font-family: var(--font-display);
-    font-size: 26px; letter-spacing: 2px;
-    color: var(--black); text-decoration: none;
+    display: inline-flex; align-items: center; text-decoration: none;
   }
-  .logo .slash {
-    color: var(--red);
-    display: inline-block;
-    transform: rotate(-15deg) translateY(-1px);
-    margin: 0 1px;
+  .logo img {
+    height: 32px; width: auto; display: block;
   }
   .nav-cta {
     background: var(--red); color: var(--white);
@@ -357,13 +352,9 @@
     display: flex; justify-content: space-between; align-items: center;
     border-top: 1px solid #252220;
   }
-  .footer-logo {
-    font-family: var(--font-display); font-size: 22px; letter-spacing: 2px;
-    color: var(--white);
-  }
-  .footer-logo .slash {
-    color: var(--red); display: inline-block;
-    transform: rotate(-15deg) translateY(-1px);
+  .footer-logo img {
+    height: 26px; width: auto; display: block;
+    filter: brightness(0) invert(1);
   }
   .footer-tagline {
     font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px;
@@ -414,7 +405,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="logo">NO<span class="slash">/</span>AGE</a>
+  <a href="#" class="logo"><img src="images/index/logo.webp" alt="NOAGE"></a>
   <a href="#contato" class="nav-cta">Começar agora</a>
 </nav>
 
@@ -623,7 +614,7 @@
 <!-- FOOTER -->
 <footer>
   <div>
-    <div class="footer-logo">NO<span class="slash">/</span>AGE</div>
+    <div class="footer-logo"><img src="images/index/logo.webp" alt="NOAGE"></div>
     <div class="footer-tagline">Marketing que funciona. Sem agência.</div>
   </div>
   <div class="footer-links">
