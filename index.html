@@ -249,11 +249,26 @@
   }
   .service-item:hover .service-arrow { color: var(--red); transform: translate(3px,-3px); }
 
-  /* HOW — dark */
-  .how { background: var(--black); }
+  /* HOW — dark + IMG 03 como background no desktop */
+  .how {
+    background: var(--black);
+    background-image: url('images/index/img-03-trabalho.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .how::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: var(--black);
+    opacity: 0.55;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .how > * { position: relative; z-index: 1; }
   .how .section-tag { color: var(--red); }
-  .how-visual { margin: 0 -60px 64px; overflow: hidden; max-height: 480px; }
-  .how-visual img { width: 100%; height: 480px; object-fit: cover; object-position: center; display: block; opacity: 0.9; }
+  /* img strip: visível só no mobile */
+  .how-visual { display: none; }
   .how-headline {
     font-family: var(--font-display); font-size: clamp(38px, 4.5vw, 64px);
     letter-spacing: 2px; color: var(--white); margin-bottom: 64px; max-width: 640px; line-height: 1.05;
@@ -417,6 +432,12 @@
     nav, .hero, section, .stats-section, .cta-section, footer { padding-left:28px; padding-right:28px; }
     .manifesto-grid, .services-header, .cta-section { grid-template-columns:1fr; gap:40px; }
     .steps { grid-template-columns:1fr 1fr; }
+    /* IMG 03: no mobile aparece como strip, remove o background */
+    .how { background-image: none; }
+    .how::before { display: none; }
+    .how > * { position: static; }
+    .how-visual { display: block; margin: 0 -28px 48px; }
+    .how-visual img { width: 100%; height: 280px; object-fit: cover; display: block; }
     .testimonials { grid-template-columns:1fr; }
     .stats-row { grid-template-columns:1fr 1fr; }
     .service-item { grid-template-columns:56px 1fr; gap:12px; }
