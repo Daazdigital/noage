@@ -267,7 +267,7 @@
   /* HOW — dark */
   .how { background: var(--black); }
   .how .section-tag { color: var(--red); }
-  .how-visual { margin: 0 -60px 64px; overflow: hidden; max-height: 480px; }
+  .how-visual { margin: 0 -60px 64px; overflow: hidden; }
   .how-visual img { width: 100%; height: 480px; object-fit: cover; object-position: center; display: block; opacity: 0.9; }
   .how-headline {
     font-family: var(--font-display); font-size: clamp(38px, 4.5vw, 64px);
@@ -433,6 +433,10 @@
     .manifesto-grid, .services-header, .cta-section { grid-template-columns:1fr; gap:40px; }
     .steps { grid-template-columns:1fr 1fr; }
     /* IMG 04: no mobile aparece como strip, remove o background */
+    /* IMG 03: corrige margem no mobile */
+    .how-visual { margin: 0 -28px 48px; }
+    .how-visual img { height: 280px; }
+    /* IMG 04: no mobile vira strip, remove background */
     .services { background-image: none; }
     .services::before { display: none; }
     .services > * { position: static; }
