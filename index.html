@@ -183,24 +183,11 @@
   }
   .section-tag::before { content: '//'; opacity: 0.5; }
 
-  /* MANIFESTO — offwhite bg + IMG 02 */
-  .manifesto {
-    background: var(--offwhite);
-    background-image: url('images/index/img-02-decisao.webp');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  .manifesto::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: var(--offwhite);
-    opacity: 0.55;
-    pointer-events: none;
-    z-index: 0;
-  }
-  .manifesto > * { position: relative; z-index: 1; }
-  .manifesto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  /* MANIFESTO — offwhite bg */
+  .manifesto { background: var(--offwhite); }
+  .manifesto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: stretch; }
+  .manifesto-image { overflow: hidden; }
+  .manifesto-image img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; display: block; }
   .manifesto-headline {
     font-family: var(--font-display);
     font-size: clamp(40px, 4.5vw, 64px);
@@ -226,24 +213,11 @@
     text-transform: uppercase; color: var(--mid-gray);
   }
 
-  /* SERVICES — white + IMG 04 */
-  .services {
-    background: var(--white);
-    background-image: url('images/index/img-04-resultado.webp');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  .services::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: var(--white);
-    opacity: 0.60;
-    pointer-events: none;
-    z-index: 0;
-  }
-  .services > * { position: relative; z-index: 1; }
+  /* SERVICES — white */
+  .services { background: var(--white); }
   .services-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 56px; align-items: end; }
+  .services-visual { margin: 0 -60px 56px; overflow: hidden; max-height: 400px; }
+  .services-visual img { width: 100%; height: 400px; object-fit: cover; object-position: center; display: block; }
   .services-headline {
     font-family: var(--font-display); font-size: clamp(40px, 5vw, 68px);
     letter-spacing: 2px; line-height: 1; color: var(--black);
@@ -275,24 +249,11 @@
   }
   .service-item:hover .service-arrow { color: var(--red); transform: translate(3px,-3px); }
 
-  /* HOW — dark + IMG 03 */
-  .how {
-    background: var(--black);
-    background-image: url('images/index/img-03-trabalho.webp');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  .how::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: var(--black);
-    opacity: 0.55;
-    pointer-events: none;
-    z-index: 0;
-  }
-  .how > * { position: relative; z-index: 1; }
+  /* HOW — dark */
+  .how { background: var(--black); }
   .how .section-tag { color: var(--red); }
+  .how-visual { margin: 0 -60px 64px; overflow: hidden; max-height: 480px; }
+  .how-visual img { width: 100%; height: 480px; object-fit: cover; object-position: center; display: block; opacity: 0.9; }
   .how-headline {
     font-family: var(--font-display); font-size: clamp(38px, 4.5vw, 64px);
     letter-spacing: 2px; color: var(--white); margin-bottom: 64px; max-width: 640px; line-height: 1.05;
@@ -530,14 +491,15 @@
     <div class="reveal">
       <div class="section-tag">Manifesto</div>
       <h2 class="manifesto-headline">CHEGA DE PAGAR PELO <em>PROCESSO.</em> PAGUE PELO <em>RESULTADO.</em></h2>
-    </div>
-    <div class="reveal reveal-delay-1">
       <div class="manifesto-divider"></div>
       <div class="manifesto-body">
         <p>Agências tradicionais foram construídas para cobrar por hora, por reunião, por aprovação. Quanto mais lento o processo, mais elas faturam. <strong>Isso não é parceria. É conflito de interesses.</strong></p>
         <p>A NOAGE foi construída ao contrário. Usamos inteligência artificial para eliminar o overhead e entregar em horas o que antes levava semanas — com qualidade que você vai querer mostrar.</p>
         <p><strong>Sem sócio gerente que some após o contrato. Sem redator júnior entregando trabalho de sênior. Sem relatório de vaidade no fim do mês.</strong> Só entrega, resultado e transparência.</p>
       </div>
+    </div>
+    <div class="manifesto-image reveal reveal-delay-1">
+      <img src="images/index/img-02-decisao.webp" alt="A Decisão">
     </div>
   </div>
 </section>
@@ -554,6 +516,9 @@
 
 <!-- SERVICES — white -->
 <section class="services" id="servicos">
+  <div class="services-visual reveal">
+    <img src="images/index/img-04-resultado.webp" alt="O Resultado">
+  </div>
   <div class="services-header">
     <div>
       <div class="section-tag reveal">O que fazemos</div>
@@ -593,6 +558,9 @@
 <section class="how" id="como-funciona">
   <div class="section-tag reveal" style="color:var(--red)">Como funciona</div>
   <h2 class="how-headline reveal">SEM REUNIÃO DE KICKOFF.<br>SEM PROPOSTA EM PDF.<br>DIRETO AO PONTO.</h2>
+  <div class="how-visual reveal">
+    <img src="images/index/img-03-trabalho.webp" alt="O Trabalho">
+  </div>
   <div class="steps">
     <div class="step reveal">
       <div class="step-num">01</div>
