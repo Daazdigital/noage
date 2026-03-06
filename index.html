@@ -183,8 +183,23 @@
   }
   .section-tag::before { content: '//'; opacity: 0.5; }
 
-  /* MANIFESTO — offwhite bg */
-  .manifesto { background: var(--offwhite); }
+  /* MANIFESTO — offwhite bg + IMG 02 */
+  .manifesto {
+    background: var(--offwhite);
+    background-image: url('images/index/img-02-decisao.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .manifesto::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: var(--offwhite);
+    opacity: 0.88;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .manifesto > * { position: relative; z-index: 1; }
   .manifesto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
   .manifesto-headline {
     font-family: var(--font-display);
@@ -211,8 +226,23 @@
     text-transform: uppercase; color: var(--mid-gray);
   }
 
-  /* SERVICES — white */
-  .services { background: var(--white); }
+  /* SERVICES — white + IMG 04 */
+  .services {
+    background: var(--white);
+    background-image: url('images/index/img-04-resultado.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .services::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: var(--white);
+    opacity: 0.90;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .services > * { position: relative; z-index: 1; }
   .services-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 56px; align-items: end; }
   .services-headline {
     font-family: var(--font-display); font-size: clamp(40px, 5vw, 68px);
@@ -245,8 +275,23 @@
   }
   .service-item:hover .service-arrow { color: var(--red); transform: translate(3px,-3px); }
 
-  /* HOW — dark */
-  .how { background: var(--black); }
+  /* HOW — dark + IMG 03 */
+  .how {
+    background: var(--black);
+    background-image: url('images/index/img-03-trabalho.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .how::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: var(--black);
+    opacity: 0.82;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .how > * { position: relative; z-index: 1; }
   .how .section-tag { color: var(--red); }
   .how-headline {
     font-family: var(--font-display); font-size: clamp(38px, 4.5vw, 64px);
@@ -300,8 +345,23 @@
   .compare-table tr:last-child td.agency-col { border-radius: 0 0 6px 0; }
   .check { color: var(--red); font-size: 13px; margin-right: 6px; }
 
-  /* PROOF — white */
+  /* PROOF + CTA — IMG 05 */
   .proof { background: var(--white); }
+  .cta-section {
+    background-image: url('images/index/img-05-conquista.webp') !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    position: relative;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: var(--black);
+    opacity: 0.80;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .cta-section > * { position: relative; z-index: 1; }
   .proof-headline {
     font-family: var(--font-display); font-size: clamp(38px, 4.5vw, 56px);
     letter-spacing: 2px; color: var(--black); margin-bottom: 56px; max-width: 500px; line-height: 1.05;
