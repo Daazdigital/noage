@@ -84,7 +84,20 @@
     justify-content: flex-end; padding: 0 60px 80px;
     position: relative; overflow: hidden;
     background: var(--black);
+    background-image: url('images/index/hero-bg-texture.png');
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: normal;
   }
+  .hero::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: var(--black);
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
   .hero-bg-text {
     position: absolute; top: 50%; left: -10px;
     transform: translateY(-58%);
