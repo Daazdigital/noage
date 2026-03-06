@@ -1,3 +1,6 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# Local only — não subir para o repositório público
+gemini-api/
