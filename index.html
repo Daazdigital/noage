@@ -509,10 +509,62 @@
   .reveal-delay-2 { transition-delay:.24s; }
   .reveal-delay-3 { transition-delay:.36s; }
 
+  /* FOUNDER */
+  .founder { background: var(--white); }
+  .founder-inner {
+    display: grid; grid-template-columns: 5fr 7fr;
+    gap: 80px; align-items: center;
+  }
+  .founder-photo-frame {
+    width: 100%; aspect-ratio: 4/5;
+    overflow: hidden; border-radius: 6px;
+  }
+  .founder-photo-frame img {
+    width: 100%; height: 100%; object-fit: cover;
+    object-position: center top; display: block;
+  }
+  .founder-headline {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 4vw, 56px);
+    letter-spacing: 2px; line-height: 1.0;
+    color: var(--black); margin-bottom: 8px;
+  }
+  .founder-headline em { color: var(--red); font-style: normal; }
+  .founder-divider { width: 40px; height: 3px; background: var(--red); margin-bottom: 28px; }
+  .founder-bio {
+    font-size: 16px; line-height: 1.8;
+    color: var(--mid-gray); margin-bottom: 32px;
+  }
+  .founder-bio strong { color: var(--charcoal); font-weight: 500; }
+  .founder-linkedin {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 2px; text-transform: uppercase;
+    color: var(--charcoal); text-decoration: none;
+    border-bottom: 1px solid var(--warm-gray); padding-bottom: 2px;
+    transition: color .2s, border-color .2s;
+  }
+  .founder-linkedin:hover { color: var(--red); border-color: var(--red); }
+  .founder-logos {
+    margin-top: 44px; padding-top: 32px;
+    border-top: 1px solid var(--warm-gray);
+  }
+  .founder-logos-label {
+    font-family: var(--font-mono); font-size: 9px;
+    letter-spacing: 2px; text-transform: uppercase;
+    color: var(--mid-gray); margin-bottom: 16px; display: block;
+  }
+  .founder-logos img {
+    max-width: 100%; height: auto; max-height: 44px;
+    opacity: 0.45; filter: grayscale(1);
+    transition: opacity .25s;
+  }
+  .founder-logos img:hover { opacity: 0.7; }
+
   /* RESPONSIVE */
   @media (max-width: 900px) {
     nav, .hero, section, .stats-section, .cta-section, footer { padding-left:28px; padding-right:28px; }
-    .manifesto-grid, .services-header, .cta-section { grid-template-columns:1fr; gap:40px; }
+    .manifesto-grid, .services-header, .cta-section, .founder-inner { grid-template-columns:1fr; gap:40px; }
     .steps { grid-template-columns:1fr 1fr; }
     /* IMG 03: no mobile vira strip, remove background */
     .how { background-image: none; }
@@ -621,7 +673,7 @@
     <div class="stat reveal"><div class="stat-number">24H</div><div class="stat-label">Prazo médio de entrega</div></div>
     <div class="stat reveal reveal-delay-1"><div class="stat-number">3×</div><div class="stat-label">Mais barato que agência</div></div>
     <div class="stat reveal reveal-delay-2"><div class="stat-number">0</div><div class="stat-label">Reuniões obrigatórias</div></div>
-    <div class="stat reveal reveal-delay-3"><div class="stat-number">∞</div><div class="stat-label">Revisões incluídas</div></div>
+    <div class="stat reveal reveal-delay-3"><div class="stat-number" style="font-family:var(--font-body)">∞</div><div class="stat-label">Revisões incluídas</div></div>
   </div>
 </div>
 
@@ -794,7 +846,7 @@
         <span class="testi-star">★</span><span class="testi-star">★</span>
         <span class="testi-star">★</span>
       </div>
-      <p class="testi-quote-text">"Entregou uma solução customizada para a nossa operação. Entendeu nosso negócio a fundo para entregar resultados reais. Mais que um serviço, foi uma parceria estratégica — do escritório para a marca."</p>
+      <p class="testi-quote-text">"Entendeu nosso negócio a fundo e entregou resultados reais. Mais que um consultor, foi um parceiro estratégico do escritório."</p>
       <div class="testi-author-row">
         <div class="testi-avatar-group">
           <div class="testi-avatar-person"><img src="images/testimonials/Julia.png" alt="Julia Soriano"></div>
@@ -807,6 +859,30 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- FOUNDER — white -->
+<section class="founder">
+  <div class="founder-inner">
+    <div class="founder-photo-frame reveal">
+      <img src="images/fernando-portrait.webp" alt="Fernando Avelar">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="section-tag">Quem está por trás</div>
+      <h2 class="founder-headline">LIDERADO POR<br><em>FERNANDO AVELAR.</em></h2>
+      <div class="founder-divider"></div>
+      <p class="founder-bio">Estrategista de produto e marketing que construiu carreira liderando times e lançando produtos em empresas como <strong>iFood, Ambev, P&G, Conta Azul e 3 Corações</strong>. Formado em Engenharia Mecânica pela UNICAMP, com MBA pela University of Strathclyde (UK).</p>
+      <p class="founder-bio">Na NOAGE, combina a experiência de grandes empresas com inteligência artificial para entregar <strong>marketing de alto nível sem o overhead de uma agência tradicional</strong>. Velocidade, qualidade e transparência — sem enrolação.</p>
+      <a href="https://www.linkedin.com/in/avelarfernando/" target="_blank" rel="noopener" class="founder-linkedin">Conectar no LinkedIn →</a>
+      <div class="founder-logos">
+        <span class="founder-logos-label">Experiência em</span>
+        <picture>
+          <source media="(max-width: 767px)" srcset="images/brand-logos-new-mobile.png">
+          <img src="images/brand-logos.webp" alt="iFood, Ambev, P&G, Conta Azul, 3 Corações">
+        </picture>
+      </div>
+    </div>
   </div>
 </section>
 
