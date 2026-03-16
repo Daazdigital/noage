@@ -343,32 +343,111 @@
   .cta-section > * { position: relative; z-index: 1; }
   .proof-headline {
     font-family: var(--font-display); font-size: clamp(38px, 4.5vw, 56px);
-    letter-spacing: 2px; color: var(--black); margin-bottom: 56px; max-width: 500px; line-height: 1.05;
+    letter-spacing: 2px; color: var(--black); margin-bottom: 56px; max-width: 560px; line-height: 1.05;
   }
-  .testimonials { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-  .testimonial {
-    background: var(--offwhite); border: 1px solid var(--warm-gray);
-    padding: 40px 36px; border-radius: 6px; position: relative;
+
+  /* Trust bar */
+  .proof-trust-bar {
+    display: flex; align-items: center; gap: 40px;
+    margin-bottom: 64px; padding-bottom: 40px;
+    border-bottom: 1px solid var(--warm-gray);
   }
-  .testimonial::before {
+  .proof-trust-label {
+    font-family: var(--font-mono); font-size: 9px; letter-spacing: 2.5px;
+    text-transform: uppercase; color: var(--mid-gray); white-space: nowrap; flex-shrink: 0;
+  }
+  .proof-companies { display: flex; align-items: center; gap: 44px; flex-wrap: wrap; }
+  .proof-company {
+    font-family: var(--font-display); font-size: 20px; letter-spacing: 2px;
+    color: #D0CBC5; transition: color .25s;
+  }
+  .proof-company:hover { color: var(--charcoal); }
+  .proof-company-divider { color: var(--warm-gray); font-size: 12px; }
+
+  /* Testimonials grid v2 */
+  .testimonials-v2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+
+  /* Featured card — dark */
+  .testimonial-featured {
+    grid-row: 1 / 3;
+    background: var(--dark-surface);
+    border: 1px solid #252220;
+    border-radius: 6px;
+    padding: 52px 48px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    position: relative; overflow: hidden;
+  }
+  .testimonial-featured::before {
     content: '';
-    position: absolute; top: 0; left: 0; right: 0; height: 3px;
-    background: var(--red); border-radius: 6px 6px 0 0;
+    position: absolute; top: 0; left: 0; bottom: 0; width: 3px;
+    background: var(--red); border-radius: 6px 0 0 6px;
   }
-  .quote-mark {
-    font-family: var(--font-display); font-size: 52px; letter-spacing: 1px;
-    color: var(--red); line-height: 1; margin-bottom: 20px; opacity: 0.7;
+  .testimonial-featured .bg-quote {
+    position: absolute; bottom: -20px; right: 24px;
+    font-family: var(--font-display); font-size: 200px;
+    color: rgba(230,49,39,0.05); line-height: 1;
+    pointer-events: none; user-select: none;
   }
-  .quote-text {
-    font-size: 15px; line-height: 1.75; color: var(--charcoal);
-    margin-bottom: 28px; font-style: italic;
+
+  /* Secondary card — light */
+  .testimonial-secondary {
+    background: var(--offwhite);
+    border: 1px solid var(--warm-gray);
+    border-radius: 6px;
+    padding: 36px 36px;
+    display: flex; flex-direction: column;
+    position: relative; overflow: hidden;
   }
-  .quote-author-name {
-    font-family: var(--font-display); font-size: 16px; letter-spacing: 1px;
-    color: var(--black); margin-bottom: 4px;
+  .testimonial-secondary::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(to right, var(--red), transparent);
+    border-radius: 6px 6px 0 0;
   }
-  .quote-author-role {
-    font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px;
+
+  /* Shared elements */
+  .testi-stars { display: flex; gap: 3px; margin-bottom: 24px; }
+  .testi-star { color: var(--red); font-size: 12px; }
+
+  .testi-quote-text {
+    font-size: 16px; line-height: 1.78; font-style: italic; flex: 1;
+    margin-bottom: 36px;
+  }
+  .testimonial-featured .testi-quote-text { color: rgba(255,255,255,0.88); font-size: 17px; }
+  .testimonial-secondary .testi-quote-text { color: var(--charcoal); font-size: 15px; margin-bottom: 28px; }
+
+  .testi-author-row { display: flex; align-items: center; gap: 14px; }
+
+  /* Overlapping avatar group: person + logo */
+  .testi-avatar-group { display: flex; align-items: center; flex-shrink: 0; }
+  .testi-avatar-person {
+    width: 46px; height: 46px; border-radius: 50%; overflow: hidden; flex-shrink: 0;
+    position: relative; z-index: 2;
+  }
+  .testi-avatar-person img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .testi-avatar-logo {
+    width: 46px; height: 46px; border-radius: 50%; overflow: hidden; flex-shrink: 0;
+    position: relative; z-index: 1; margin-left: -14px; margin-top: 16px;
+    background: var(--white); display: flex; align-items: center; justify-content: center;
+  }
+  .testi-avatar-logo img { width: 34px; height: 34px; object-fit: contain; display: block; }
+  .testimonial-featured .testi-avatar-person { border: 2px solid var(--dark-surface); }
+  .testimonial-featured .testi-avatar-logo { border: 2px solid var(--dark-surface); }
+  .testimonial-secondary .testi-avatar-person { border: 2px solid var(--offwhite); }
+  .testimonial-secondary .testi-avatar-logo { border: 2px solid var(--offwhite); }
+
+  .testi-name {
+    font-family: var(--font-display); font-size: 15px; letter-spacing: 1px; margin-bottom: 4px;
+  }
+  .testimonial-featured .testi-name { color: var(--white); }
+  .testimonial-secondary .testi-name { color: var(--black); }
+  .testi-role {
+    font-family: var(--font-mono); font-size: 9px; letter-spacing: 1.5px;
     text-transform: uppercase; color: var(--mid-gray);
   }
 
@@ -444,7 +523,12 @@
     /* IMG 04: strip em ambas as telas, só ajusta altura e margem no mobile */
     .services-visual { margin: 0 -28px 48px; }
     .services-visual img { height: 280px; }
-    .testimonials { grid-template-columns:1fr; }
+    .testimonials-v2 { grid-template-columns:1fr; grid-template-rows:auto; }
+    .testimonial-featured { grid-row: auto; padding: 36px 28px; }
+    .testimonial-secondary { padding: 28px 24px; }
+    .proof-trust-bar { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .proof-companies { gap: 20px; }
+    .proof-company { font-size: 16px; }
     .stats-row { grid-template-columns:1fr 1fr; }
     .service-item { grid-template-columns:56px 1fr; gap:12px; }
     .service-desc, .service-arrow { display:none; }
@@ -645,25 +729,84 @@
 <section class="proof">
   <div class="section-tag reveal">Resultados reais</div>
   <h2 class="proof-headline reveal">CLIENTES QUE PARARAM DE PERDER TEMPO.</h2>
-  <div class="testimonials">
-    <div class="testimonial reveal">
-      <div class="quote-mark">"</div>
-      <p class="quote-text">Recebi minha landing page em menos de 24 horas. Melhor do que qualquer coisa que agência me entregou em semanas. E por um terço do preço.</p>
-      <div class="quote-author-name">MARIANA COSTA</div>
-      <div class="quote-author-role">Fundadora, Studio M — São Paulo</div>
+
+  <!-- Trust bar -->
+  <div class="proof-trust-bar reveal">
+    <span class="proof-trust-label">Confiam na NOAGE</span>
+    <div class="proof-companies">
+      <span class="proof-company">SEVENTECH</span>
+      <span class="proof-company-divider">—</span>
+      <span class="proof-company">SOMNIS</span>
+      <span class="proof-company-divider">—</span>
+      <span class="proof-company">GUERINI & SORIANO</span>
     </div>
-    <div class="testimonial reveal reveal-delay-1">
-      <div class="quote-mark">"</div>
-      <p class="quote-text">Eu precisava de uma apresentação para investidores em 2 dias. A NOAGE entregou em 18 horas. Usamos no pitch e fechamos a rodada.</p>
-      <div class="quote-author-name">RAFAEL DINIZ</div>
-      <div class="quote-author-role">CEO, Vertek — Rio de Janeiro</div>
+  </div>
+
+  <div class="testimonials-v2">
+
+    <!-- Featured testimonial -->
+    <div class="testimonial-featured reveal">
+      <span class="bg-quote" aria-hidden="true">"</span>
+      <div>
+        <div class="testi-stars">
+          <span class="testi-star">★</span><span class="testi-star">★</span>
+          <span class="testi-star">★</span><span class="testi-star">★</span>
+          <span class="testi-star">★</span>
+        </div>
+        <p class="testi-quote-text">"Fernando se tornou um parceiro estratégico essencial. Seu olhar afiado para produto, aliado a um rigor analítico elevado, nos fez avaliar oportunidades com mais critério — eliminando as que não se sustentavam. Ele faz acontecer rápido, é orientado a ação e experimentação. Acelerou iniciativas que estavam travadas e deixou um legado real: nosso time hoje pensa e opera de forma diferente."</p>
+      </div>
+      <div class="testi-author-row">
+        <div class="testi-avatar-group">
+          <div class="testi-avatar-person"><img src="images/testimonials/Natanael.png" alt="Natanael Santos"></div>
+          <div class="testi-avatar-logo"><img src="images/testimonials/Logo Seventech.webp" alt="Seventech"></div>
+        </div>
+        <div>
+          <div class="testi-name">NATANAEL SANTOS</div>
+          <div class="testi-role">Fundador & CEO — Seventech</div>
+        </div>
+      </div>
     </div>
-    <div class="testimonial reveal reveal-delay-2">
-      <div class="quote-mark">"</div>
-      <p class="quote-text">Finalmente um serviço que trata empreendedor individual com seriedade. Qualidade de agência grande, sem o processo que cansa.</p>
-      <div class="quote-author-name">CAMILA REIS</div>
-      <div class="quote-author-role">Consultora independente — Belo Horizonte</div>
+
+    <!-- Secondary testimonial 1 -->
+    <div class="testimonial-secondary reveal reveal-delay-1">
+      <div class="testi-stars">
+        <span class="testi-star">★</span><span class="testi-star">★</span>
+        <span class="testi-star">★</span><span class="testi-star">★</span>
+        <span class="testi-star">★</span>
+      </div>
+      <p class="testi-quote-text">"Fernando é extremamente sagaz na compreensão das demandas, captando rapidamente a essência e as prioridades de cada desafio. Entrega consistentemente acima do esperado, sempre com qualidade e dentro do prazo. Sua capacidade de alinhar estratégia e execução faz dele um parceiro altamente confiável e diferenciado."</p>
+      <div class="testi-author-row">
+        <div class="testi-avatar-group">
+          <div class="testi-avatar-person"><img src="images/testimonials/Leandro.png" alt="Leandro Trevisan"></div>
+          <div class="testi-avatar-logo"><img src="images/testimonials/Logo Somnis.jpeg" alt="Somnis"></div>
+        </div>
+        <div>
+          <div class="testi-name">LEANDRO TREVISAN</div>
+          <div class="testi-role">CEO — Somnis</div>
+        </div>
+      </div>
     </div>
+
+    <!-- Secondary testimonial 2 -->
+    <div class="testimonial-secondary reveal reveal-delay-2">
+      <div class="testi-stars">
+        <span class="testi-star">★</span><span class="testi-star">★</span>
+        <span class="testi-star">★</span><span class="testi-star">★</span>
+        <span class="testi-star">★</span>
+      </div>
+      <p class="testi-quote-text">"Entregou uma solução customizada para a nossa operação. Entendeu nosso negócio a fundo para entregar resultados reais. Mais que um serviço, foi uma parceria estratégica — do escritório para a marca."</p>
+      <div class="testi-author-row">
+        <div class="testi-avatar-group">
+          <div class="testi-avatar-person"><img src="images/testimonials/Julia.png" alt="Julia Soriano"></div>
+          <div class="testi-avatar-logo"><img src="images/testimonials/Logo Guerini e Soriano.png" alt="Guerini e Soriano"></div>
+        </div>
+        <div>
+          <div class="testi-name">JULIA SORIANO</div>
+          <div class="testi-role">Fundadora — Guerini e Soriano Advocacia</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
