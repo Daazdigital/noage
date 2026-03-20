@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>PrimeGente RH | Reduza turnover em 40% em 90 dias</title>
+  <meta name="description" content="Consultoria de RH especializada em processos seletivos assertivos. Reduza turnover em até 40% em 90 dias. +500 empresas transformadas. Consultoria inicial gratuita.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="#">
+  <meta name="theme-color" content="#080810">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PrimeGente RH | Reduza turnover em 40% em 90 dias">
+  <meta property="og:description" content="Processos seletivos assertivos. +500 empresas transformadas. Consultoria inicial gratuita.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1758691737492-48e8fdd336f7?auto=format&fit=crop&w=1920&q=85">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EmploymentAgency",
+    "name": "PrimeGente RH",
+    "description": "Consultoria em recrutamento e seleção especializada em redução de turnover para empresas de médio porte.",
+    "url": "#",
+    "telephone": "+55-11-3000-1234",
+    "email": "contato@primegente.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "312"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Em quanto tempo vejo os primeiros resultados?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os primeiros resultados são visíveis em 30 dias, com a redução imediata no tempo de preenchimento de vagas. A redução de turnover de 40% é medida no ciclo completo de 90 dias."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona a consultoria inicial gratuita?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Em uma reunião de 45 minutos, um especialista da PrimeGente RH analisa seus processos atuais, identifica os principais gargalos e apresenta uma estimativa de ROI personalizada para sua empresa. Sem compromisso de contratação."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A PrimeGente RH atende empresas de qual tamanho?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nosso foco são empresas de médio porte (50 a 1000 funcionários) com necessidade de estruturar ou profissionalizar processos de recrutamento. Atendemos todos os segmentos de mercado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual a diferença entre a PrimeGente RH e uma agência de recrutamento tradicional?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Agências tradicionais entregam currículos. A PrimeGente RH entrega processos: mapeamos o perfil ideal, estruturamos avaliações por competência e transferimos o conhecimento para sua equipe interna. O objetivo é que você precise cada vez menos de apoio externo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "E se os resultados não atingirem a meta de 40%?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oferecemos garantia de resultado: se em 90 dias sua taxa de turnover não reduzir pelo menos 20%, revisamos o processo sem custo adicional até atingirmos a meta acordada."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Source+Sans+Pro:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========================================
+       DESIGN TOKENS
+    ======================================== */
+    :root {
+      --bg:           #080810;
+      --bg-2:         #0F0F1A;
+      --surface:      #13131F;
+      --surface-2:    #1A1A2E;
+      --primary:      #6B5CE7;
+      --primary-rgb:  107,92,231;
+      --primary-dark: #4E3ECB;
+      --accent:       #2EC4B6;
+      --accent-rgb:   46,196,182;
+      --text:         #F0F0FF;
+      --text-2:       #9090BB;
+      --border:       rgba(255,255,255,0.08);
+      --border-2:     rgba(255,255,255,0.04);
+
+      --font-display: 'Merriweather', Georgia, serif;
+      --font-body:    'Source Sans Pro', system-ui, sans-serif;
+      --font-mono:    'JetBrains Mono', monospace;
+
+      --ease-expo:    cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ease-smooth:  cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Noise overlay */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      z-index: 9999; pointer-events: none;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* ========================================
+       UTILITIES
+    ======================================== */
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 60px; }
+    @media (max-width: 768px) { .container { padding: 0 24px; } }
+
+    .section-tag {
+      font-family: var(--font-mono);
+      font-size: 11px; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--accent);
+      display: block; margin-bottom: 16px;
+    }
+
+    .reveal {
+      opacity: 0; transform: translateY(36px) scale(0.97);
+      transition: opacity 0.7s var(--ease-expo), transform 0.7s var(--ease-expo);
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 100ms; }
+    .reveal-delay-2 { transition-delay: 200ms; }
+    .reveal-delay-3 { transition-delay: 300ms; }
+    .reveal-delay-4 { transition-delay: 400ms; }
+
+    /* Mobile hidden/visible */
+    .mobile-only { display: none; }
+    @media (max-width: 767px) {
+      .mobile-only { display: block; }
+      .desktop-only { display: none; }
+    }
+
+    /* Gradient text */
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* ========================================
+       NAVBAR
+    ======================================== */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 24px 60px;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: all 0.4s var(--ease-expo);
+    }
+    .navbar.scrolled {
+      background: rgba(8,8,16,0.92);
+      backdrop-filter: blur(20px) saturate(180%);
+      padding: 16px 60px;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: var(--font-display); font-size: 22px; font-weight: 700;
+      color: var(--text); text-decoration: none; letter-spacing: -0.02em;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      color: var(--text-2); text-decoration: none; font-size: 15px;
+      font-weight: 400; transition: color 0.2s ease;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta {
+      background: var(--primary); color: var(--text);
+      padding: 10px 22px; border-radius: 8px; text-decoration: none;
+      font-size: 14px; font-weight: 600;
+      transition: all 0.25s var(--ease-smooth);
+    }
+    .nav-cta:hover {
+      background: var(--primary-dark);
+      box-shadow: 0 8px 24px rgba(var(--primary-rgb), 0.4);
+      transform: translateY(-1px);
+    }
+    @media (max-width: 768px) {
+      .navbar { padding: 18px 24px; }
+      .navbar.scrolled { padding: 14px 24px; }
+      .nav-links { display: none; }
+    }
+
+    /* ========================================
+       HERO
+    ======================================== */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center; justify-content: flex-start;
+      overflow: hidden;
+      background:
+        linear-gradient(to right, rgba(8,8,16,0.94) 45%, rgba(8,8,16,0.55) 100%),
+        url('https://images.unsplash.com/photo-1758691737492-48e8fdd336f7?auto=format&fit=crop&w=1920&q=85') center/cover no-repeat;
+    }
+    .hero img.hero-bg {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; z-index: -1;
+      filter: contrast(1.08) saturate(0.72) brightness(0.88);
+      animation: kenburns 22s ease-in-out infinite alternate;
+    }
+    @keyframes kenburns {
+      0% { transform: scale(1) translate(0, 0); }
+      100% { transform: scale(1.09) translate(-2%, -1.5%); }
+    }
+
+    /* Atmosphere glows */
+    .hero::before {
+      content: ''; position: absolute; top: -15%; left: -8%;
+      width: 900px; height: 900px;
+      background: radial-gradient(ellipse, rgba(107,92,231,0.38) 0%, transparent 62%);
+      pointer-events: none; z-index: 0;
+      animation: glow-breathe 10s ease-in-out infinite;
+    }
+    .hero::after {
+      content: ''; position: absolute; bottom: -10%; right: 10%;
+      width: 600px; height: 600px;
+      background: radial-gradient(ellipse, rgba(46,196,182,0.14) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
+      animation: glow-breathe 13s ease-in-out infinite reverse;
+    }
+    @keyframes glow-breathe {
+      0%, 100% { opacity: 0.8; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+
+    /* Ghost watermark */
+    .hero-ghost {
+      position: absolute; right: -40px; top: 50%; transform: translateY(-50%);
+      font-family: var(--font-display); font-weight: 900;
+      font-size: clamp(120px, 18vw, 320px);
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255,255,255,0.03);
+      pointer-events: none; z-index: 0; user-select: none; white-space: nowrap;
+    }
+
+    /* Scroll indicator */
+    .scroll-indicator {
+      position: absolute; right: 60px; bottom: 80px;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      opacity: 0.5;
+    }
+    .scroll-label {
+      font-family: var(--font-mono); font-size: 10px;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--text-2);
+      writing-mode: vertical-rl;
+    }
+    .scroll-line {
+      width: 1px; height: 56px;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(1.1); }
+    }
+    @media (max-width: 768px) { .scroll-indicator { display: none; } }
+
+    .hero-content {
+      position: relative; z-index: 1;
+      padding: 160px 0 120px;
+      max-width: 680px; margin-right: auto;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 100px; padding: 7px 14px 7px 10px;
+      margin-bottom: 24px;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.1s both;
+    }
+    .badge-dot {
+      width: 6px; height: 6px; background: #22C55E;
+      border-radius: 50%; animation: pulse-dot 2s ease infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.8); }
+    }
+    .hero-badge span { font-size: 13px; color: var(--text); font-weight: 500; }
+
+    .hero-eyebrow {
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 3px; text-transform: uppercase; color: var(--accent);
+      margin-bottom: 20px; display: block;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.2s both;
+    }
+
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(42px, 5.5vw, 76px);
+      font-weight: 700; line-height: 1.08;
+      letter-spacing: -0.03em; color: var(--text);
+      margin-bottom: 24px;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.3s both;
+    }
+    .hero-headline em { font-style: italic; color: var(--accent); }
+
+    .hero-subheadline {
+      font-size: clamp(16px, 1.6vw, 20px); font-weight: 300;
+      color: var(--text-2); line-height: 1.65; max-width: 540px;
+      margin-bottom: 40px;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.4s both;
+    }
+
+    .hero-ctas {
+      display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 56px;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.5s both;
+    }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--primary); color: white;
+      padding: 15px 28px; border-radius: 8px; font-size: 16px; font-weight: 600;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: all 0.25s var(--ease-smooth);
+      touch-action: manipulation;
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark); transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(var(--primary-rgb), 0.45);
+    }
+
+    .btn-whatsapp {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(37,211,102,0.12);
+      border: 1px solid rgba(37,211,102,0.3);
+      color: #25D366; padding: 15px 28px; border-radius: 8px;
+      font-size: 16px; font-weight: 600; text-decoration: none;
+      transition: all 0.25s var(--ease-smooth);
+      touch-action: manipulation;
+    }
+    .btn-whatsapp:hover {
+      background: rgba(37,211,102,0.2);
+      box-shadow: 0 8px 32px rgba(37,211,102,0.25);
+      transform: translateY(-2px);
+    }
+    .btn-whatsapp svg { width: 20px; height: 20px; fill: #25D366; }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; border: 1px solid var(--border);
+      color: var(--text-2); padding: 15px 28px; border-radius: 8px;
+      font-size: 16px; font-weight: 500; text-decoration: none;
+      transition: all 0.25s var(--ease-smooth);
+    }
+    .btn-ghost:hover {
+      border-color: rgba(255,255,255,0.2); color: var(--text);
+      transform: translateY(-1px);
+    }
+
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 0; width: 100%; max-width: 480px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.6s both;
+    }
+    .stat-item {
+      padding: 20px 24px; text-align: center;
+      border-right: 1px solid var(--border);
+      position: relative;
+    }
+    @media (max-width: 480px) {
+      .hero-stats { max-width: 100%; }
+      .stat-item { padding: 16px 12px; }
+      .stat-number { font-size: 26px; }
+      .stat-label { font-size: 11px; }
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-number {
+      font-family: var(--font-display); font-size: 32px; font-weight: 700;
+      color: var(--text); display: block; letter-spacing: -0.03em;
+    }
+    .stat-label {
+      font-size: 12px; color: var(--text-2); margin-top: 4px; display: block;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ========================================
+       MARQUEE STRIP
+    ======================================== */
+    .marquee-section {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 0; overflow: hidden;
+    }
+    .marquee-track {
+      display: flex; gap: 0; white-space: nowrap;
+      animation: marquee 30s linear infinite;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    .marquee-item {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 0 40px; font-family: var(--font-mono);
+      font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--text-2);
+    }
+    .marquee-dot { width: 4px; height: 4px; background: var(--accent); border-radius: 50%; }
+
+    /* ========================================
+       SECTION SHARED
+    ======================================== */
+    .section-header { max-width: 640px; margin: 0 auto 64px; text-align: center; }
+    .section-header.left { margin: 0 0 64px; text-align: left; }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(30px, 3.5vw, 48px); font-weight: 700;
+      line-height: 1.15; letter-spacing: -0.025em;
+      color: var(--text); margin-bottom: 16px;
+    }
+    .section-title em { font-style: italic; color: var(--accent); }
+    .section-subtitle {
+      font-size: 18px; font-weight: 300; color: var(--text-2); line-height: 1.65;
+    }
+
+    /* Wave divider */
+    .wave-divider { display: block; line-height: 0; }
+    .wave-divider svg { display: block; width: 100%; }
+
+    /* Diagonal divider */
+    .section-diagonal-end {
+      position: relative; padding-bottom: 80px;
+    }
+    .section-diagonal-end::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 80px; background: var(--bg-2);
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    }
+
+    /* ========================================
+       PROBLEMA
+    ======================================== */
+    .problema-section {
+      background: var(--bg-2);
+      padding: 120px 0 100px;
+      position: relative;
+      background-image:
+        radial-gradient(ellipse at 80% 20%, rgba(107,92,231,0.08) 0%, transparent 50%),
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: auto, 40px 40px, 40px 40px;
+    }
+    .problema-cards {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .problema-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px; padding: 36px 32px;
+      position: relative; overflow: hidden;
+      transition: all 0.4s var(--ease-expo);
+    }
+    .problema-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 2px; background: var(--primary); opacity: 0.6;
+    }
+    .problema-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      border-color: rgba(107,92,231,0.2);
+    }
+    .problema-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: rgba(var(--primary-rgb),0.1);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+    }
+    .problema-icon svg { width: 22px; height: 22px; stroke: var(--primary); stroke-width: 1.8; fill: none; }
+    .problema-card h3 {
+      font-family: var(--font-display); font-size: 20px; font-weight: 700;
+      margin-bottom: 12px; color: var(--text);
+    }
+    .problema-card p { font-size: 16px; color: var(--text-2); line-height: 1.65; }
+    .problema-cost {
+      margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border);
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 2px; color: #FF6B6B; text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) { .problema-cards { grid-template-columns: 1fr; } }
+
+    /* ========================================
+       VIDA DEPOIS — BEFORE/AFTER SPLIT
+    ======================================== */
+    .vida-section {
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 70vh; position: relative;
+    }
+    .vida-antes {
+      background: var(--surface); padding: 100px 72px;
+      display: flex; flex-direction: column; justify-content: center;
+      position: relative;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .vida-antes-tag {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 3px;
+      text-transform: uppercase; color: #FF6B6B; margin-bottom: 28px;
+    }
+    .vida-antes h3 {
+      font-family: var(--font-display); font-size: clamp(22px, 2.5vw, 30px);
+      font-weight: 700; color: var(--text-2); line-height: 1.2;
+      margin-bottom: 32px; letter-spacing: -0.02em;
+    }
+    .vida-antes-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+    .vida-antes-list li {
+      display: flex; gap: 12px; align-items: flex-start;
+      font-size: 16px; color: var(--text-2); line-height: 1.5;
+    }
+    .antes-icon { color: #FF6B6B; margin-top: 2px; flex-shrink: 0; font-size: 14px; }
+
+    .vida-depois {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--bg-2) 100%);
+      padding: 100px 72px; display: flex; flex-direction: column; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .vida-depois::before {
+      content: ''; position: absolute; top: -20%; right: -20%;
+      width: 500px; height: 500px;
+      background: radial-gradient(ellipse, rgba(46,196,182,0.15) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .vida-depois-tag {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 28px;
+    }
+    .vida-depois h3 {
+      font-family: var(--font-display); font-size: clamp(22px, 2.5vw, 30px);
+      font-weight: 700; color: var(--text); line-height: 1.2;
+      margin-bottom: 32px; letter-spacing: -0.02em;
+    }
+    .vida-depois-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+    .vida-depois-list li {
+      display: flex; gap: 12px; align-items: flex-start;
+      font-size: 16px; color: rgba(240,240,255,0.85); line-height: 1.5;
+    }
+    .depois-icon { color: var(--accent); margin-top: 2px; flex-shrink: 0; font-size: 14px; }
+
+    /* Divisor central */
+    .vida-divisor {
+      position: absolute; left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+      width: 56px; height: 56px; z-index: 10;
+      background: var(--bg); border: 2px solid var(--accent);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .vida-section { grid-template-columns: 1fr; }
+      .vida-divisor { display: none; }
+      .vida-antes, .vida-depois { padding: 64px 32px; }
+    }
+
+    /* ========================================
+       SOLUÇÃO
+    ======================================== */
+    .solucao-section {
+      background: var(--bg); padding: 120px 0;
+      background-image:
+        radial-gradient(ellipse at 20% 80%, rgba(46,196,182,0.07) 0%, transparent 50%);
+    }
+    .solucao-steps {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+    }
+    .step-item {
+      background: var(--surface); padding: 48px 40px;
+      position: relative; overflow: hidden;
+      transition: background 0.3s ease;
+    }
+    .step-item:hover { background: var(--surface-2); }
+    .step-number {
+      font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px;
+      color: var(--accent); text-transform: uppercase; margin-bottom: 24px;
+    }
+    .step-item h3 {
+      font-family: var(--font-display); font-size: 22px; font-weight: 700;
+      margin-bottom: 14px; letter-spacing: -0.02em;
+    }
+    .step-item p { font-size: 16px; color: var(--text-2); line-height: 1.65; }
+    .step-accent {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 3px; background: var(--accent); transform: scaleX(0);
+      transform-origin: left; transition: transform 0.4s var(--ease-expo);
+    }
+    .step-item:hover .step-accent { transform: scaleX(1); }
+
+    @media (max-width: 900px) { .solucao-steps { grid-template-columns: 1fr; } }
+
+    /* ========================================
+       CALCULATOR
+    ======================================== */
+    .calc-section {
+      background: var(--bg-2); padding: 120px 0;
+      position: relative; overflow: hidden;
+      background-image:
+        radial-gradient(ellipse at 70% 50%, rgba(107,92,231,0.12) 0%, transparent 55%),
+        radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: auto, 28px 28px;
+    }
+    .calc-wrapper {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
+    }
+    .calc-intro h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3vw, 42px); font-weight: 700;
+      line-height: 1.15; letter-spacing: -0.025em; margin-bottom: 20px;
+    }
+    .calc-intro p { font-size: 17px; color: var(--text-2); line-height: 1.65; margin-bottom: 32px; }
+    .calc-insight {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px 24px;
+      font-size: 14px; color: var(--text-2); line-height: 1.6;
+    }
+    .calc-insight strong { color: var(--accent); }
+
+    .calc-widget {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 20px; padding: 48px 40px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+    }
+    .calc-field { margin-bottom: 32px; }
+    .calc-field label {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 14px; font-weight: 600; color: var(--text-2);
+      margin-bottom: 12px;
+    }
+    .calc-field label span {
+      font-family: var(--font-mono); font-size: 13px;
+      color: var(--accent); font-weight: 500;
+    }
+    input[type="range"] {
+      width: 100%; -webkit-appearance: none; appearance: none;
+      height: 4px; border-radius: 4px;
+      background: var(--border); outline: none; cursor: pointer;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none;
+      width: 20px; height: 20px; border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 0 4px rgba(var(--primary-rgb),0.2);
+      transition: box-shadow 0.2s ease;
+    }
+    input[type="range"]::-webkit-slider-thumb:hover {
+      box-shadow: 0 0 0 8px rgba(var(--primary-rgb),0.25);
+    }
+    .calc-result {
+      margin-top: 8px; padding: 28px; border-radius: 12px;
+      background: linear-gradient(135deg, rgba(var(--primary-rgb),0.15), rgba(var(--accent-rgb),0.08));
+      border: 1px solid rgba(var(--primary-rgb),0.25); text-align: center;
+    }
+    .result-label {
+      font-size: 13px; color: var(--text-2); margin-bottom: 8px;
+      font-family: var(--font-mono); letter-spacing: 1px; text-transform: uppercase;
+    }
+    .result-value {
+      font-family: var(--font-display); font-size: 36px; font-weight: 900;
+      color: #FF6B6B; letter-spacing: -0.03em; margin-bottom: 4px;
+    }
+    .result-saving {
+      font-size: 14px; color: var(--accent); font-weight: 600; margin-bottom: 20px;
+    }
+    .calc-result .btn-primary { width: 100%; justify-content: center; }
+
+    @media (max-width: 900px) {
+      .calc-wrapper { grid-template-columns: 1fr; gap: 48px; }
+    }
+
+    /* ========================================
+       TESTIMONIALS
+    ======================================== */
+    .testimonials-section {
+      background: var(--surface);
+      padding: 120px 0;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .testimonial-card {
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: 16px; padding: 36px 32px;
+      display: flex; flex-direction: column; gap: 24px;
+      position: relative; overflow: hidden;
+      transition: all 0.4s var(--ease-expo);
+    }
+    .testimonial-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+    }
+    .testimonial-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+    .testimonial-stars { color: var(--accent); font-size: 14px; letter-spacing: 2px; }
+    .testimonial-quote {
+      font-size: 16px; line-height: 1.7; color: rgba(240,240,255,0.85);
+      font-style: italic; flex: 1;
+    }
+    .testimonial-author { display: flex; gap: 14px; align-items: center; }
+    .testimonial-avatar {
+      width: 52px; height: 52px; border-radius: 50%;
+      object-fit: cover; border: 2px solid var(--border);
+      filter: contrast(1.05) saturate(0.85) brightness(0.95);
+    }
+    .author-info h4 { font-size: 15px; font-weight: 600; color: var(--text); }
+    .author-info p { font-size: 13px; color: var(--text-2); margin-top: 2px; }
+    .testimonial-metric {
+      padding-top: 16px; border-top: 1px solid var(--border);
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: var(--accent);
+    }
+    @media (max-width: 900px) { .testimonials-grid { grid-template-columns: 1fr; } }
+
+    /* ========================================
+       COMPARATIVO
+    ======================================== */
+    .comparativo-section {
+      background: var(--bg); padding: 120px 0;
+      background-image:
+        radial-gradient(ellipse at 50% 0%, rgba(107,92,231,0.06) 0%, transparent 50%);
+    }
+    .comparativo-table {
+      width: 100%; border-collapse: separate; border-spacing: 0;
+      border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+    }
+    .comparativo-table thead th {
+      padding: 20px 32px; text-align: left;
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--text-2);
+      background: var(--surface);
+    }
+    .comparativo-table thead .col-primegente {
+      background: rgba(var(--primary-rgb),0.15);
+      color: var(--accent);
+    }
+    .comparativo-table tbody tr {
+      border-top: 1px solid var(--border);
+      transition: background 0.2s ease;
+    }
+    .comparativo-table tbody tr:hover { background: var(--surface); }
+    .comparativo-table td {
+      padding: 18px 32px; font-size: 15px; color: var(--text-2);
+    }
+    .comparativo-table td:first-child { color: var(--text); font-weight: 500; }
+    .comparativo-table .col-primegente {
+      color: var(--text); font-weight: 600;
+      background: rgba(var(--primary-rgb),0.06);
+    }
+    .check { color: var(--accent); }
+    .cross { color: rgba(255,107,107,0.7); }
+
+    /* ========================================
+       REVERSÃO DE RISCO
+    ======================================== */
+    .risco-section {
+      background: var(--surface); padding: 80px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .risco-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    .risco-item {
+      display: flex; gap: 20px; align-items: flex-start;
+    }
+    .risco-icon-wrap {
+      width: 48px; height: 48px; flex-shrink: 0; border-radius: 12px;
+      background: rgba(var(--accent-rgb),0.1);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .risco-icon-wrap svg { width: 22px; height: 22px; stroke: var(--accent); stroke-width: 1.8; fill: none; }
+    .risco-item h3 { font-size: 17px; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+    .risco-item p { font-size: 15px; color: var(--text-2); line-height: 1.6; }
+    @media (max-width: 900px) { .risco-grid { grid-template-columns: 1fr; } }
+
+    /* ========================================
+       FAQ
+    ======================================== */
+    .faq-section {
+      background: var(--bg-2); padding: 120px 0;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .faq-list { max-width: 780px; margin: 0 auto; }
+    .faq-item {
+      border-bottom: 1px solid var(--border); padding: 24px 0;
+    }
+    .faq-question {
+      display: flex; justify-content: space-between; align-items: center;
+      cursor: pointer; gap: 24px; width: 100%;
+      background: none; border: none; padding: 0; text-align: left;
+      font-family: var(--font-body);
+      font-size: 18px; font-weight: 600; color: var(--text); line-height: 1.4;
+      transition: color 0.2s ease;
+    }
+    .faq-question:hover { color: var(--accent); }
+    .faq-icon {
+      flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.35s var(--ease-spring); color: var(--text-2);
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg); background: var(--primary);
+      border-color: var(--primary); color: white;
+    }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.45s var(--ease-expo), padding 0.3s ease;
+    }
+    .faq-item.active .faq-answer { max-height: 320px; padding-top: 16px; }
+    .faq-answer p { font-size: 16px; color: var(--text-2); line-height: 1.7; }
+
+    /* ========================================
+       CTA FINAL
+    ======================================== */
+    .cta-section {
+      background: var(--bg); padding: 140px 0; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .cta-section::before {
+      content: ''; position: absolute; top: -20%; left: 50%; transform: translateX(-50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(ellipse, rgba(var(--primary-rgb),0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .cta-section::after {
+      content: ''; position: absolute; bottom: 10%; right: 10%;
+      width: 400px; height: 400px;
+      background: radial-gradient(ellipse, rgba(var(--accent-rgb),0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .cta-content { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+    .cta-section .section-tag { display: block; text-align: center; }
+    .cta-headline {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4vw, 56px); font-weight: 700;
+      line-height: 1.1; letter-spacing: -0.03em;
+      margin-bottom: 20px; color: var(--text);
+    }
+    .cta-headline em { font-style: italic; color: var(--accent); }
+    .cta-subtext { font-size: 18px; color: var(--text-2); margin-bottom: 40px; line-height: 1.6; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+    .cta-reassurance {
+      font-size: 13px; color: var(--text-2); display: flex;
+      align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;
+    }
+    .cta-reassurance span { display: flex; align-items: center; gap: 6px; }
+    .cta-reassurance svg { width: 14px; height: 14px; stroke: var(--accent); stroke-width: 2; fill: none; }
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+    footer {
+      background: var(--surface); border-top: 1px solid var(--border);
+      padding: 64px 0 40px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand .logo { font-family: var(--font-display); font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 12px; display: block; }
+    .footer-brand .logo span { color: var(--accent); }
+    .footer-brand p { font-size: 14px; color: var(--text-2); line-height: 1.7; max-width: 280px; }
+    .footer-col h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 16px; letter-spacing: 0.5px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { font-size: 14px; color: var(--text-2); text-decoration: none; transition: color 0.2s ease; }
+    .footer-col ul li a:hover { color: var(--text); }
+    .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom p { font-size: 13px; color: var(--text-2); }
+    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+
+    /* ========================================
+       MOBILE STICKY CTA
+    ======================================== */
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 998;
+      padding: 14px 20px;
+      padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+      background: rgba(8,8,16,0.96);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid var(--border);
+      transform: translateY(100%);
+      transition: transform 0.4s var(--ease-expo);
+    }
+    .mobile-sticky-cta.visible { transform: translateY(0); }
+    @media (max-width: 768px) { .mobile-sticky-cta { display: block; } }
+    .sticky-btn {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      width: 100%; background: #25D366; color: white;
+      padding: 15px; border-radius: 10px; font-size: 16px; font-weight: 700;
+      text-decoration: none; border: none;
+    }
+    .sticky-btn svg { width: 20px; height: 20px; fill: white; }
+
+  
+    /* ===== MOBILE HERO FIX v3.1 ===== */
+    @media (max-width: 768px) {
+      .hero-ctas, .hero-cta {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+      }
+      .btn-primary, .btn-ghost, .btn, .btn-whatsapp,
+      .btn-secondary, .btn-primary-light, .btn-ghost-dark,
+      .btn-cta-primary, .btn-cta-ghost, .btn-vida {
+        width: 100% !important;
+        max-width: 100% !important;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .hero-inner {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+      }
+      .hero-badge {
+        max-width: calc(100vw - 2.5rem);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 11px !important;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero-ctas, .hero-cta {
+        gap: 12px;
+      }
+      .hero-inner {
+        padding-top: 5.5rem !important;
+        padding-bottom: 2.5rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      .btn-primary, .btn-ghost, .btn, .btn-whatsapp,
+      .btn-secondary, .btn-primary-light, .btn-ghost-dark,
+      .btn-cta-primary, .btn-cta-ghost, .btn-vida {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        font-size: 15px !important;
+      }
+    }
+    /* ===== END MOBILE HERO FIX ===== */
+</style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Menu principal">
+    <a href="#" class="nav-logo">PrimeGente <span>RH</span></a>
+    <ul class="nav-links">
+      <li><a href="#problema">O Problema</a></li>
+      <li><a href="#solucao">Solução</a></li>
+      <li><a href="#calculadora">Calculadora</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="https://wa.me/5511300001234?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consultoria%20gratuita" class="nav-cta" target="_blank" rel="noopener">Consultoria Gratuita</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" role="main" aria-labelledby="hero-heading">
+    <div class="hero-ghost" aria-hidden="true">TALENTO</div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-label">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>★★★★★ 4.9 · 312 avaliações · +500 empresas</span>
+        </div>
+
+        <span class="hero-eyebrow">// Consultoria em RH</span>
+
+        <h1 class="hero-headline" id="hero-heading">
+          <span class="desktop-only">Reduza turnover em 40%.<br><em>Em 90 dias.</em></span>
+          <span class="mobile-only">Turnover −40%.<br><em>Em 90 dias.</em></span>
+        </h1>
+
+        <p class="hero-subheadline">
+          Processos seletivos assertivos que eliminam contratações equivocadas.
+          Cada demissão custa 6 meses de salário — nós cortamos esse ciclo pela raiz.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="https://wa.me/5511300001234?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consultoria%20gratuita" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Quero minha consultoria grátis
+          </a>
+          <a href="#calculadora" class="btn-ghost">Calcular meu custo de turnover →</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-counter data-target="40" data-suffix="%">40%</span>
+            <span class="stat-label">Redução de turnover</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-counter data-target="90" data-suffix=" dias">90 dias</span>
+            <span class="stat-label">Para ver resultado</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-counter data-target="500" data-prefix="+" >+500</span>
+            <span class="stat-label">Empresas atendidas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <!-- duplicado para loop contínuo -->
+      <span class="marquee-item"><span class="marquee-dot"></span>+500 empresas transformadas</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>40% menos turnover</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>R$ 2,5M economizados</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>98% satisfação</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>90 dias para resultado</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Consultoria gratuita</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Garantia de resultado</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>+500 empresas transformadas</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>40% menos turnover</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>R$ 2,5M economizados</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>98% satisfação</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>90 dias para resultado</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Consultoria gratuita</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Garantia de resultado</span>
+    </div>
+  </div>
+
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="background:#1a1a2e;">
+      <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#0F0F1A"/>
+    </svg>
+  </div>
+
+  <!-- PROBLEMA -->
+  <section class="problema-section" id="problema" aria-labelledby="problema-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// O Problema</span>
+        <h2 class="section-title" id="problema-heading">A contratação errada<br>custa <em>mais do que você imagina</em></h2>
+        <p class="section-subtitle">Cada demissão involuntária representa em média 6 meses de salário perdidos. Em uma empresa com 100 funcionários e 25% de turnover, são R$ 600 mil por ano — invisíveis no balanço, mas devastadores no time.</p>
+      </div>
+
+      <div class="problema-cards">
+        <div class="problema-card reveal reveal-delay-1">
+          <div class="problema-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Segunda-feira. De novo.</h3>
+          <p>Você está apagando incêndios de RH quando deveria estar construindo o negócio. Vagas abertas há 3 meses. Entrevistas que não chegam a lugar nenhum. Times sobrecarregados cobrindo ausências.</p>
+          <p class="problema-cost">⚠ Custo estimado: R$ 4.000–12.000 por vaga em aberto/mês</p>
+        </div>
+        <div class="problema-card reveal reveal-delay-2">
+          <div class="problema-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>O custo invisível do turnover</h3>
+          <p>Demissão. Rescisão. Anúncio. Triagem. Entrevistas. Contratação. Onboarding. Ramp-up de 90 dias. Tudo isso para descobrir que a pessoa não tem fit cultural — e recomeçar.</p>
+          <p class="problema-cost">⚠ Custo médio por substituição: 1,5× o salário mensal</p>
+        </div>
+        <div class="problema-card reveal reveal-delay-3">
+          <div class="problema-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Time instável, moral em queda</h3>
+          <p>Quando um colega vai embora, os que ficam sentem. A sobrecarga aumenta, o engajamento despenca, e logo mais um pede demissão. O ciclo se perpetua — e piora com o tempo.</p>
+          <p class="problema-cost">⚠ Impacto: −23% produtividade em times com turnover alto</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="background:#0F0F1A;">
+      <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" fill="#13131F"/>
+    </svg>
+  </div>
+
+  <!-- VIDA DEPOIS -->
+  <section class="vida-section" aria-label="Transformação: antes e depois">
+    <div class="vida-antes reveal">
+      <span class="vida-antes-tag">// Hoje, sem a PrimeGente RH</span>
+      <h3>Segunda-feira às 9h. Inbox cheio. Mais uma demissão inesperada. Você recalcula o custo de reposição — de novo.</h3>
+      <ul class="vida-antes-list">
+        <li><span class="antes-icon" aria-hidden="true">✗</span> Vagas abertas por meses sem candidatos qualificados</li>
+        <li><span class="antes-icon" aria-hidden="true">✗</span> Entrevistas que consomem 3h do seu dia e não chegam a nada</li>
+        <li><span class="antes-icon" aria-hidden="true">✗</span> Contratação rápida e arrependimento rápido</li>
+        <li><span class="antes-icon" aria-hidden="true">✗</span> Time desmotivado com quem ficou sobrecarregado</li>
+        <li><span class="antes-icon" aria-hidden="true">✗</span> Você no operacional quando deveria estar no estratégico</li>
+      </ul>
+    </div>
+
+    <div class="vida-divisor" aria-hidden="true">→</div>
+
+    <div class="vida-depois reveal">
+      <span class="vida-depois-tag">// Com a PrimeGente RH, em 90 dias</span>
+      <h3>Segunda-feira às 9h. Dashboard de clima atualizado. Equipe completa. Reunião de estratégia no calendário.</h3>
+      <ul class="vida-depois-list">
+        <li><span class="depois-icon" aria-hidden="true">✓</span> Vagas preenchidas com candidatos que ficam e crescem</li>
+        <li><span class="depois-icon" aria-hidden="true">✓</span> Processo seletivo que roda sem você precisar gerenciar</li>
+        <li><span class="depois-icon" aria-hidden="true">✓</span> Time coeso, engajado e com cultura forte</li>
+        <li><span class="depois-icon" aria-hidden="true">✓</span> Turnover caindo semana a semana, medido e documentado</li>
+        <li><span class="depois-icon" aria-hidden="true">✓</span> Você no crescimento, não no apagar incêndios</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section class="solucao-section" id="solucao" aria-labelledby="solucao-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Nossa Solução</span>
+        <h2 class="section-title" id="solucao-heading">Processos seletivos que funcionam.<br><em>Metodologia, não sorte.</em></h2>
+        <p class="section-subtitle">Combinamos psicologia organizacional, avaliações por competência e employer branding para encontrar quem fica — não só quem aceita.</p>
+      </div>
+      <div class="solucao-steps">
+        <div class="step-item reveal reveal-delay-1">
+          <div class="step-number">01 — Diagnóstico</div>
+          <h3>Mapeamento de Perfil</h3>
+          <p>Definimos o perfil ideal por competências técnicas e comportamentais específicas. Não genéricas — específicas para o cargo, a equipe e a cultura da sua empresa.</p>
+          <div class="step-accent"></div>
+        </div>
+        <div class="step-item reveal reveal-delay-2">
+          <div class="step-number">02 — Atração</div>
+          <h3>Sourcing Estratégico</h3>
+          <p>Campanhas de employer branding e sourcing ativo em canais qualificados. Trazemos candidatos que já querem trabalhar na sua empresa antes da primeira entrevista.</p>
+          <div class="step-accent"></div>
+        </div>
+        <div class="step-item reveal reveal-delay-3">
+          <div class="step-number">03 — Avaliação</div>
+          <h3>Seleção por Competência</h3>
+          <p>Testes validados, dinâmicas estruturadas e entrevistas por competência eliminam 87% dos erros de contratação antes de você ver o primeiro currículo.</p>
+          <div class="step-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGONAL DIVIDER -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="background:#080810;">
+      <path d="M0,60 L1440,0 L1440,60 Z" fill="#0F0F1A"/>
+    </svg>
+  </div>
+
+  <!-- ROI CALCULATOR -->
+  <section class="calc-section" id="calculadora" aria-labelledby="calc-heading">
+    <div class="container">
+      <div class="calc-wrapper">
+        <div class="calc-intro reveal">
+          <span class="section-tag">// Calculadora de ROI</span>
+          <h2 id="calc-heading">Quanto turnover está custando para <em>você</em>?</h2>
+          <p>Ajuste os dados da sua empresa e veja em tempo real o custo anual de rotatividade — e quanto você pode recuperar com processos seletivos assertivos.</p>
+          <div class="calc-insight">
+            <strong>Fato comprovado:</strong> empresas que investem em processos seletivos estruturados reduzem o custo de turnover em média 40% no primeiro ano e 65% em 3 anos.
+          </div>
+        </div>
+
+        <div class="calc-widget reveal reveal-delay-1">
+          <div class="calc-field">
+            <label for="c-employees">Número de funcionários <span id="emp-display">50</span></label>
+            <input type="range" id="c-employees" min="10" max="500" value="50" step="10" aria-label="Número de funcionários">
+          </div>
+          <div class="calc-field">
+            <label for="c-turnover">Turnover anual atual <span id="turn-display">25%</span></label>
+            <input type="range" id="c-turnover" min="5" max="70" value="25" step="5" aria-label="Turnover anual">
+          </div>
+          <div class="calc-field">
+            <label for="c-salary">Salário médio (R$) <span id="sal-display">R$ 4.000</span></label>
+            <input type="range" id="c-salary" min="2000" max="20000" value="4000" step="500" aria-label="Salário médio">
+          </div>
+
+          <div class="calc-result">
+            <p class="result-label">Custo anual de turnover estimado</p>
+            <p class="result-value" id="calc-total">R$ 75.000</p>
+            <p class="result-saving" id="calc-saving">Com PrimeGente RH: economize até R$ 30.000/ano</p>
+            <a href="https://wa.me/5511300001234?text=Ol%C3%A1%2C%20calculei%20meu%20custo%20de%20turnover%20no%20site%20e%20quero%20entender%20como%20reduzi-lo" class="btn-primary" target="_blank" rel="noopener">
+              Quero reduzir esse custo →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section" id="depoimentos" aria-labelledby="test-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Depoimentos</span>
+        <h2 class="section-title" id="test-heading">Números reais.<br><em>Empresas reais.</em></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="testimonial-quote">"Em 90 dias, reduzimos nosso turnover de 35% para 8%. A PrimeGente RH não só trouxe resultados — mudou nossa forma de pensar sobre recrutamento."</blockquote>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&h=120&q=80" alt="Marina Costa, CEO da TechStart Brasil" class="testimonial-avatar" loading="lazy" width="52" height="52">
+            <div class="author-info">
+              <h4>Marina Costa</h4>
+              <p>CEO · TechStart Brasil</p>
+            </div>
+          </div>
+          <div class="testimonial-metric">Turnover: 35% → 8% · em 90 dias</div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="testimonial-quote">"Economizamos R$ 180 mil em 6 meses só com a redução de turnover. O ROI foi imediato e mensurável desde o primeiro mês de parceria."</blockquote>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=120&h=120&q=80" alt="Carlos Mendes, HR Director da InovaCorp" class="testimonial-avatar" loading="lazy" width="52" height="52">
+            <div class="author-info">
+              <h4>Carlos Mendes</h4>
+              <p>HR Director · InovaCorp</p>
+            </div>
+          </div>
+          <div class="testimonial-metric">ROI: R$ 180k em 6 meses</div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-3">
+          <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="testimonial-quote">"A qualidade das contratações melhorou drasticamente. Hoje temos um time mais engajado e alinhado com nossa cultura. É outra empresa."</blockquote>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=120&h=120&q=80" alt="Ana Paula Ferreira, Head de Pessoas do Grupo Nexus" class="testimonial-avatar" loading="lazy" width="52" height="52">
+            <div class="author-info">
+              <h4>Ana Paula Ferreira</h4>
+              <p>Head de Pessoas · Grupo Nexus</p>
+            </div>
+          </div>
+          <div class="testimonial-metric">Engajamento: +41% em 6 meses</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARATIVO -->
+  <section class="comparativo-section" id="comparativo" aria-labelledby="comp-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Comparativo</span>
+        <h2 class="section-title" id="comp-heading">PrimeGente RH vs.<br><em>recrutamento tradicional</em></h2>
+        <p class="section-subtitle">Entenda por que metodologia vence improviso — sempre.</p>
+      </div>
+      <div class="reveal reveal-delay-1" style="overflow-x:auto;">
+        <table class="comparativo-table" aria-label="Comparativo entre PrimeGente RH e recrutamento tradicional">
+          <thead>
+            <tr>
+              <th>Atributo</th>
+              <th class="col-primegente">PrimeGente RH</th>
+              <th>Recrutamento Tradicional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tempo médio de preenchimento</td>
+              <td class="col-primegente"><span class="check">✓</span> 18–22 dias úteis</td>
+              <td>45–90 dias úteis</td>
+            </tr>
+            <tr>
+              <td>Taxa de retenção em 12 meses</td>
+              <td class="col-primegente"><span class="check">✓</span> 89% dos contratados</td>
+              <td>52–60% dos contratados</td>
+            </tr>
+            <tr>
+              <td>Avaliação por competência</td>
+              <td class="col-primegente"><span class="check">✓</span> Sempre — validada cientificamente</td>
+              <td><span class="cross">✗</span> Raramente estruturada</td>
+            </tr>
+            <tr>
+              <td>Transferência de metodologia</td>
+              <td class="col-primegente"><span class="check">✓</span> Você fica independente</td>
+              <td><span class="cross">✗</span> Dependência contínua</td>
+            </tr>
+            <tr>
+              <td>Garantia de resultado</td>
+              <td class="col-primegente"><span class="check">✓</span> Revisão sem custo extra</td>
+              <td><span class="cross">✗</span> Nenhuma garantia</td>
+            </tr>
+            <tr>
+              <td>ROI documentado</td>
+              <td class="col-primegente"><span class="check">✓</span> Relatório mensal com métricas</td>
+              <td><span class="cross">✗</span> Sem rastreamento</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVERSÃO DE RISCO -->
+  <section class="risco-section" aria-label="Garantias e sem riscos">
+    <div class="container">
+      <div class="risco-grid">
+        <div class="risco-item reveal reveal-delay-1">
+          <div class="risco-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3>Garantia de resultado</h3>
+            <p>Se em 90 dias sua taxa de turnover não cair ao menos 20%, revisamos todo o processo sem custo adicional — até atingirmos a meta.</p>
+          </div>
+        </div>
+        <div class="risco-item reveal reveal-delay-2">
+          <div class="risco-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div>
+            <h3>Consultoria inicial gratuita</h3>
+            <p>45 minutos com um especialista. Diagnóstico do seu processo atual, estimativa de ROI personalizada. Sem compromisso de contratação.</p>
+          </div>
+        </div>
+        <div class="risco-item reveal reveal-delay-3">
+          <div class="risco-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <h3>ROI documentado mensalmente</h3>
+            <p>Você recebe relatórios mensais com as métricas do processo: tempo de preenchimento, taxa de retenção, economia gerada. Sem surpresas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// FAQ</span>
+        <h2 class="section-title" id="faq-heading">Perguntas que você<br><em>provavelmente tem</em></h2>
+      </div>
+      <div class="faq-list" role="list">
+
+        <div class="faq-item reveal" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Em quanto tempo vejo os primeiros resultados?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Os primeiros indicadores aparecem em 30 dias: redução no tempo de preenchimento de vagas e aumento na qualidade dos candidatos. A redução de 40% no turnover é medida no ciclo completo de 90 dias. Você recebe um relatório de progresso mensal desde o início.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Como funciona a consultoria inicial gratuita?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Em 45 minutos via videoconferência ou presencial em São Paulo, um especialista da PrimeGente RH analisa seu processo atual, identifica os gargalos principais e apresenta uma estimativa de ROI específica para o seu contexto. Você sai com clareza sobre o problema e as opções. Sem pitch de vendas agressivo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            A PrimeGente RH atende empresas de qual tamanho?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Nosso foco são empresas de médio porte — entre 50 e 1.000 funcionários — que precisam estruturar ou profissionalizar seus processos de recrutamento. Atendemos todos os segmentos de mercado: varejo, tecnologia, saúde, serviços e indústria.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-3" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Qual a diferença entre a PrimeGente RH e uma agência de recrutamento comum?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Agências tradicionais entregam currículos e cobram por preenchimento de vaga. A PrimeGente RH entrega processos: mapeamos o perfil ideal, estruturamos avaliações por competência e transferimos a metodologia para sua equipe. O objetivo é que você precise cada vez menos de apoio externo — e que as contratações certas virem regra, não exceção.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-4" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            E se os resultados não chegarem aos 40%?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Nós temos garantia de resultado. Se em 90 dias sua taxa de turnover não reduzir ao menos 20%, revisamos todo o processo sem custo adicional — ajustamos metodologia, refazemos avaliações e acompanhamos até atingirmos a meta acordada. Simples assim.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-content">
+        <span class="section-tag">// Próximo passo</span>
+        <h2 class="cta-headline" id="cta-heading">Sua equipe estável começa<br><em>com uma conversa.</em></h2>
+        <p class="cta-subtext">Consultoria inicial gratuita. 45 minutos. Sem compromisso de contratação.<br>Você sai com clareza — independente de seguir ou não com a PrimeGente RH.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/5511300001234?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20agendar%20minha%20consultoria%20gratuita" class="btn-whatsapp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Quero minha consultoria grátis
+          </a>
+          <a href="tel:+551130001234" class="btn-ghost">ou ligue (11) 3000-1234</a>
+        </div>
+        <div class="cta-reassurance">
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Sem compromisso
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Resposta em até 2h
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Garantia de resultado
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">PrimeGente <span>RH</span></span>
+          <p>Transformando empresas através de processos seletivos assertivos. Reduza turnover em 40% em 90 dias.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#">R&S Especializado</a></li>
+            <li><a href="#">Employer Branding</a></li>
+            <li><a href="#">Avaliação de Perfil</a></li>
+            <li><a href="#">Consultoria em RH</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Cases de Sucesso</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:contato@primegente.com.br">contato@primegente.com.br</a></li>
+            <li><a href="tel:+551130001234">(11) 3000-1234</a></li>
+            <li><a href="#">São Paulo, SP</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 PrimeGente RH. Todos os direitos reservados.</p>
+        <p style="font-size:13px; color:var(--text-2);">Política de Privacidade · Termos de Uso</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-sticky-cta" id="mobileCTA" aria-label="Ação rápida pelo WhatsApp">
+    <a href="https://wa.me/5511300001234?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20agendar%20uma%20consultoria%20gratuita" class="sticky-btn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Consultoria gratuita — WhatsApp
+    </a>
+  </div>
+
+  <script>
+    // ===== NAVBAR SCROLL =====
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ===== REVEAL ON SCROLL =====
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ===== ANIMATED COUNTERS =====
+    function animateCounter(el) {
+      const target = parseFloat(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      const prefix = el.dataset.prefix || '';
+      const duration = 1600;
+      const start = performance.now();
+      const easeOutQuart = t => 1 - Math.pow(1 - t, 4);
+      const update = (now) => {
+        const p = Math.min((now - start) / duration, 1);
+        const val = easeOutQuart(p) * target;
+        el.textContent = prefix + (Number.isInteger(target)
+          ? Math.floor(val).toLocaleString('pt-BR')
+          : val.toFixed(1)) + suffix;
+        if (p < 1) requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    }
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && !e.target.dataset.animated) {
+          e.target.dataset.animated = 'true';
+          animateCounter(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observe(el));
+
+    // ===== ROI CALCULATOR =====
+    const calcEmp = document.getElementById('c-employees');
+    const calcTurn = document.getElementById('c-turnover');
+    const calcSal = document.getElementById('c-salary');
+
+    function updateCalc() {
+      const emp = +calcEmp.value;
+      const turn = +calcTurn.value / 100;
+      const sal = +calcSal.value;
+
+      document.getElementById('emp-display').textContent = emp;
+      document.getElementById('turn-display').textContent = calcTurn.value + '%';
+      document.getElementById('sal-display').textContent = 'R$ ' + sal.toLocaleString('pt-BR');
+
+      const annualSubs = Math.round(emp * turn);
+      const costPerSub = sal * 1.5;
+      const total = annualSubs * costPerSub;
+      const saving = Math.round(total * 0.4);
+
+      document.getElementById('calc-total').textContent = 'R$ ' + total.toLocaleString('pt-BR');
+      document.getElementById('calc-saving').textContent =
+        'Com PrimeGente RH: economize até R$ ' + saving.toLocaleString('pt-BR') + '/ano';
+    }
+    [calcEmp, calcTurn, calcSal].forEach(el => el.addEventListener('input', updateCalc));
+    updateCalc();
+
+    // ===== FAQ ACCORDION =====
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const answer = item.querySelector('.faq-answer');
+        const isOpen = item.classList.contains('active');
+
+        // Fecha todos
+        document.querySelectorAll('.faq-item.active').forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          i.querySelector('.faq-answer').removeAttribute('hidden');
+        });
+
+        if (!isOpen) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.removeAttribute('hidden');
+        }
+      });
+    });
+
+    // ===== MOBILE STICKY CTA =====
+    const mobileCTA = document.getElementById('mobileCTA');
+    const finalCTA = document.querySelector('.cta-section');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      if (scrolled > 0.25) mobileCTA.classList.add('visible');
+      if (finalCTA) {
+        const rect = finalCTA.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.8) mobileCTA.classList.remove('visible');
+      }
+    }, { passive: true });
+  </script>
+</body>
+</html>

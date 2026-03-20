@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0A0F1E">
+  <title>Atlas Seguros — Corretora em Campinas | Proteção Patrimonial</title>
+  <meta name="description" content="Corretora de seguros com 30 anos em Campinas. Seguros auto, vida, residencial e empresarial. Atendimento personalizado e as melhores seguradoras do mercado.">
+  <meta property="og:title" content="Atlas Seguros — Proteção Patrimonial em Campinas">
+  <meta property="og:description" content="30 anos protegendo patrimônios em Campinas. Cotação gratuita via WhatsApp.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1920&q=85">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Atlas Seguros",
+    "description": "Corretora de seguros com mais de 30 anos de experiência em Campinas e região.",
+    "url": "#",
+    "telephone": "+5519XXXXXXXXX",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Campinas",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Mo-Fr 08:00-18:00"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual a diferença de contratar seguro por um corretor em vez de direto com a seguradora?",
+        "acceptedAnswer": { "@type": "Answer", "text": "O corretor trabalha para você, não para a seguradora. Ele busca a melhor opção entre várias seguradoras, negocia coberturas e te representa no sinistro. Contratar direto pode parecer mais barato, mas na hora do sinistro você fica sozinho." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo demora para resolver um sinistro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Depende do tipo e complexidade, mas com nossa gestão ativa a maioria dos sinistros é resolvida em 48 a 72 horas. Acompanhamos cada caso até a conclusão." }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso ter seguros de diferentes seguradoras?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim. Gerenciamos apólices de múltiplas seguradoras para você ter sempre a melhor cobertura pelo melhor custo-benefício em cada produto." }
+      },
+      {
+        "@type": "Question",
+        "name": "Vocês atendem pequenas empresas?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim, atendemos desde MEIs até grandes corporações. Cada negócio tem necessidades únicas e nós montamos a proteção ideal para cada caso." }
+      },
+      {
+        "@type": "Question",
+        "name": "Como fazer uma cotação?",
+        "acceptedAnswer": { "@type": "Answer", "text": "É simples: mande uma mensagem no WhatsApp ou preencha o formulário. Em até 24h úteis você recebe as melhores opções do mercado, sem compromisso." }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'Source Sans Pro', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    img { max-width: 100%; height: auto; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    a { text-decoration: none; color: inherit; }
+    input, textarea, select { font-family: inherit; font-size: 16px; }
+
+    :root {
+      --bg: #0A0F1E;
+      --bg-2: #111827;
+      --surface: #141C2F;
+      --surface-2: #1C2640;
+      --primary: #1E3A8A;
+      --primary-rgb: 30,58,138;
+      --accent: #F59E0B;
+      --accent-rgb: 245,158,11;
+      --text: #F0F4FF;
+      --text-2: #8899BB;
+      --border: rgba(255,255,255,0.08);
+      --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+      --font-display: 'Merriweather', serif;
+      --font-body: 'Source Sans Pro', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    /* Noise global */
+    body::before {
+      content: ''; position: fixed; inset: 0; z-index: 9999;
+      pointer-events: none; opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* NAVBAR */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+      padding: 1.25rem 2rem; display: flex; justify-content: space-between; align-items: center;
+      transition: all 0.4s var(--ease-smooth);
+      background: transparent;
+    }
+    .nav.scrolled {
+      background: rgba(10,15,30,0.92);
+      backdrop-filter: blur(16px) saturate(180%);
+      border-bottom: 1px solid var(--border);
+      padding: 0.875rem 2rem;
+    }
+    .nav-logo {
+      font-family: var(--font-display); font-weight: 700; font-size: 1.25rem;
+      color: var(--text); display: flex; align-items: center; gap: 0.625rem;
+    }
+    .nav-logo-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--primary), #2563EB);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: rgba(240,244,255,0.75); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta {
+      background: var(--accent); color: #0A0F1E; padding: 0.625rem 1.25rem;
+      border-radius: 8px; font-weight: 700; font-size: 0.875rem; display: flex; align-items: center; gap: 0.4rem;
+      transition: all 0.25s var(--ease-smooth);
+    }
+    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,158,11,0.4); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: all 0.3s; }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh; position: relative; display: flex; align-items: center;
+      padding: 120px 2rem 6rem;
+      background:
+        linear-gradient(to right, rgba(10,15,30,0.94) 40%, rgba(10,15,30,0.55) 100%),
+        url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1920&q=85') center/cover no-repeat;
+      overflow: hidden;
+    }
+    .hero-bg-img {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+      z-index: -1; filter: contrast(1.08) saturate(0.75) brightness(0.9);
+      animation: kenburns 22s ease alternate infinite;
+    }
+    @keyframes kenburns {
+      0%   { transform: scale(1.0) translate(0%, 0%); }
+      100% { transform: scale(1.12) translate(-2%, -1%); }
+    }
+    .hero::before {
+      content: ''; position: absolute; top: -10%; left: -5%;
+      width: 700px; height: 700px; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse, rgba(30,58,138,0.4) 0%, transparent 60%);
+    }
+    .hero::after {
+      content: ''; position: absolute; bottom: 0; right: 10%;
+      width: 500px; height: 500px; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse, rgba(245,158,11,0.12) 0%, transparent 65%);
+    }
+    .hero-ghost {
+      position: absolute; font-family: var(--font-display);
+      font-size: clamp(100px, 18vw, 280px); font-weight: 900;
+      color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.04);
+      white-space: nowrap; pointer-events: none; z-index: 0;
+      top: 50%; left: 50%; transform: translate(-40%, -55%);
+      user-select: none;
+    }
+    .hero-content { max-width: 680px; position: relative; z-index: 2; }
+    .section-tag {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--accent); display: inline-flex;
+      align-items: center; gap: 8px; margin-bottom: 1.25rem;
+    }
+    .section-tag::before { content: '//'; opacity: 0.6; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px; margin-bottom: 1.5rem;
+      background: rgba(255,255,255,0.06); backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.12); border-radius: 100px;
+      padding: 8px 16px; font-size: 13px; font-weight: 500;
+    }
+    .status-dot {
+      width: 6px; height: 6px; background: #22C55E; border-radius: 50%;
+      animation: blink 2s ease infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.8); }
+    }
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(42px, 5.5vw, 80px);
+      line-height: 1.05; letter-spacing: -0.03em;
+      color: var(--text); margin-bottom: 1.25rem; font-weight: 700;
+    }
+    .hero-headline em { font-style: normal; color: var(--accent); }
+    .hero-sub {
+      font-size: clamp(17px, 1.5vw, 20px); color: rgba(240,244,255,0.75);
+      line-height: 1.65; margin-bottom: 2rem; max-width: 560px;
+    }
+    .hero-stats {
+      display: flex; gap: 2.5rem; margin-bottom: 2.5rem; flex-wrap: wrap;
+    }
+    .hero-stat-num {
+      font-family: var(--font-display); font-size: 2.25rem; font-weight: 700;
+      color: var(--accent); line-height: 1;
+    }
+    .hero-stat-lbl { font-size: 0.8rem; color: var(--text-2); margin-top: 4px; }
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--accent); color: #0A0F1E; padding: 14px 28px;
+      border-radius: 8px; font-weight: 700; font-size: 1rem;
+      display: inline-flex; align-items: center; gap: 8px;
+      transition: all 0.25s var(--ease-smooth);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(245,158,11,0.45); }
+    .btn-ghost {
+      background: transparent; color: var(--text); padding: 14px 28px;
+      border-radius: 8px; font-weight: 600; font-size: 1rem;
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.25s var(--ease-smooth);
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.4); }
+    .scroll-indicator {
+      position: absolute; right: 60px; bottom: 80px; z-index: 2;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+    }
+    .scroll-line {
+      width: 1px; height: 56px;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+      animation: scrollPulse 2s ease infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 1; transform: scaleY(1); }
+      50% { opacity: 0.4; transform: scaleY(0.85); }
+    }
+
+    /* MARQUEE */
+    .marquee-strip {
+      background: var(--accent); overflow: hidden; white-space: nowrap; padding: 14px 0;
+    }
+    .marquee-inner {
+      display: inline-flex; gap: 0;
+      animation: marquee 28s linear infinite;
+    }
+    .marquee-inner:hover { animation-play-state: paused; }
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .marquee-item {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 0 2.5rem; font-weight: 700; font-size: 0.875rem;
+      color: #0A0F1E; font-family: var(--font-body);
+    }
+    .marquee-sep { color: rgba(10,15,30,0.35); font-size: 1.2rem; }
+
+    /* SOCIAL PROOF BAR */
+    .proof-bar {
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+    }
+    .proof-bar-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap;
+    }
+    .proof-item { display: flex; align-items: center; gap: 10px; }
+    .proof-icon { color: var(--accent); flex-shrink: 0; }
+    .proof-text { font-size: 0.9rem; color: var(--text-2); font-weight: 500; }
+    .proof-text strong { color: var(--text); }
+    .proof-divider { width: 1px; height: 28px; background: var(--border); }
+
+    /* SEÇÕES */
+    .section { padding: 6rem 2rem; position: relative; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-header { text-align: center; max-width: 680px; margin: 0 auto 4rem; }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3.5vw, 48px);
+      line-height: 1.15; letter-spacing: -0.02em;
+      color: var(--text); margin-bottom: 1rem; font-weight: 700;
+    }
+    .section-title em { font-style: normal; color: var(--accent); }
+    .section-sub { font-size: 1.1rem; color: var(--text-2); line-height: 1.65; }
+
+    /* PROBLEMA */
+    .section-problema {
+      background: var(--bg-2);
+      background-image: repeating-linear-gradient(
+        45deg, transparent, transparent 10px,
+        rgba(255,255,255,0.012) 10px, rgba(255,255,255,0.012) 11px
+      );
+    }
+    .problema-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+    }
+    .problema-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 2rem; position: relative; overflow: hidden;
+    }
+    .problema-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, #EF4444, #F97316);
+    }
+    .problema-number {
+      font-family: var(--font-display); font-size: 3rem; font-weight: 900;
+      color: rgba(239,68,68,0.15); line-height: 1; margin-bottom: 1rem;
+    }
+    .problema-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text); }
+    .problema-card p { font-size: 0.95rem; color: var(--text-2); line-height: 1.6; }
+
+    /* VIDA DEPOIS */
+    .section-vida-depois {
+      min-height: 600px; display: flex; align-items: center;
+      background:
+        linear-gradient(to right, rgba(10,15,30,0.88) 50%, rgba(10,15,30,0.65) 100%),
+        url('./images/vida-depois.jpg') center/cover no-repeat;
+      position: relative;
+    }
+    .section-vida-depois::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%231E3A8A' d='M47.1,-57.1C59.5,-46.3,67.2,-30.1,68.8,-13.5C70.4,3.1,65.8,20.1,56.6,33.6C47.4,47.1,33.6,57.1,17.3,63.2C1,69.3,-17.7,71.5,-33.1,65.1C-48.5,58.7,-60.5,43.7,-66.3,26.4C-72.1,9.1,-71.7,-10.5,-64.4,-26.2C-57.1,-41.9,-42.9,-53.7,-27.8,-63.9C-12.7,-74.1,3.3,-82.7,18.2,-79.8C33.1,-76.9,34.7,-67.9,47.1,-57.1Z' transform='translate(100 100)'/%3E%3C/svg%3E")
+        left center/500px no-repeat; opacity: 0.06; pointer-events: none;
+    }
+    .vida-depois-content {
+      max-width: 620px; padding: 5rem 2rem; position: relative; z-index: 2;
+      margin-left: auto; margin-right: auto;
+    }
+    .vida-depois-list { list-style: none; margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem; }
+    .vida-depois-list li {
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 1.05rem; color: rgba(240,244,255,0.9);
+    }
+    .check-icon { color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+
+    /* SPLIT — BENEFÍCIOS */
+    .section-split {
+      background: var(--bg);
+      background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .split-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-radius: 20px;
+      overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+      border: 1px solid var(--border);
+    }
+    .split-img-wrap { position: relative; min-height: 500px; }
+    .split-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: contrast(1.05) saturate(0.85) brightness(0.92);
+    }
+    .split-body {
+      background: var(--surface); padding: 3.5rem 3rem;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .split-body .section-tag { margin-bottom: 1rem; }
+    .split-body h2 {
+      font-family: var(--font-display); font-size: clamp(24px, 2.5vw, 36px);
+      line-height: 1.2; letter-spacing: -0.02em; color: var(--text);
+      margin-bottom: 1.5rem; font-weight: 700;
+    }
+    .split-body h2 em { font-style: normal; color: var(--accent); }
+    .benefits-list { list-style: none; display: flex; flex-direction: column; gap: 1.25rem; }
+    .benefits-list li { display: flex; align-items: flex-start; gap: 12px; }
+    .benefits-list li span { font-size: 1rem; color: var(--text-2); line-height: 1.5; }
+    .benefits-list li strong { color: var(--text); }
+    .benefit-icon-wrap {
+      width: 32px; height: 32px; border-radius: 8px; flex-shrink: 0;
+      background: rgba(245,158,11,0.12); display: flex; align-items: center; justify-content: center;
+      color: var(--accent);
+    }
+
+    /* PRODUTOS */
+    .section-produtos {
+      background: var(--bg-2);
+    }
+    .produtos-tabs {
+      display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-bottom: 3rem;
+      max-width: 480px; margin-left: auto; margin-right: auto; margin-bottom: 3rem;
+    }
+    .tab-btn {
+      flex: 1; padding: 0.875rem 1.5rem; font-family: var(--font-body);
+      font-size: 0.95rem; font-weight: 600; color: var(--text-2); cursor: pointer;
+      border-bottom: 2px solid transparent; transition: all 0.25s; background: none; border-top: none; border-left: none; border-right: none;
+    }
+    .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .produtos-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+    }
+    .produto-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.75rem; position: relative; overflow: hidden;
+      transition: all 0.35s var(--ease-spring); cursor: default;
+    }
+    .produto-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transform: scaleX(0); transition: transform 0.35s var(--ease-expo);
+    }
+    .produto-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    .produto-card:hover::before { transform: scaleX(1); }
+    .produto-icon {
+      width: 48px; height: 48px; border-radius: 10px; margin-bottom: 1.25rem;
+      background: rgba(30,58,138,0.2); display: flex; align-items: center; justify-content: center;
+      color: var(--accent);
+    }
+    .produto-card h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
+    .produto-card p { font-size: 0.9rem; color: var(--text-2); line-height: 1.55; }
+
+    /* STATS */
+    .section-stats {
+      background: linear-gradient(135deg, var(--primary) 0%, #1C2A6E 100%);
+      position: relative; overflow: hidden;
+    }
+    .section-stats::before {
+      content: ''; position: absolute;
+      background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px; inset: 0; pointer-events: none;
+    }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+      position: relative; z-index: 1;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: var(--font-display); font-size: clamp(2.5rem, 4vw, 3.5rem);
+      font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 0.5rem;
+    }
+    .stat-lbl { font-size: 0.95rem; color: rgba(240,244,255,0.75); }
+
+    /* TESTIMONIALS */
+    .section-testimonials {
+      background: var(--bg);
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+    }
+    .testimonial-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 2rem; position: relative; overflow: hidden;
+    }
+    .testimonial-card::before {
+      content: ''; position: absolute; top: -1px; left: 24px; right: 24px; height: 2px;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+    }
+    .stars { display: flex; gap: 3px; margin-bottom: 1rem; }
+    .star { color: var(--accent); }
+    .testimonial-text { font-size: 1rem; color: var(--text-2); line-height: 1.65; margin-bottom: 1.5rem; font-style: italic; }
+    .testimonial-author { display: flex; align-items: center; gap: 12px; }
+    .testimonial-avatar {
+      width: 48px; height: 48px; border-radius: 50%; object-fit: cover;
+      filter: contrast(1.05) saturate(0.9);
+    }
+    .testimonial-name { font-weight: 700; font-size: 0.95rem; color: var(--text); }
+    .testimonial-role { font-size: 0.8rem; color: var(--text-2); }
+
+    /* COMPARATIVO */
+    .section-comparativo {
+      background: var(--surface);
+      background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .comparison-wrap { overflow-x: auto; }
+    .comparison-table { width: 100%; border-collapse: collapse; }
+    .comparison-table th, .comparison-table td {
+      padding: 16px 24px; text-align: left;
+      border-bottom: 1px solid var(--border); font-size: 0.95rem;
+    }
+    .comparison-table th {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--text-2); font-weight: 500; padding-top: 0;
+    }
+    .col-atlas { background: rgba(30,58,138,0.08); }
+    .col-atlas th { color: var(--accent); }
+    .col-direto { opacity: 0.55; }
+    .check-cell { color: #22C55E; font-size: 1.1rem; }
+    .cross-cell { color: #EF4444; font-size: 1.1rem; }
+    .row-label { font-weight: 600; color: var(--text); }
+
+    /* GARANTIA */
+    .section-garantia {
+      background: var(--bg-2);
+      background-image: repeating-linear-gradient(
+        45deg, transparent, transparent 12px,
+        rgba(255,255,255,0.01) 12px, rgba(255,255,255,0.01) 13px
+      );
+    }
+    .garantia-box {
+      background: var(--surface); border: 1px solid rgba(34,197,94,0.25);
+      border-radius: 20px; padding: 3rem; text-align: center; max-width: 700px; margin: 0 auto;
+      position: relative; overflow: hidden;
+    }
+    .garantia-box::before {
+      content: ''; position: absolute; top: -1px; left: 20%; right: 20%; height: 2px;
+      background: linear-gradient(to right, transparent, #22C55E, transparent);
+    }
+    .garantia-icon {
+      width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 1.5rem;
+      background: rgba(34,197,94,0.1); display: flex; align-items: center; justify-content: center;
+    }
+    .garantia-box h2 { font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; }
+    .garantia-box p { font-size: 1.05rem; color: var(--text-2); line-height: 1.65; }
+
+    /* FAQ */
+    .section-faq {
+      background: var(--bg);
+      background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-question {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.5rem 0; cursor: pointer; font-size: 1.05rem; font-weight: 600;
+      color: var(--text); gap: 1rem; transition: color 0.2s;
+      background: none; width: 100%; text-align: left;
+    }
+    .faq-question:hover { color: var(--accent); }
+    .faq-icon {
+      width: 24px; height: 24px; flex-shrink: 0; color: var(--accent);
+      transition: transform 0.3s var(--ease-spring);
+    }
+    .faq-item.active .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.4s var(--ease-expo), padding 0.3s;
+      font-size: 1rem; color: var(--text-2); line-height: 1.65;
+    }
+    .faq-item.active .faq-answer { max-height: 300px; padding-bottom: 1.5rem; }
+
+    /* CTA FINAL */
+    .section-cta-final {
+      min-height: 520px; display: flex; align-items: center;
+      background:
+        linear-gradient(rgba(10,15,30,0.88) 0%, rgba(10,15,30,0.88) 100%),
+        url('./images/cta-bg.jpg') center/cover no-repeat;
+      position: relative; overflow: hidden;
+    }
+    .section-cta-final::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg, transparent, transparent 10px,
+        rgba(255,255,255,0.015) 10px, rgba(255,255,255,0.015) 11px
+      );
+    }
+    .cta-final-content {
+      text-align: center; position: relative; z-index: 2;
+      max-width: 700px; margin: 0 auto; padding: 5rem 2rem;
+    }
+    .cta-final-content h2 {
+      font-family: var(--font-display); font-size: clamp(28px, 4vw, 52px);
+      line-height: 1.1; letter-spacing: -0.02em; color: var(--text);
+      font-weight: 700; margin-bottom: 1.25rem;
+    }
+    .cta-final-content h2 em { font-style: normal; color: var(--accent); }
+    .cta-final-content p { font-size: 1.15rem; color: rgba(240,244,255,0.75); margin-bottom: 2.5rem; }
+    .cta-urgency {
+      display: inline-flex; align-items: center; gap: 8px; margin-bottom: 1.5rem;
+      background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.25);
+      border-radius: 100px; padding: 6px 16px; font-size: 0.85rem; color: #4ADE80;
+    }
+    .cta-risk { font-size: 0.875rem; color: var(--text-2); margin-top: 1rem; }
+
+    /* FOOTER */
+    .footer { background: #050810; border-top: 1px solid var(--border); padding: 4rem 2rem 2rem; }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem; max-width: 1200px; margin: 0 auto 3rem;
+    }
+    .footer-brand-p { color: var(--text-2); font-size: 0.9rem; line-height: 1.7; margin-top: 1rem; }
+    .footer-col h4 {
+      font-family: var(--font-display); font-size: 0.95rem; font-weight: 700;
+      color: var(--text); margin-bottom: 1.25rem;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.625rem; }
+    .footer-col a { font-size: 0.875rem; color: var(--text-2); transition: color 0.2s; }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom {
+      max-width: 1200px; margin: 0 auto; padding-top: 2rem;
+      border-top: 1px solid var(--border); display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 1rem;
+      font-size: 0.8rem; color: var(--text-2);
+    }
+    .footer-susep {
+      background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+      border-radius: 6px; padding: 4px 10px; font-size: 0.75rem; color: var(--text-2);
+    }
+
+    /* MOBILE STICKY CTA */
+    .mobile-cta-bar {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 8000;
+      background: var(--bg-2); border-top: 1px solid var(--border);
+      padding: 12px 20px; gap: 12px;
+      transform: translateY(100%); transition: transform 0.4s var(--ease-expo);
+    }
+    .mobile-cta-bar.visible { transform: translateY(0); }
+
+    /* REVEAL */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s var(--ease-expo), transform 0.6s var(--ease-expo); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: 0.12s; }
+    .reveal-d2 { transition-delay: 0.24s; }
+    .reveal-d3 { transition-delay: 0.36s; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .produtos-grid { grid-template-columns: repeat(2, 1fr); }
+      .split-grid { grid-template-columns: 1fr; }
+      .split-img-wrap { min-height: 300px; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .problema-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-cta { display: none; }
+      .hero { padding: 100px 1.5rem 4rem; }
+      .hero-stats { gap: 1.5rem; }
+      .hero-ctas { flex-direction: column; }
+      .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
+      .section { padding: 4rem 1.5rem; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+      .produtos-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .scroll-indicator { display: none; }
+      .proof-divider { display: none; }
+      .proof-bar-inner { gap: 1.5rem; }
+      .mobile-cta-bar { display: flex; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  
+    /* ===== MOBILE HERO FIX v3.1 ===== */
+    @media (max-width: 768px) {
+      .hero-ctas, .hero-cta {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+      }
+      .btn-primary, .btn-ghost, .btn, .btn-whatsapp,
+      .btn-secondary, .btn-primary-light, .btn-ghost-dark,
+      .btn-cta-primary, .btn-cta-ghost, .btn-vida {
+        width: 100% !important;
+        max-width: 100% !important;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .hero-inner {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+      }
+      .hero-badge {
+        max-width: calc(100vw - 2.5rem);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 11px !important;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero-ctas, .hero-cta {
+        gap: 12px;
+      }
+      .hero-inner {
+        padding-top: 5.5rem !important;
+        padding-bottom: 2.5rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      .btn-primary, .btn-ghost, .btn, .btn-whatsapp,
+      .btn-secondary, .btn-primary-light, .btn-ghost-dark,
+      .btn-cta-primary, .btn-cta-ghost, .btn-vida {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        font-size: 15px !important;
+      }
+    }
+    /* ===== END MOBILE HERO FIX ===== */
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+    Atlas Seguros
+  </a>
+  <ul class="nav-links">
+    <li><a href="#para-voce">Para Você</a></li>
+    <li><a href="#para-empresa">Para Empresa</a></li>
+    <li><a href="#diferenciais">Diferenciais</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="https://wa.me/5519XXXXXXXXX?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20cotação" class="nav-cta" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Cotação Grátis
+  </a>
+  <div class="nav-hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1920&q=85" alt="Cityscape representando solidez patrimonial" loading="eager" fetchpriority="high" class="hero-bg-img">
+  <div class="hero-ghost">PROTEÇÃO</div>
+  <div class="hero-content">
+    <div class="section-tag">Corretora em Campinas — SP</div>
+    <div class="hero-badge">
+      <div class="status-dot"></div>
+      Atendimento disponível — Seg a Sex, 8h–18h
+    </div>
+    <h1 class="hero-headline reveal">
+      Seu Patrimônio.<br><em>Nossa Missão.</em>
+    </h1>
+    <p class="hero-sub reveal reveal-d1">
+      30 anos protegendo famílias e empresas em Campinas. Atendimento personalizado, melhores seguradoras do mercado e suporte total na hora do sinistro.
+    </p>
+    <div class="hero-stats reveal reveal-d2">
+      <div>
+        <div class="hero-stat-num" data-counter data-target="30" data-suffix="+">30+</div>
+        <div class="hero-stat-lbl">Anos de Experiência</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" data-counter data-target="2000" data-suffix="+">2.000+</div>
+        <div class="hero-stat-lbl">Clientes Protegidos</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" data-counter data-target="15" data-suffix="+">15+</div>
+        <div class="hero-stat-lbl">Seguradoras Parceiras</div>
+      </div>
+    </div>
+    <div class="hero-ctas reveal reveal-d3">
+      <a href="https://wa.me/5519XXXXXXXXX?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20cotação" class="btn-primary" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quero Minha Cotação
+      </a>
+      <a href="#para-voce" class="btn-ghost">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        Ver Seguros
+      </a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Seguro Auto</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Residencial</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Seguro Vida</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Empresarial</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.34 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.25 1.17h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg> Suporte Sinistro</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg> Seguro Frota</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg> Seguro Viagem</span>
+    <span class="marquee-sep">·</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Seguro Auto</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Residencial</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Seguro Vida</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Empresarial</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.34 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.25 1.17h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg> Suporte Sinistro</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg> Seguro Frota</span>
+    <span class="marquee-sep">·</span>
+    <span class="marquee-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg> Seguro Viagem</span>
+  </div>
+</div>
+
+<!-- SOCIAL PROOF BAR -->
+<div class="proof-bar">
+  <div class="proof-bar-inner">
+    <div class="proof-item reveal">
+      <div class="proof-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+      </div>
+      <span class="proof-text"><strong>SUSEP</strong> Regulamentada</span>
+    </div>
+    <div class="proof-divider"></div>
+    <div class="proof-item reveal reveal-d1">
+      <div class="proof-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <span class="proof-text"><strong>15+</strong> seguradoras parceiras</span>
+    </div>
+    <div class="proof-divider"></div>
+    <div class="proof-item reveal reveal-d2">
+      <div class="proof-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <span class="proof-text"><strong>2.000+</strong> clientes ativos</span>
+    </div>
+    <div class="proof-divider"></div>
+    <div class="proof-item reveal reveal-d3">
+      <div class="proof-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <span class="proof-text"><strong>4.9 ★</strong> avaliação média</span>
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEMA -->
+<section class="section section-problema">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag reveal">O Problema Real</div>
+      <h2 class="section-title reveal reveal-d1">Você paga o seguro, mas quem te defende<br><em>na hora do sinistro?</em></h2>
+      <p class="section-sub reveal reveal-d2">Contratar diretamente com uma seguradora parece simples — até o dia que você mais precisa.</p>
+    </div>
+    <div class="problema-grid">
+      <div class="problema-card reveal">
+        <div class="problema-number">01</div>
+        <h3>Burocracia no momento errado</h3>
+        <p>Sem um corretor, você enfrenta sozinho processos complexos, documentações excessivas e prazos apertados quando já está sob estresse.</p>
+      </div>
+      <div class="problema-card reveal reveal-d1">
+        <div class="problema-number">02</div>
+        <h3>Cobertura inadequada</h3>
+        <p>Muitas pessoas descobrem que o seguro não cobre o que precisam exatamente quando mais importa. Cláusulas de exclusão passam despercebidas na contratação.</p>
+      </div>
+      <div class="problema-card reveal reveal-d2">
+        <div class="problema-number">03</div>
+        <h3>Sem representação no sinistro</h3>
+        <p>A seguradora trabalha para minimizar pagamentos. Sem um corretor ao seu lado, você negocia sozinho contra especialistas em negar pedidos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDA DEPOIS -->
+<section class="section-vida-depois">
+  <div class="vida-depois-content">
+    <div class="section-tag reveal">Com a Atlas Seguros</div>
+    <h2 class="section-title reveal reveal-d1">Tranquilidade real. <em>Não apenas uma apólice.</em></h2>
+    <p class="section-sub reveal reveal-d2" style="color:rgba(240,244,255,0.75)">Imagine um sinistro resolvido em 48h, sem burocracia, sem estresse — com alguém do seu lado em cada etapa.</p>
+    <ul class="vida-depois-list">
+      <li class="reveal reveal-d1">
+        <div class="check-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <span>Corretor dedicado que conhece seu patrimônio e sua história</span>
+      </li>
+      <li class="reveal reveal-d2">
+        <div class="check-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <span>Gestão ativa do sinistro — nós acompanhamos cada passo até a resolução</span>
+      </li>
+      <li class="reveal reveal-d3">
+        <div class="check-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <span>Revisão anual gratuita — seu seguro sempre adequado à sua realidade atual</span>
+      </li>
+    </ul>
+    <a href="https://wa.me/5519XXXXXXXXX?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20cotação" class="btn-primary reveal" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Quero Esta Tranquilidade
+    </a>
+  </div>
+</section>
+
+<!-- SPLIT — DIFERENCIAIS -->
+<section class="section section-split" id="diferenciais">
+  <div class="section-inner">
+    <div class="split-grid">
+      <div class="split-img-wrap">
+        <img src="./images/split-beneficios.jpg" alt="Corretor em reunião consultiva explicando opções ao cliente" loading="lazy">
+      </div>
+      <div class="split-body">
+        <div class="section-tag">Por que a Atlas</div>
+        <h2>Seu corretor <em>trabalha para você</em> — não para a seguradora</h2>
+        <ul class="benefits-list">
+          <li class="reveal">
+            <div class="benefit-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span><strong>Independência total:</strong> comparamos 15+ seguradoras para te dar sempre o melhor custo-benefício.</span>
+          </li>
+          <li class="reveal reveal-d1">
+            <div class="benefit-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <span><strong>Transparência absoluta:</strong> você entende exatamente o que está contratando — sem letras miúdas escondidas.</span>
+          </li>
+          <li class="reveal reveal-d2">
+            <div class="benefit-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.34 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.25 1.17h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
+            </div>
+            <span><strong>Gestão de sinistros:</strong> abrimos o processo, acompanhamos e cobramos a seguradora até você ser indenizado.</span>
+          </li>
+          <li class="reveal reveal-d3">
+            <div class="benefit-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <span><strong>Atendimento humano:</strong> você fala com a mesma pessoa sempre. Não com um call center de 200 atendentes.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="section section-produtos" id="para-voce">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag reveal">Produtos</div>
+      <h2 class="section-title reveal reveal-d1">A proteção certa para<br><em>cada momento da vida</em></h2>
+      <p class="section-sub reveal reveal-d2">Seguros personalizados para você e para sua empresa.</p>
+    </div>
+    <div class="produtos-tabs">
+      <button class="tab-btn active" data-tab="pessoal">Para Você</button>
+      <button class="tab-btn" data-tab="empresa" id="para-empresa">Para Empresa</button>
+    </div>
+    <div class="tab-panel active" id="tab-pessoal">
+      <div class="produtos-grid">
+        <div class="produto-card reveal">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <h3>Seguro Automóvel</h3>
+          <p>Cotamos nas principais seguradoras para você ter a melhor cobertura com o menor custo. Inclui assistência 24h.</p>
+        </div>
+        <div class="produto-card reveal reveal-d1">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h3>Seguro Residencial</h3>
+          <p>Proteção para sua casa ou apartamento — incêndio, roubo, danos elétricos e muito mais. Mais barato do que você imagina.</p>
+        </div>
+        <div class="produto-card reveal reveal-d2">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h3>Seguro de Vida</h3>
+          <p>Proteção financeira para quem você ama. Ajustável ao seu bolso e personalizado com beneficiários à sua escolha.</p>
+        </div>
+        <div class="produto-card reveal">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+          <h3>Seguro Viagem</h3>
+          <p>Proteção completa para viagens nacionais e internacionais. Cobertura médica, bagagem e assistência 24h.</p>
+        </div>
+        <div class="produto-card reveal reveal-d1">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <h3>Seguro Moto</h3>
+          <p>Cobertura especializada para motos com assistência 24h e as melhores taxas do mercado.</p>
+        </div>
+        <div class="produto-card reveal reveal-d2">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+          <h3>Seguro Celular e Portáteis</h3>
+          <p>Proteção para seus dispositivos eletrônicos — roubo, queda, danos acidentais e tela quebrada.</p>
+        </div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-empresa">
+      <div class="produtos-grid">
+        <div class="produto-card reveal">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <h3>Seguro Empresarial</h3>
+          <p>Proteção completa do patrimônio da empresa — patrimônio físico, responsabilidades e interrupção de negócios.</p>
+        </div>
+        <div class="produto-card reveal reveal-d1">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+          <h3>Seguro Auto e Frota</h3>
+          <p>Gestão simplificada da frota com coberturas customizadas e apólices unificadas.</p>
+        </div>
+        <div class="produto-card reveal reveal-d2">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Vida em Grupo</h3>
+          <p>Benefício de qualidade de vida para seus colaboradores. Ajustável às convenções com ótimas taxas.</p>
+        </div>
+        <div class="produto-card reveal">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h3>Saúde e Odontológico</h3>
+          <p>Planos de saúde e odonto para sua equipe — cotamos nas melhores operadoras para o seu orçamento.</p>
+        </div>
+        <div class="produto-card reveal reveal-d1">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+          <h3>Seguro Condomínio</h3>
+          <p>Proteção obrigatória e adicional para condomínios residenciais e comerciais.</p>
+        </div>
+        <div class="produto-card reveal reveal-d2">
+          <div class="produto-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Responsabilidade Civil</h3>
+          <p>Cobertura para danos causados a terceiros — RC Profissional, D&O e RC Geral.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section section-stats">
+  <div class="section-inner">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num" data-counter data-target="30" data-suffix=" anos">30 anos</div>
+        <div class="stat-lbl">de experiência no mercado</div>
+      </div>
+      <div class="stat-item reveal reveal-d1">
+        <div class="stat-num" data-counter data-target="2000" data-suffix="+">2.000+</div>
+        <div class="stat-lbl">clientes protegidos</div>
+      </div>
+      <div class="stat-item reveal reveal-d2">
+        <div class="stat-num" data-counter data-target="15" data-suffix="+">15+</div>
+        <div class="stat-lbl">seguradoras parceiras</div>
+      </div>
+      <div class="stat-item reveal reveal-d3">
+        <div class="stat-num" data-counter data-target="98" data-suffix="%">98%</div>
+        <div class="stat-lbl">índice de satisfação</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT SERVIÇOS -->
+<section class="section section-split">
+  <div class="section-inner">
+    <div class="split-grid" style="direction: rtl;">
+      <div class="split-img-wrap" style="direction: ltr;">
+        <img src="./images/split-conteudo.jpg" alt="Profissional analisando apólices e documentos de seguro" loading="lazy">
+      </div>
+      <div class="split-body" style="direction: ltr;">
+        <div class="section-tag">Como Funciona</div>
+        <h2>Da cotação à <em>indenização</em> — com você em cada passo</h2>
+        <ul class="benefits-list">
+          <li class="reveal">
+            <div class="benefit-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <span><strong>1. Análise gratuita:</strong> entendemos sua situação e identificamos o que você realmente precisa proteger.</span>
+          </li>
+          <li class="reveal reveal-d1">
+            <div class="benefit-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/></svg>
+            </div>
+            <span><strong>2. Comparativo:</strong> cotamos nas melhores seguradoras e apresentamos as opções com linguagem clara.</span>
+          </li>
+          <li class="reveal reveal-d2">
+            <div class="benefit-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span><strong>3. Contratação:</strong> cuidamos de toda a burocracia. Você só precisa assinar.</span>
+          </li>
+          <li class="reveal reveal-d3">
+            <div class="benefit-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span><strong>4. Suporte contínuo:</strong> em caso de sinistro, abrimos e acompanhamos o processo até a resolução.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-testimonials">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag reveal">Depoimentos</div>
+      <h2 class="section-title reveal reveal-d1">O que nossos clientes <em>dizem</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Tive um sinistro com meu carro e a Atlas cuidou de tudo. Em menos de 48h estava resolvido. Não precisei ligar uma vez para a seguradora — eles fizeram tudo por mim."</p>
+        <div class="testimonial-author">
+          <img src="./images/testimonial-1.jpg" alt="Foto de Roberto Santana" loading="lazy" class="testimonial-avatar">
+          <div>
+            <div class="testimonial-name">Roberto Santana</div>
+            <div class="testimonial-role">Empresário, Campinas</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-d1">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Finalmente um corretor que explica tudo de forma clara. Eles revisaram minha apólice antiga e encontraram coberturas desnecessárias que eu pagava há anos. Economizei R$ 800 por ano."</p>
+        <div class="testimonial-author">
+          <img src="./images/testimonial-2.jpg" alt="Foto de Ana Paula Mendes" loading="lazy" class="testimonial-avatar">
+          <div>
+            <div class="testimonial-name">Ana Paula Mendes</div>
+            <div class="testimonial-role">Servidora Pública</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-d2">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Seguro da minha empresa com a Atlas há 8 anos. A tranquilidade de saber que tenho alguém que me representa — e não a seguradora — não tem preço. Melhor investimento que fiz."</p>
+        <div class="testimonial-author">
+          <img src="./images/testimonial-3.jpg" alt="Foto de Carlos Borges" loading="lazy" class="testimonial-avatar">
+          <div>
+            <div class="testimonial-name">Carlos Borges</div>
+            <div class="testimonial-role">Diretor Comercial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section class="section section-comparativo">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag reveal">Comparativo</div>
+      <h2 class="section-title reveal reveal-d1">Atlas Seguros vs. <em>Contratar Direto</em></h2>
+    </div>
+    <div class="comparison-wrap reveal">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>O que você recebe</th>
+            <th class="col-atlas">Atlas Seguros</th>
+            <th class="col-direto">Direto com Seguradora</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-label">Comparação entre múltiplas seguradoras</td>
+            <td class="col-atlas check-cell">✓ Sim — 15+ seguradoras</td>
+            <td class="col-direto cross-cell">✗ Apenas 1</td>
+          </tr>
+          <tr>
+            <td class="row-label">Consultoria gratuita na contratação</td>
+            <td class="col-atlas check-cell">✓ Incluída</td>
+            <td class="col-direto cross-cell">✗ Não disponível</td>
+          </tr>
+          <tr>
+            <td class="row-label">Gestão ativa de sinistros</td>
+            <td class="col-atlas check-cell">✓ Nós acompanhamos tudo</td>
+            <td class="col-direto cross-cell">✗ Você enfrenta sozinho</td>
+          </tr>
+          <tr>
+            <td class="row-label">Revisão anual de cobertura</td>
+            <td class="col-atlas check-cell">✓ Gratuita anualmente</td>
+            <td class="col-direto cross-cell">✗ Não incluída</td>
+          </tr>
+          <tr>
+            <td class="row-label">Atendimento personalizado (mesma pessoa)</td>
+            <td class="col-atlas check-cell">✓ Corretor dedicado</td>
+            <td class="col-direto cross-cell">✗ Call center rotativo</td>
+          </tr>
+          <tr>
+            <td class="row-label">Custo extra</td>
+            <td class="col-atlas check-cell">✓ Zero — remuneração via seguradora</td>
+            <td class="col-direto cross-cell">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="section section-garantia">
+  <div class="section-inner">
+    <div class="garantia-box reveal">
+      <div class="garantia-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+      </div>
+      <h2>Sem risco. Sem compromisso.</h2>
+      <p>A cotação é 100% gratuita e sem obrigação de contratação. Você recebe as melhores opções do mercado, com linguagem clara — e decide com total tranquilidade. A corretagem já está incluída no prêmio do seguro: você não paga nada a mais por ter um especialista do seu lado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-faq" id="faq">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag reveal">Dúvidas Frequentes</div>
+      <h2 class="section-title reveal reveal-d1">Respostas para quem <em>quer decidir bem</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">
+          Qual a diferença de contratar seguro por um corretor em vez de direto com a seguradora?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">O corretor trabalha para você, não para a seguradora. Ele busca a melhor opção entre várias seguradoras, negocia coberturas e te representa no sinistro. Contratar direto pode parecer mais simples, mas na hora do sinistro você fica sozinho diante de uma empresa cujo interesse é minimizar pagamentos.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Quanto tempo demora para resolver um sinistro?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">Depende do tipo e complexidade, mas com nossa gestão ativa a maioria dos sinistros é resolvida em 48 a 72 horas. Acompanhamos cada caso do início ao fim — você não precisa ligar para a seguradora uma única vez.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Posso ter seguros de diferentes seguradoras gerenciados por vocês?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">Sim. Gerenciamos apólices de múltiplas seguradoras para você ter sempre a melhor cobertura pelo melhor custo em cada produto. Auto com uma seguradora, vida com outra — você tem um único ponto de contato para tudo.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Vocês atendem pequenas empresas e MEIs?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">Sim, atendemos desde MEIs até grandes corporações. Para negócios menores é ainda mais importante ter um corretor — as seguradoras grandes muitas vezes negligenciam pequenos clientes, mas nós garantimos o mesmo nível de atenção independente do porte.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Como faço para pedir uma cotação?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">É simples: clique em qualquer botão "Cotação" desta página para nos chamar no WhatsApp. Em até 24h úteis você recebe as melhores opções do mercado com análise personalizada — sem compromisso e sem custo algum.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section-cta-final">
+  <div class="cta-final-content">
+    <div class="cta-urgency reveal">
+      <div class="status-dot"></div>
+      Respondemos em até 2h no horário comercial
+    </div>
+    <h2 class="reveal reveal-d1">Pronto para ter <em>alguém do seu lado</em>?</h2>
+    <p class="reveal reveal-d2">Cotação gratuita, sem compromisso, em até 24h úteis. 30 anos protegendo famílias e empresas em Campinas.</p>
+    <a href="https://wa.me/5519XXXXXXXXX?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20cotação" class="btn-primary reveal reveal-d3" target="_blank" rel="noopener" style="margin: 0 auto; display: inline-flex;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Quero Minha Cotação Grátis
+    </a>
+    <p class="cta-risk reveal">Sem compromisso · Sem custo · Resposta em até 24h</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        Atlas Seguros
+      </a>
+      <p class="footer-brand-p">Corretora de seguros com mais de 30 anos de experiência em Campinas e região. Protegendo patrimônios, garantindo tranquilidade.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Para Você</h4>
+      <ul>
+        <li><a href="#">Seguro Automóvel</a></li>
+        <li><a href="#">Seguro Residencial</a></li>
+        <li><a href="#">Seguro de Vida</a></li>
+        <li><a href="#">Seguro Viagem</a></li>
+        <li><a href="#">Seguro Moto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Para Empresa</h4>
+      <ul>
+        <li><a href="#">Seguro Empresarial</a></li>
+        <li><a href="#">Seguro Frota</a></li>
+        <li><a href="#">Vida em Grupo</a></li>
+        <li><a href="#">Responsabilidade Civil</a></li>
+        <li><a href="#">Seguro Condomínio</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="#">Campinas, SP</a></li>
+        <li><a href="https://wa.me/5519XXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="#">Seg–Sex, 8h–18h</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Atlas Seguros. Todos os direitos reservados.</span>
+    <span class="footer-susep">SUSEP Registrada</span>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-cta-bar" id="mobileCta">
+  <a href="https://wa.me/5519XXXXXXXXX?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20cotação" class="btn-primary" target="_blank" rel="noopener" style="flex: 1; justify-content: center;">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Cotação Grátis no WhatsApp
+  </a>
+</div>
+
+<script>
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+    // Mobile sticky CTA
+    const bar = document.getElementById('mobileCta');
+    if (window.scrollY > window.innerHeight * 0.3) bar.classList.add('visible');
+  }, { passive: true });
+
+  // Reveal on scroll
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+  // Animated counters
+  function animateCounter(el) {
+    const target = parseFloat(el.dataset.target);
+    const suffix = el.dataset.suffix || '';
+    const prefix = el.dataset.prefix || '';
+    const duration = 1500;
+    const start = performance.now();
+    const easeOutQuart = t => 1 - Math.pow(1 - t, 4);
+    const update = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const value = easeOutQuart(progress) * target;
+      el.textContent = prefix + (Number.isInteger(target) ? Math.floor(value).toLocaleString('pt-BR') : value.toFixed(1)) + suffix;
+      if (progress < 1) requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  }
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting && !e.target.dataset.animated) {
+        e.target.dataset.animated = 'true';
+        animateCounter(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-counter]').forEach(el => counterObs.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-question').addEventListener('click', () => {
+      const isOpen = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isOpen) item.classList.add('active');
+    });
+  });
+
+  // Product tabs
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    });
+  });
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+
+  // Hamburger (mobile nav toggle — basic)
+  document.getElementById('hamburger').addEventListener('click', () => {
+    const links = document.querySelector('.nav-links');
+    if (links) {
+      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+      links.style.flexDirection = 'column';
+      links.style.position = 'absolute';
+      links.style.top = '100%';
+      links.style.left = '0';
+      links.style.right = '0';
+      links.style.background = 'rgba(10,15,30,0.98)';
+      links.style.padding = '1rem 2rem';
+      links.style.gap = '1rem';
+    }
+  });
+</script>
+</body>
+</html>

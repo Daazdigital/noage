@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1E3A5F">
+  <title>MaxSeguros — Proteção para Você e Sua Família</title>
+  <meta name="description" content="MaxSeguros: líder em seguros de vida, residencial, auto e empresarial. +1 milhão de lares protegidos. Previdência, capitalização e odontológico. Simule agora.">
+  <meta property="og:title" content="MaxSeguros — Proteção para Você e Sua Família">
+  <meta property="og:description" content="Líder nos ramos em que atua. +1M de lares segurados em +5.000 cidades. Simule seu seguro agora.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1766808984213-4293f91d6a6f?auto=format&fit=crop&w=1920&q=85">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="canonical" href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MaxSeguros",
+    "description": "Líder em seguros de vida, residencial, auto, empresarial, previdência privada, capitalização e planos odontológicos no Brasil.",
+    "url": "#",
+    "telephone": "+55-61-3493-6060",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brasília",
+      "addressRegion": "DF",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como contratar um seguro pela MaxSeguros?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Você pode simular e contratar seu seguro diretamente pelo nosso site, pelo aplicativo, ou em qualquer agência do Parceiro Financeiro. O processo é simples e leva menos de 10 minutos." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais seguros a MaxSeguros oferece?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oferecemos seguro de vida, residencial, automóvel, empresarial, itens pessoais e proteção pessoal. Além disso, temos previdência privada, capitalização e planos odontológicos." }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso ser correntista do Parceiro Financeiro para contratar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Não. Qualquer pessoa pode contratar os produtos da MaxSeguros, independente de ser cliente do Parceiro Financeiro." }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona o acionamento do seguro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Atendemos mais de 3.000 acionamentos por dia. Você pode acionar pelo app MaxSeguros, pelo site ou pelo telefone 0800. Nossa equipe está disponível 24 horas por dia, 7 dias por semana." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Source Sans Pro', sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background: var(--bg); color: var(--text); }
+    img { max-width: 100%; height: auto; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    a { text-decoration: none; color: inherit; }
+    input, textarea, select { font-family: inherit; font-size: 16px; }
+
+    :root {
+      --bg: #F5F3EE;
+      --bg-2: #EDEAE3;
+      --surface: #FFFFFF;
+      --surface-2: #F0EDE6;
+      --primary: #1E3A5F;
+      --primary-rgb: 30,58,95;
+      --primary-light: #2C5282;
+      --accent: #C8973A;
+      --accent-rgb: 200,151,58;
+      --accent-light: #F6E8CC;
+      --text: #1A1A2E;
+      --text-2: #5A5A72;
+      --text-3: #8888AA;
+      --border: rgba(0,0,0,0.08);
+      --border-strong: rgba(0,0,0,0.14);
+      --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+      --font-display: 'Merriweather', serif;
+      --font-body: 'Source Sans Pro', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    body::before {
+      content: ''; position: fixed; inset: 0; z-index: 9999; pointer-events: none; opacity: 0.02;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* ─── TYPOGRAPHY ─── */
+    .hero-headline { font-family: var(--font-display); font-size: clamp(38px, 4.5vw, 72px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 700; color: #fff; }
+    .section-title { font-family: var(--font-display); font-size: clamp(30px, 3.5vw, 52px); line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; color: var(--text); }
+    .section-tag { font-family: var(--font-mono); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); }
+    .body-lead { font-size: clamp(16px, 1.4vw, 19px); line-height: 1.7; color: var(--text-2); }
+
+    /* ─── NAVBAR ─── */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: transparent; transition: all 0.4s var(--ease-smooth); }
+    nav.scrolled { background: rgba(255,255,255,0.95); backdrop-filter: blur(16px) saturate(180%); border-bottom: 1px solid var(--border); box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+    .nav-inner { max-width: 1280px; margin: 0 auto; padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo { font-family: var(--font-display); font-size: 1.35rem; font-weight: 900; color: #fff; display: flex; align-items: center; gap: 10px; transition: color 0.3s; }
+    nav.scrolled .nav-logo { color: var(--primary); }
+    .nav-logo-icon { width: 36px; height: 36px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-links a { font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.85); transition: color 0.2s; }
+    nav.scrolled .nav-links a { color: var(--text-2); }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta { background: var(--accent); color: #fff !important; padding: 0.55rem 1.4rem; border-radius: 8px; font-weight: 700; transition: all 0.2s var(--ease-smooth) !important; }
+    .nav-cta:hover { background: #B8832A !important; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(200,151,58,0.35); }
+    nav.scrolled .nav-cta { background: var(--primary); }
+    nav.scrolled .nav-cta:hover { background: var(--primary-light) !important; box-shadow: 0 4px 16px rgba(30,58,95,0.3); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: #fff; transition: all 0.3s; border-radius: 2px; }
+    nav.scrolled .hamburger span { background: var(--text); }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* ─── HERO ─── */
+    .hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden;
+      background: linear-gradient(to right, rgba(10,20,40,0.92) 45%, rgba(10,20,40,0.55) 100%), url('https://images.unsplash.com/photo-1766808984213-4293f91d6a6f?auto=format&fit=crop&w=1920&q=85') center/cover no-repeat; }
+    .hero::before { content: ''; position: absolute; top: -10%; left: -5%; width: 700px; height: 700px; background: radial-gradient(ellipse, rgba(var(--accent-rgb),0.18) 0%, transparent 60%); pointer-events: none; z-index: 0; }
+    .hero::after { content: 'PROTEÇÃO'; position: absolute; bottom: -40px; right: -20px; font-family: var(--font-display); font-size: clamp(100px, 16vw, 240px); font-weight: 900; letter-spacing: -0.05em; color: rgba(255,255,255,0.04); pointer-events: none; z-index: 0; line-height: 1; }
+    .hero-inner { position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; padding: 10rem 2rem 6rem; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.15); border-radius: 100px; padding: 8px 18px; margin-bottom: 28px; animation: fadeInUp 0.6s var(--ease-expo) 0.1s both; }
+    .badge-dot { width: 6px; height: 6px; background: #22C55E; border-radius: 50%; animation: pulse-dot 2s ease-in-out infinite; flex-shrink: 0; }
+    .badge-text { font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.8); }
+    .hero-eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; animation: fadeInUp 0.6s var(--ease-expo) 0.2s both; }
+    .hero-headline { max-width: 680px; animation: fadeInUp 0.6s var(--ease-expo) 0.3s both; }
+    .hero-headline em { font-style: normal; color: var(--accent); }
+    .hero-sub { max-width: 520px; font-size: clamp(16px, 1.4vw, 19px); line-height: 1.7; color: rgba(255,255,255,0.75); margin-top: 20px; animation: fadeInUp 0.6s var(--ease-expo) 0.4s both; }
+    .hero-ctas { display: flex; gap: 14px; margin-top: 36px; flex-wrap: wrap; animation: fadeInUp 0.6s var(--ease-expo) 0.5s both; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #fff; padding: 0.9rem 2rem; border-radius: 10px; font-weight: 700; font-size: 16px; transition: all 0.2s var(--ease-smooth); touch-action: manipulation; }
+    .btn-primary:hover { background: #B8832A; transform: translateY(-2px); box-shadow: 0 6px 24px rgba(200,151,58,0.4); }
+    .btn-ghost { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); color: #fff; padding: 0.9rem 2rem; border-radius: 10px; font-weight: 600; font-size: 16px; border: 1px solid rgba(255,255,255,0.25); transition: all 0.2s var(--ease-smooth); touch-action: manipulation; }
+    .btn-ghost:hover { background: rgba(255,255,255,0.18); transform: translateY(-2px); }
+    .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); background: rgba(255,255,255,0.07); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; overflow: hidden; margin-top: 56px; max-width: 540px; animation: fadeInUp 0.6s var(--ease-expo) 0.6s both; }
+    .hero-stat { padding: 22px 28px; text-align: center; }
+    .hero-stat + .hero-stat { border-left: 1px solid rgba(255,255,255,0.1); }
+    .hero-stat-value { font-family: var(--font-display); font-size: clamp(24px, 2.5vw, 36px); font-weight: 900; line-height: 1; color: var(--accent); }
+    .hero-stat-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-top: 8px; }
+    .scroll-indicator { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: 0.5; animation: fadeInUp 1s var(--ease-expo) 1s both; }
+    .scroll-indicator span { font-family: var(--font-mono); font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #fff; }
+    .scroll-arrow { width: 20px; height: 20px; border-right: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(45deg); animation: scrollBounce 1.5s ease-in-out infinite; }
+
+    /* ─── MARQUEE ─── */
+    .marquee-strip { overflow: hidden; padding: 14px 0; background: var(--primary); border-top: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .marquee-track { display: flex; gap: 0; white-space: nowrap; animation: marquee 30s linear infinite; }
+    .marquee-track:hover { animation-play-state: paused; }
+    .marquee-item { font-family: var(--font-mono); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.65); padding: 0 28px; }
+    .marquee-dot { width: 4px; height: 4px; background: var(--accent); border-radius: 50%; flex-shrink: 0; align-self: center; }
+
+    /* ─── SECTIONS COMMON ─── */
+    section { position: relative; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+    .section-header { text-align: center; margin-bottom: 64px; }
+    .section-header .section-tag { display: block; margin-bottom: 16px; }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s var(--ease-expo), transform 0.6s var(--ease-expo); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.12s; }
+    .reveal-delay-2 { transition-delay: 0.24s; }
+    .reveal-delay-3 { transition-delay: 0.36s; }
+
+    /* ─── PROBLEMA ─── */
+    .section-problema { padding: 100px 0; background: var(--bg-2);
+      background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.008) 10px, rgba(0,0,0,0.008) 11px); }
+    .problemas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .problema-card { background: var(--surface); border: 1px solid var(--border-strong); border-radius: 16px; padding: 36px 30px; transition: transform 0.3s var(--ease-expo), box-shadow 0.3s var(--ease-expo); }
+    .problema-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+    .problema-icon { width: 48px; height: 48px; background: rgba(255,107,107,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .problema-title { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+    .problema-desc { font-size: 15px; color: var(--text-2); line-height: 1.65; }
+    .problema-cost { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; color: #E05C5C; text-transform: uppercase; }
+
+    /* ─── VIDA DEPOIS ─── */
+    .vida-section { display: grid; grid-template-columns: 1fr 1fr; min-height: 70vh; position: relative; }
+    .vida-antes { background: var(--primary); padding: 80px 60px 80px 80px; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+    .vida-antes::before { content: ''; position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; pointer-events: none; }
+    .vida-depois-col { position: relative; overflow: hidden; }
+    .vida-depois-col::before { content: ''; position: absolute; inset: -15%; background-image: url('./images/vida-depois.jpg'); background-size: cover; background-position: center; will-change: transform; z-index: 0; filter: brightness(0.35) saturate(0.8); }
+    .vida-depois-col::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(var(--accent-rgb),0.2) 0%, rgba(var(--primary-rgb),0.4) 100%); z-index: 1; }
+    .vida-depois-content { position: relative; z-index: 2; padding: 80px 80px 80px 60px; display: flex; flex-direction: column; justify-content: center; }
+    .vida-divisor { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 56px; height: 56px; background: var(--surface); border: 2px solid var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; color: var(--accent); font-size: 20px; font-weight: 900; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+    .vida-section .section-tag { color: rgba(255,255,255,0.5); }
+    .vida-depois-col .section-tag { color: var(--accent); }
+    .vida-section .section-title { color: #fff; font-size: clamp(24px, 2.5vw, 38px); margin-top: 16px; }
+    .vida-antes-list, .vida-depois-list { list-style: none; display: flex; flex-direction: column; gap: 16px; margin-top: 24px; }
+    .vida-antes-list li, .vida-depois-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 16px; }
+    .vida-antes-list li { color: rgba(255,255,255,0.7); }
+    .vida-depois-list li { color: rgba(255,255,255,0.9); }
+    .antes-icon { color: #FF7070; font-weight: 900; flex-shrink: 0; line-height: 1.5; }
+    .depois-icon { color: var(--accent); font-weight: 900; flex-shrink: 0; line-height: 1.5; }
+
+    /* ─── PRODUTOS ─── */
+    .section-produtos { padding: 100px 0; background: var(--bg);
+      background-image: radial-gradient(circle, rgba(var(--primary-rgb),0.06) 1px, transparent 1px);
+      background-size: 28px 28px; }
+    .produtos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .produto-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px 28px; transition: all 0.3s var(--ease-expo); position: relative; overflow: hidden; }
+    .produto-card::before { content: ''; position: absolute; top: 0; left: 24px; right: 24px; height: 2px; background: linear-gradient(to right, var(--primary), var(--accent)); transform: scaleX(0); transform-origin: left; transition: transform 0.3s var(--ease-expo); }
+    .produto-card:hover::before { transform: scaleX(1); }
+    .produto-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(30,58,95,0.12); }
+    .produto-card.featured { border-color: var(--accent); background: linear-gradient(135deg, rgba(var(--accent-rgb),0.05) 0%, var(--surface) 60%); }
+    .produto-card.featured::before { transform: scaleX(1); }
+    .featured-badge { position: absolute; top: 16px; right: 16px; background: var(--accent); color: #fff; font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; padding: 4px 10px; border-radius: 100px; }
+    .produto-icon { width: 52px; height: 52px; background: rgba(var(--primary-rgb),0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .produto-title { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+    .produto-desc { font-size: 14px; color: var(--text-2); line-height: 1.65; }
+    .produto-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 20px; font-size: 14px; font-weight: 700; color: var(--primary); transition: gap 0.2s; }
+    .produto-link:hover { gap: 10px; color: var(--accent); }
+
+    /* ─── SPLIT SECTION ─── */
+    .split-section { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; overflow: hidden; }
+    .split-img-wrap { position: relative; overflow: hidden; }
+    .split-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.88) contrast(1.05) saturate(0.9); transition: transform 0.1s linear; }
+    .split-content { padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; background: var(--surface); }
+    .split-section.image-right .split-img-wrap { order: 2; }
+    .split-section.image-right .split-content { order: 1; }
+    .feature-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+    .feature-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 16px; color: var(--text-2); line-height: 1.55; }
+    .feature-list li::before { content: ''; width: 20px; height: 20px; background: rgba(var(--primary-rgb),0.08); border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+    .feature-check { width: 20px; height: 20px; background: rgba(var(--accent-rgb),0.12); border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+    .feature-list-item { display: flex; align-items: flex-start; gap: 12px; font-size: 16px; color: var(--text-2); line-height: 1.55; }
+
+    /* ─── STATS BAR ─── */
+    .section-stats { padding: 80px 0; background: var(--primary); position: relative; overflow: hidden; }
+    .section-stats::before { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.015) 20px, rgba(255,255,255,0.015) 21px); }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; z-index: 1; }
+    .stat-item { text-align: center; padding: 40px 24px; border-right: 1px solid rgba(255,255,255,0.1); }
+    .stat-item:last-child { border-right: none; }
+    .stat-value { font-family: var(--font-display); font-size: clamp(32px, 3.5vw, 52px); font-weight: 900; color: var(--accent); line-height: 1; }
+    .stat-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-top: 12px; }
+
+    /* ─── TESTIMONIALS ─── */
+    .section-testimonials { padding: 100px 0; background: var(--bg-2);
+      background-image: linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+      background-size: 60px 60px; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .testimonial-card { background: var(--surface); border: 1px solid var(--border-strong); border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px; transition: transform 0.3s var(--ease-expo), box-shadow 0.3s; }
+    .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+    .testimonial-stars { display: flex; gap: 3px; }
+    .testimonial-star { color: var(--accent); font-size: 15px; }
+    .testimonial-text { font-size: 16px; line-height: 1.75; color: var(--text-2); font-style: italic; flex: 1; }
+    .testimonial-author { display: flex; align-items: center; gap: 14px; }
+    .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-light); }
+    .testimonial-name { font-weight: 700; color: var(--text); font-size: 15px; }
+    .testimonial-role { font-size: 13px; color: var(--text-3); }
+    .testimonial-metric { padding-top: 16px; border-top: 1px solid var(--border); font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
+
+    /* ─── COMPARATIVO ─── */
+    .section-comparativo { padding: 100px 0; background: var(--surface);
+      background-image: linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+      background-size: 60px 60px; }
+    .comp-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .comp-table { width: 100%; min-width: 640px; border-collapse: collapse; border-radius: 16px; overflow: hidden; }
+    .comp-table thead { background: var(--primary); }
+    .comp-table th { padding: 20px 24px; text-align: center; font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+    .comp-table th:first-child { text-align: left; }
+    .comp-table th.highlight { color: var(--accent); }
+    .comp-table tbody tr { border-bottom: 1px solid var(--border); transition: background 0.2s; }
+    .comp-table tbody tr:hover { background: rgba(var(--primary-rgb),0.03); }
+    .comp-table td { padding: 18px 24px; font-size: 15px; color: var(--text-2); text-align: center; }
+    .comp-table td:first-child { text-align: left; font-weight: 600; color: var(--text); }
+    .comp-table td.highlight { background: rgba(var(--accent-rgb),0.05); }
+    .check-icon { color: #16A34A; font-weight: 900; font-size: 18px; }
+    .x-icon { color: #DC2626; font-weight: 900; font-size: 16px; }
+    .partial-icon { color: var(--text-3); font-size: 14px; }
+
+    /* ─── FAQ ─── */
+    .section-faq { padding: 100px 0; background: var(--bg);
+      background-image: radial-gradient(circle, rgba(var(--primary-rgb),0.04) 1px, transparent 1px);
+      background-size: 32px 32px; }
+    .faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+    .faq-item { background: var(--surface); border: 1px solid var(--border-strong); border-radius: 12px; overflow: hidden; }
+    .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 28px; font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--text); text-align: left; cursor: pointer; transition: background 0.2s; background: transparent; }
+    .faq-q:hover { background: rgba(var(--primary-rgb),0.03); }
+    .faq-q.open { color: var(--primary); }
+    .faq-chevron { width: 20px; height: 20px; flex-shrink: 0; transition: transform 0.3s var(--ease-expo); color: var(--text-3); }
+    .faq-q.open .faq-chevron { transform: rotate(180deg); color: var(--accent); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s var(--ease-expo); }
+    .faq-a-inner { padding: 0 28px 22px; font-size: 16px; line-height: 1.7; color: var(--text-2); }
+
+    /* ─── CTA FINAL ─── */
+    .section-cta { position: relative; padding: 120px 0; overflow: hidden; text-align: center;
+      background: linear-gradient(to bottom, rgba(10,20,40,0.88) 0%, rgba(10,20,40,0.82) 100%), url('./images/cta-bg.jpg') center/cover no-repeat; }
+    .section-cta::before { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.01) 10px, rgba(255,255,255,0.01) 11px); z-index: 0; }
+    .section-cta > * { position: relative; z-index: 1; }
+    .cta-eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
+    .cta-title { font-family: var(--font-display); font-size: clamp(30px, 3.5vw, 52px); font-weight: 900; color: #fff; line-height: 1.1; max-width: 700px; margin: 0 auto 20px; letter-spacing: -0.02em; }
+    .cta-sub { font-size: 18px; color: rgba(255,255,255,0.7); max-width: 480px; margin: 0 auto 40px; line-height: 1.65; }
+    .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-cta-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #fff; padding: 1rem 2.2rem; border-radius: 10px; font-weight: 700; font-size: 17px; transition: all 0.25s var(--ease-smooth); touch-action: manipulation; }
+    .btn-cta-primary:hover { background: #B8832A; transform: translateY(-3px); box-shadow: 0 8px 32px rgba(200,151,58,0.5); }
+    .btn-cta-ghost { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); color: #fff; padding: 1rem 2rem; border-radius: 10px; font-weight: 600; font-size: 17px; border: 1px solid rgba(255,255,255,0.2); transition: all 0.25s var(--ease-smooth); touch-action: manipulation; }
+    .btn-cta-ghost:hover { background: rgba(255,255,255,0.15); transform: translateY(-3px); }
+    .cta-reassurance { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 28px; font-size: 13px; color: rgba(255,255,255,0.55); flex-wrap: wrap; }
+    .cta-reassurance-item { display: flex; align-items: center; gap: 7px; }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--primary); color: rgba(255,255,255,0.6); padding: 60px 0 30px; }
+    .footer-inner { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .footer-brand-name { font-family: var(--font-display); font-size: 1.3rem; font-weight: 900; color: #fff; margin-bottom: 12px; }
+    .footer-brand-desc { font-size: 14px; line-height: 1.65; max-width: 280px; }
+    .footer-col-title { font-family: var(--font-mono); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { font-size: 14px; color: rgba(255,255,255,0.6); transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--accent); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 30px; font-size: 13px; flex-wrap: wrap; gap: 12px; }
+
+    /* ─── MOBILE STICKY ─── */
+    .mobile-cta-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border-strong); padding: 14px 20px; z-index: 9000; transform: translateY(100%); transition: transform 0.4s var(--ease-expo); box-shadow: 0 -4px 20px rgba(0,0,0,0.08); }
+    .mobile-cta-bar.visible { transform: translateY(0); }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @keyframes scrollBounce { 0%, 100% { transform: rotate(45deg) translateY(0); } 50% { transform: rotate(45deg) translateY(5px); } }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34,197,94,0.4); } 50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(34,197,94,0); } }
+    @keyframes kenBurns { 0% { transform: scale(1); } 100% { transform: scale(1.06); } }
+    .hero { animation: kenBurns 14s ease-in-out infinite alternate; background-attachment: scroll; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: fixed; inset: 0; top: 64px; background: var(--surface); flex-direction: column; align-items: center; justify-content: center; gap: 32px; z-index: 8000; }
+      .nav-links.open { display: flex; }
+      .nav-links a { color: var(--text-2) !important; font-size: 18px; }
+      .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .hero-stats { grid-template-columns: repeat(3, 1fr); max-width: 100%; } .hero-stat-label { font-size: 9px !important; letter-spacing: 1px !important; } .hero-stat-value { font-size: 22px !important; }
+      .problemas-grid, .produtos-grid, .testimonials-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(2) { border-right: none; }
+      .split-section { grid-template-columns: 1fr; }
+      .split-section.image-right .split-img-wrap { order: 0; }
+      .split-section.image-right .split-content { order: 0; }
+      .split-img-wrap { height: 280px; }
+      .split-content { padding: 48px 24px; }
+      .vida-section { grid-template-columns: 1fr; min-height: auto; }
+      .vida-antes { padding: 60px 24px; }
+      .vida-depois-content { padding: 60px 24px; }
+      .vida-divisor { display: none; }
+      section { padding: 60px 20px !important; }
+      .section-cta { background-attachment: scroll !important; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .mobile-cta-bar { display: block; }
+      .hero-ctas { flex-direction: column; }
+      .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+      .btn-cta-primary, .btn-cta-ghost { width: 100%; max-width: 340px; justify-content: center; }
+    }
+    @media (max-width: 480px) {
+      .hero-headline { font-size: clamp(32px, 9vw, 46px); }
+      .hero-stats { grid-template-columns: 1fr; }
+      .hero-stat { border-left: none !important; border-top: 1px solid rgba(255,255,255,0.1); } .hero-stat:first-child { border-top: none; }
+      .comp-wrapper { overflow-x: auto; }
+    }
+  
+    /* ===== MOBILE HERO FIX v3.1 ===== */
+    @media (max-width: 768px) {
+      .hero-ctas, .hero-cta {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+      }
+      .btn-primary, .btn-ghost, .btn, .btn-whatsapp,
+      .btn-secondary, .btn-primary-light, .btn-ghost-dark,
+      .btn-cta-primary, .btn-cta-ghost, .btn-vida {
+        width: 100% !important;
+        max-width: 100% !important;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .hero-inner {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+      }
+      .hero-badge {
+        max-width: calc(100vw - 2.5rem);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 11px !important;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero-ctas, .hero-cta {
+        gap: 12px;
+      }
+      .hero-inner {
+        padding-top: 5.5rem !important;
+        padding-bottom: 2.5rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      .btn-primary, .btn-ghost, .btn, .btn-whatsapp,
+      .btn-secondary, .btn-primary-light, .btn-ghost-dark,
+      .btn-cta-primary, .btn-cta-ghost, .btn-vida {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        font-size: 15px !important;
+      }
+    }
+    
+/* ── MOBILE FIX: hero-stats e stats-grid ── */
+@media (max-width: 480px) {
+  .hero-stats {
+    grid-template-columns: 1fr !important;
+    max-width: 100%;
+  }
+  .hero-stat {
+    border-left: none !important;
+    border-top: 1px solid rgba(255,255,255,0.1) !important;
+  }
+  .hero-stat:first-child { border-top: none !important; }
+  .hero-stat-value { font-size: 28px !important; }
+  .hero-stat-label { font-size: 10px !important; }
+}
+/* ===== END MOBILE HERO FIX ===== */
+</style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
+            <path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.25C17.25 23.15 21 18.25 21 13V7L12 2z"/>
+          </svg>
+        </div>
+        MaxSeguros
+      </a>
+      <ul class="nav-links">
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="https://wa.me/5511300001234?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20simular%20um%20seguro" class="nav-cta" target="_blank" rel="noopener">Simular Agora</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">+1 milhão de lares protegidos</span>
+      </div>
+      <p class="hero-eyebrow">// Líder em proteção</p>
+      <h1 class="hero-headline">Sua família<br>protegida.<br><em>Sua vida tranquila.</em></h1>
+      <p class="hero-sub">Seguros, previdência e capitalização com quem é líder nos ramos em que atua. Presente em +5.000 cidades.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5511300001234?text=Ol%C3%A1%2C%20quero%20simular%20um%20seguro" class="btn-primary" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Simular Meu Seguro
+        </a>
+        <a href="#produtos" class="btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.25C17.25 23.15 21 18.25 21 13V7L12 2z"/></svg>
+          Ver Produtos
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-counter data-target="1" data-prefix="+" data-suffix="M">0</div>
+          <div class="hero-stat-label">Lares Segurados</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-counter data-target="3" data-prefix="+" data-suffix="K">0</div>
+          <div class="hero-stat-label">Acionamentos/Dia</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-counter data-target="5" data-prefix="+" data-suffix="K">0</div>
+          <div class="hero-stat-label">Cidades</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span class="marquee-item">Seguro de Vida</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Seguro Residencial</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Seguro Auto</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Previdência Privada</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Capitalização</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Plano Odontológico</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Seguro Empresarial</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Proteção Pessoal</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Seguro de Vida</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Seguro Residencial</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Seguro Auto</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Previdência Privada</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Capitalização</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Plano Odontológico</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Seguro Empresarial</span><span class="marquee-dot"></span>
+      <span class="marquee-item">Proteção Pessoal</span><span class="marquee-dot"></span>
+    </div>
+  </div>
+
+  <!-- PROBLEMA -->
+  <section class="section-problema">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// O custo de não se proteger</span>
+        <h2 class="section-title" style="margin-top:16px">Riscos que custam caro<br>quando você menos espera</h2>
+        <p class="body-lead" style="max-width:560px;margin:16px auto 0">Imprevistos não avisam. E sem proteção adequada, os custos vão muito além do financeiro.</p>
+      </div>
+      <div class="problemas-grid">
+        <div class="problema-card reveal">
+          <div class="problema-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E05C5C" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="problema-title">Seu lar desprotegido</div>
+          <div class="problema-desc">Um incêndio, enchente ou furto pode destruir anos de conquista em um único evento. A recuperação sem seguro pode levar décadas.</div>
+          <div class="problema-cost">// Custo médio sem seguro: R$ 48.000 por sinistro</div>
+        </div>
+        <div class="problema-card reveal reveal-delay-1">
+          <div class="problema-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E05C5C" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div class="problema-title">Família sem amparo</div>
+          <div class="problema-desc">Uma ausência inesperada pode deixar sua família sem renda. Sem seguro de vida, a instabilidade financeira chega junto com a dor.</div>
+          <div class="problema-cost">// Impacto médio: 2,5 salários do titular por mês</div>
+        </div>
+        <div class="problema-card reveal reveal-delay-2">
+          <div class="problema-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E05C5C" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div class="problema-title">Seu veículo vulnerável</div>
+          <div class="problema-desc">Roubo, colisão ou dano de terceiros podem paralisar sua vida e negócio. Sem cobertura, você arca com tudo sozinho.</div>
+          <div class="problema-cost">// Sinistro médio auto sem seguro: R$ 12.400</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDA DEPOIS -->
+  <section class="vida-section" id="sobre">
+    <div class="vida-antes">
+      <span class="section-tag">// Situação Atual</span>
+      <h2 class="section-title">Sem proteção</h2>
+      <ul class="vida-antes-list">
+        <li><span class="antes-icon">✗</span> Noites preocupado com o que aconteceria se um imprevisto ocorresse</li>
+        <li><span class="antes-icon">✗</span> Família exposta a riscos sem rede de segurança financeira</li>
+        <li><span class="antes-icon">✗</span> Patrimônio construído ao longo de anos sem cobertura</li>
+        <li><span class="antes-icon">✗</span> Futuro financeiro dependendo apenas da aposentadoria pública</li>
+      </ul>
+    </div>
+    <div class="vida-divisor" aria-hidden="true">→</div>
+    <div class="vida-depois-col">
+      <div class="vida-depois-content">
+        <span class="section-tag">// Com MaxSeguros</span>
+        <h2 class="section-title">Vida com tranquilidade</h2>
+        <ul class="vida-depois-list">
+          <li><span class="depois-icon">✓</span> Dorme tranquilo sabendo que sua família está protegida 24h</li>
+          <li><span class="depois-icon">✓</span> Patrimônio assegurado com coberturas completas e acionamento ágil</li>
+          <li><span class="depois-icon">✓</span> Reserva financeira crescendo com previdência privada personalizada</li>
+          <li><span class="depois-icon">✓</span> Assistência 24h sempre disponível quando você mais precisa</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="section-produtos" id="produtos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Nossas soluções</span>
+        <h2 class="section-title" style="margin-top:16px">Proteção completa<br>para todos os momentos</h2>
+        <p class="body-lead" style="max-width:520px;margin:16px auto 0">Conheça as soluções que a MaxSeguros oferece para proteger o que é mais importante para você.</p>
+      </div>
+      <div class="produtos-grid">
+        <div class="produto-card reveal">
+          <div class="produto-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <div class="produto-title">Seguro de Vida</div>
+          <div class="produto-desc">Proteção financeira para sua família com coberturas de morte, invalidez e doenças graves. Tranquilidade em qualquer fase da vida.</div>
+          <a href="#contato" class="produto-link">Simular agora <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="produto-card featured reveal reveal-delay-1">
+          <span class="featured-badge">Mais contratado</span>
+          <div class="produto-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="produto-title">Seguro Residencial</div>
+          <div class="produto-desc">Tudo para manter seu lar protegido. Cobertura flexível e completa contra incêndio, roubo, danos elétricos e muito mais.</div>
+          <a href="#contato" class="produto-link">Simular agora <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="produto-card reveal reveal-delay-2">
+          <div class="produto-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div class="produto-title">Seguro Auto</div>
+          <div class="produto-desc">Proteja seu carro, moto, taxi ou caminhão. Cobertura completa com assistência 24h, carro reserva e proteção contra terceiros.</div>
+          <a href="#contato" class="produto-link">Simular agora <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="produto-card reveal">
+          <div class="produto-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="produto-title">Seguro Empresarial</div>
+          <div class="produto-desc">Criado para proteger seu patrimônio empresarial, assegurar resultados e garantir a continuidade do seu negócio.</div>
+          <a href="#contato" class="produto-link">Simular agora <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="produto-card reveal reveal-delay-1">
+          <div class="produto-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <div class="produto-title">Previdência Privada</div>
+          <div class="produto-desc">Muito além da aposentadoria — forme uma reserva financeira para o futuro com rentabilidade atrativa e flexibilidade de aporte.</div>
+          <a href="#contato" class="produto-link">Simular agora <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="produto-card reveal reveal-delay-2">
+          <div class="produto-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <div class="produto-title">Plano Odontológico</div>
+          <div class="produto-desc">Rede de atendimento em todas as regiões do país com cobertura completa para você e sua família. Consultas, tratamentos e emergências.</div>
+          <a href="#contato" class="produto-link">Simular agora <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPLIT: BENEFÍCIOS -->
+  <div class="split-section">
+    <div class="split-img-wrap">
+      <img src="./images/split-beneficios.jpg" alt="Consultores MaxSeguros em reunião com cliente" loading="lazy">
+    </div>
+    <div class="split-content">
+      <span class="section-tag">// Por que nos escolher</span>
+      <h2 class="section-title" style="margin-top:16px;font-size:clamp(24px,2.5vw,38px)">A seguradora líder nos ramos em que atua</h2>
+      <p class="body-lead" style="margin-top:16px">Nosso sucesso é uma conquista dos nossos clientes, que contribuem diariamente para a melhoria dos nossos produtos e atendimento.</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:28px">
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:16px;color:var(--text-2)">
+          <span style="width:22px;height:22px;background:rgba(var(--accent-rgb),0.12);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:1px">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          Acionamento em até 30 minutos via app ou telefone
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:16px;color:var(--text-2)">
+          <span style="width:22px;height:22px;background:rgba(var(--accent-rgb),0.12);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:1px">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          +3.000 acionamentos atendidos por dia com satisfação
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:16px;color:var(--text-2)">
+          <span style="width:22px;height:22px;background:rgba(var(--accent-rgb),0.12);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:1px">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          Rede de parceiros em todas as capitais e interiores
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:12px;font-size:16px;color:var(--text-2)">
+          <span style="width:22px;height:22px;background:rgba(var(--accent-rgb),0.12);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:1px">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          Gestão completa pelo app MaxSeguros, 100% digital
+        </li>
+      </ul>
+      <a href="https://wa.me/5511300001234?text=Ol%C3%A1%2C%20quero%20simular%20um%20seguro" class="btn-primary" style="margin-top:32px;align-self:flex-start;display:inline-flex;align-items:center;gap:10px" target="_blank" rel="noopener">
+        Quero ser Superprotegido
+      </a>
+    </div>
+  </div>
+
+  <!-- SPLIT: COMO FUNCIONA -->
+  <div class="split-section image-right">
+    <div class="split-content" style="background:var(--bg-2)">
+      <span class="section-tag">// Como funciona</span>
+      <h2 class="section-title" style="margin-top:16px;font-size:clamp(24px,2.5vw,38px)">Contratar é simples.<br>Usar é mais simples ainda.</h2>
+      <p class="body-lead" style="margin-top:16px">Em menos de 10 minutos você simula, contrata e já está protegido. E quando precisar, o acionamento é tão fácil quanto uma mensagem.</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;margin-top:28px;counter-reset:steps">
+        <li style="display:flex;align-items:flex-start;gap:16px;font-size:16px;color:var(--text-2)">
+          <span style="width:32px;height:32px;background:var(--primary);color:#fff;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:12px;font-weight:700;margin-top:0px">01</span>
+          <div><strong style="color:var(--text);display:block;margin-bottom:4px">Simule online</strong>Compare coberturas e preços em minutos pelo site ou app.</div>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:16px;font-size:16px;color:var(--text-2)">
+          <span style="width:32px;height:32px;background:var(--primary);color:#fff;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:12px;font-weight:700">02</span>
+          <div><strong style="color:var(--text);display:block;margin-bottom:4px">Contrate em 10 min</strong>Sem burocracia, sem vistorias demoradas — 100% digital.</div>
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:16px;font-size:16px;color:var(--text-2)">
+          <span style="width:32px;height:32px;background:var(--accent);color:#fff;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:12px;font-weight:700">03</span>
+          <div><strong style="color:var(--text);display:block;margin-bottom:4px">Acione quando precisar</strong>24h por dia, 7 dias por semana. Pelo app, site ou 0800.</div>
+        </li>
+      </ul>
+    </div>
+    <div class="split-img-wrap">
+      <img src="./images/split-conteudo.jpg" alt="Ambiente moderno de trabalho da equipe MaxSeguros" loading="lazy">
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <section class="section-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-value" data-counter data-target="1000000" data-prefix="+" data-suffix="">0</div>
+          <div class="stat-label">Lares Segurados</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="stat-value" data-counter data-target="3000" data-prefix="+" data-suffix="">0</div>
+          <div class="stat-label">Acionamentos por Dia</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-value" data-counter data-target="5000" data-prefix="+" data-suffix="">0</div>
+          <div class="stat-label">Cidades no Brasil</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-value">24<span style="font-size:0.5em">h</span></div>
+          <div class="stat-label">Assistência Contínua</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section-testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Depoimentos</span>
+        <h2 class="section-title" style="margin-top:16px">O que dizem nossos clientes</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Minha casa alagou durante as chuvas de verão. Acionei às 22h pelo app e em 35 minutos um técnico já estava na porta. A cobertura foi total. Nunca me arrependi de contratar."</p>
+          <div class="testimonial-author">
+            <img src="./images/testimonial-1.jpg" alt="Foto de Ricardo Almeida" loading="lazy" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Ricardo Almeida</div>
+              <div class="testimonial-role">Empresário, São Paulo — SP</div>
+            </div>
+          </div>
+          <div class="testimonial-metric">// Indenização recebida em 5 dias úteis</div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Contratei o seguro de vida para meu marido há 3 anos. Quando ele faleceu inesperadamente, a MaxSeguros foi incrivelmente ágil e humana no processo. Sou eternamente grata."</p>
+          <div class="testimonial-author">
+            <img src="./images/testimonial-2.jpg" alt="Foto de Cláudia Ferreira" loading="lazy" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Cláudia Ferreira</div>
+              <div class="testimonial-role">Professora, Belo Horizonte — MG</div>
+            </div>
+          </div>
+          <div class="testimonial-metric">// Processo resolvido em 18 dias corridos</div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Tive meu carro roubado na segunda-feira e na sexta já tinha recebido o valor integral. Processo 100% pelo app, sem precisar ir a nenhuma agência. Atendimento nota 10."</p>
+          <div class="testimonial-author">
+            <img src="./images/testimonial-3.jpg" alt="Foto de Marcos Oliveira" loading="lazy" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Marcos Oliveira</div>
+              <div class="testimonial-role">Autônomo, Porto Alegre — RS</div>
+            </div>
+          </div>
+          <div class="testimonial-metric">// Indenização: R$ 56.000 em 4 dias úteis</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARATIVO -->
+  <section class="section-comparativo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Comparativo</span>
+        <h2 class="section-title" style="margin-top:16px">MaxSeguros vs. a alternativa</h2>
+        <p class="body-lead" style="max-width:500px;margin:16px auto 0">Veja por que mais de 1 milhão de famílias escolheram a MaxSeguros.</p>
+      </div>
+      <div class="comp-wrapper reveal">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Recurso</th>
+              <th class="highlight">MaxSeguros</th>
+              <th>Seguradoras Tradicionais</th>
+              <th>Sem Seguro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Acionamento 24h</td>
+              <td class="highlight"><span class="check-icon">✓</span></td>
+              <td><span class="partial-icon">Horário comercial</span></td>
+              <td><span class="x-icon">✗</span></td>
+            </tr>
+            <tr>
+              <td>App 100% digital</td>
+              <td class="highlight"><span class="check-icon">✓</span></td>
+              <td><span class="partial-icon">Parcial</span></td>
+              <td><span class="x-icon">✗</span></td>
+            </tr>
+            <tr>
+              <td>Assistência em +5.000 cidades</td>
+              <td class="highlight"><span class="check-icon">✓</span></td>
+              <td><span class="partial-icon">Capitais apenas</span></td>
+              <td><span class="x-icon">✗</span></td>
+            </tr>
+            <tr>
+              <td>Múltiplos produtos integrados</td>
+              <td class="highlight"><span class="check-icon">✓</span></td>
+              <td><span class="x-icon">✗</span></td>
+              <td><span class="x-icon">✗</span></td>
+            </tr>
+            <tr>
+              <td>Indenização rápida (&lt;5 dias)</td>
+              <td class="highlight"><span class="check-icon">✓</span></td>
+              <td><span class="partial-icon">10-30 dias</span></td>
+              <td><span class="x-icon">✗</span></td>
+            </tr>
+            <tr>
+              <td>Proteção financeira real</td>
+              <td class="highlight"><span class="check-icon">✓</span></td>
+              <td><span class="check-icon">✓</span></td>
+              <td><span class="x-icon">✗</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-faq" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Dúvidas frequentes</span>
+        <h2 class="section-title" style="margin-top:16px">Perguntas frequentes</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Como contratar um seguro pela MaxSeguros?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Você pode simular e contratar diretamente pelo nosso site, pelo aplicativo MaxSeguros, ou em qualquer agência do Parceiro Financeiro. O processo é 100% digital e leva menos de 10 minutos. Basta informar seus dados e escolher a cobertura ideal.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Preciso ser correntista do Parceiro Financeiro para contratar?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Não. Qualquer pessoa física ou jurídica pode contratar os produtos da MaxSeguros, independente de ser cliente do Parceiro Financeiro. Basta acessar o site ou baixar o aplicativo.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Como funciona o acionamento do seguro?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Você pode acionar pelo app MaxSeguros, pelo site ou pelo telefone 0800-729-0722. Nossa equipe está disponível 24 horas por dia, 7 dias por semana. Atendemos mais de 3.000 acionamentos por dia em todo o Brasil.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Quais são os seguros disponíveis para minha empresa?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Para empresas oferecemos seguro empresarial (patrimônio e responsabilidade civil), seguro de frota de veículos, seguro de vida em grupo para colaboradores e planos odontológicos empresariais. Entre em contato pelo WhatsApp para uma proposta personalizada.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Quanto tempo leva para receber a indenização?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">O prazo varia conforme o tipo de sinistro e a documentação necessária. Em média, nossas indenizações são pagas em 5 dias úteis após a aprovação da documentação. Para sinistros simples, o pagamento pode ocorrer em até 48h.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section-cta" id="contato">
+    <div class="container">
+      <p class="cta-eyebrow">// Proteja o que mais importa</p>
+      <h2 class="cta-title">Comece agora.<br>Sua família não<br>pode esperar.</h2>
+      <p class="cta-sub">Simule em minutos, contrate sem burocracia e tenha proteção imediata para você e sua família.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/5511300001234?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20simular%20um%20seguro%20agora" class="btn-cta-primary" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Simular pelo WhatsApp
+        </a>
+        <a href="tel:08007290722" class="btn-cta-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14h-.08z"/></svg>
+          0800-729-0722
+        </a>
+      </div>
+      <div class="cta-reassurance">
+        <div class="cta-reassurance-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Sem burocracia
+        </div>
+        <div class="cta-reassurance-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Proteção imediata após contratação
+        </div>
+        <div class="cta-reassurance-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Cancele quando quiser
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">MaxSeguros</div>
+          <div class="footer-brand-desc">A seguradora líder nos ramos em que atua. Mais de 1 milhão de famílias protegidas em todo o Brasil.</div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Produtos</div>
+          <ul>
+            <li><a href="#">Seguro de Vida</a></li>
+            <li><a href="#">Seguro Residencial</a></li>
+            <li><a href="#">Seguro Auto</a></li>
+            <li><a href="#">Seguro Empresarial</a></li>
+            <li><a href="#">Previdência Privada</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Empresa</div>
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Trabalhe conosco</a></li>
+            <li><a href="#">Imprensa</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Suporte</div>
+          <ul>
+            <li><a href="#">Acionar seguro</a></li>
+            <li><a href="#">0800-729-0722</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Termos de uso</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MaxSeguros — Todos os direitos reservados</span>
+        <span>CNPJ: 00.000.000/0001-00 · SUSEP: 000000</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY -->
+  <div class="mobile-cta-bar">
+    <a href="https://wa.me/5511300001234?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20simular%20um%20seguro" class="btn-primary" style="width:100%;justify-content:center" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Simular Seguro Grátis
+    </a>
+  </div>
+
+  <script>
+    // Nav scroll state
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    // Hamburger
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      this.classList.toggle('active');
+      this.setAttribute('aria-expanded', this.classList.contains('active'));
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
+    // Reveal on scroll
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Counter animation
+    function animateCounter(el) {
+      const target = parseFloat(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      const prefix = el.dataset.prefix || '';
+      const duration = 1600;
+      const start = performance.now();
+      const easeOutQuart = t => 1 - Math.pow(1 - t, 4);
+      const update = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const value = easeOutQuart(progress) * target;
+        el.textContent = prefix + (Number.isInteger(target) ? Math.floor(value).toLocaleString('pt-BR') : value.toFixed(1)) + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    }
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && !e.target.dataset.animated) {
+          e.target.dataset.animated = 'true';
+          animateCounter(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observe(el));
+
+    // Mobile sticky CTA
+    window.addEventListener('scroll', () => {
+      document.querySelector('.mobile-cta-bar').classList.toggle('visible', window.scrollY > window.innerHeight * 0.3);
+    }, { passive: true });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const answer = item.querySelector('.faq-a');
+        const isOpen = btn.classList.contains('open');
+        document.querySelectorAll('.faq-q.open').forEach(b => {
+          b.classList.remove('open');
+          b.setAttribute('aria-expanded', 'false');
+          b.closest('.faq-item').querySelector('.faq-a').style.maxHeight = '0';
+        });
+        if (!isOpen) {
+          btn.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Parallax on split images + vida depois
+    const parallaxEls = document.querySelectorAll('.split-img-wrap img, .vida-depois-col');
+    const updateParallax = () => {
+      parallaxEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+        const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+        const offset = (progress - 0.5) * 40;
+        if (el.tagName === 'IMG') el.style.transform = `translateY(${offset * 0.4}px) scale(1.05)`;
+      });
+    };
+    window.addEventListener('scroll', updateParallax, { passive: true });
+    updateParallax();
+  </script>
+</body>
+</html>

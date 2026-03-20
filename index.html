@@ -393,7 +393,6 @@
     color: rgba(230,49,39,0.05); line-height: 1;
     pointer-events: none; user-select: none;
   }
-
   /* Secondary card — light */
   .testimonial-secondary {
     background: var(--offwhite);
@@ -475,6 +474,167 @@
     margin-top: 14px;
     font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px;
     text-transform: uppercase; color: var(--mid-gray);
+  }
+
+  /* SHOWCASE — dark, horizontal carousel with phone mockups */
+  .showcase {
+    background: var(--black); padding: 100px 0 100px 60px; overflow: hidden;
+    position: relative;
+  }
+  .showcase-header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    padding-right: 60px; margin-bottom: 56px;
+  }
+  .showcase-headline {
+    font-family: var(--font-display);
+    font-size: clamp(38px, 4.5vw, 64px);
+    letter-spacing: 2px; line-height: 1.0; color: var(--white);
+    max-width: 600px;
+  }
+  .showcase-headline em { font-style: normal; color: var(--red); }
+  .showcase-nav {
+    display: flex; align-items: center; gap: 20px; flex-shrink: 0;
+  }
+  .showcase-counter {
+    font-family: var(--font-mono); font-size: 12px; letter-spacing: 1.5px;
+    color: var(--mid-gray);
+  }
+  .showcase-counter .current { color: var(--white); font-weight: 500; }
+  .showcase-arrow {
+    width: 48px; height: 48px; border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.12); background: transparent;
+    color: var(--white); font-size: 18px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: none; transition: all .25s;
+  }
+  .showcase-arrow:hover {
+    border-color: var(--red); color: var(--red);
+    background: rgba(230,49,39,0.08);
+  }
+  .showcase-arrow:active { transform: scale(0.92); }
+  .showcase-arrow.disabled { opacity: 0.25; pointer-events: none; }
+
+  .showcase-track {
+    display: flex; gap: 36px; align-items: flex-start;
+    overflow-x: auto; scroll-behavior: smooth;
+    scrollbar-width: none; -ms-overflow-style: none;
+    padding-right: 60px;
+    cursor: grab;
+  }
+  .showcase-track::-webkit-scrollbar { display: none; }
+  .showcase-track.dragging { cursor: grabbing; scroll-behavior: auto; }
+
+  .showcase-card {
+    flex: 0 0 auto; width: clamp(220px, 20vw, 300px);
+    position: relative; text-decoration: none;
+  }
+
+  /* Phone mockup frame */
+  .showcase-phone {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    background: #1A1817;
+    border: 3px solid #2A2725;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,255,255,0.04);
+    transition: border-color .35s ease, transform .4s cubic-bezier(.25,.46,.45,.94);
+    will-change: transform;
+  }
+  .showcase-card:hover .showcase-phone {
+    border-color: rgba(230,49,39,0.35);
+    transform: translateY(-8px);
+  }
+
+  /* Notch */
+  .showcase-notch {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 90px; height: 24px; background: #1A1817;
+    border-radius: 0 0 16px 16px; z-index: 3;
+  }
+  .showcase-notch::after {
+    content: ''; position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+    width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.06);
+  }
+
+  .showcase-img {
+    display: block; width: 100%; height: auto; aspect-ratio: 390/844;
+    object-fit: cover; object-position: top;
+  }
+
+  /* Subtle gradient at bottom of phone on hover */
+  .showcase-phone::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 35%;
+    background: linear-gradient(to top, rgba(13,13,13,0.9) 0%, rgba(13,13,13,0.4) 50%, transparent 100%);
+    pointer-events: none; z-index: 1;
+    border-radius: inherit;
+    opacity: 0; transition: opacity .35s ease;
+  }
+  .showcase-card:hover .showcase-phone::after { opacity: 1; }
+
+  /* "Ver projeto" pinned to bottom */
+  .showcase-info {
+    position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+    padding: 0 0 24px; text-align: center;
+    opacity: 0; transform: translateY(6px);
+    transition: opacity .35s ease, transform .35s ease;
+  }
+  .showcase-card:hover .showcase-info { opacity: 1; transform: translateY(0); }
+  .showcase-link {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 2.5px;
+    text-transform: uppercase; color: rgba(255,255,255,0.85); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: color .2s;
+  }
+  .showcase-link:hover { border-color: var(--red); color: var(--red); }
+  .showcase-link .arrow { transition: transform .2s; }
+  .showcase-link:hover .arrow { transform: translate(3px, -2px); }
+
+  /* Card label below phone */
+  .showcase-label {
+    padding: 16px 4px 0; text-align: center;
+  }
+  .showcase-label-name {
+    font-family: var(--font-display); font-size: 16px; letter-spacing: 1.5px;
+    color: var(--white); margin-bottom: 3px;
+    transition: color .25s;
+  }
+  .showcase-card:hover .showcase-label-name { color: var(--red); }
+  .showcase-label-segment {
+    font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--mid-gray);
+  }
+
+  /* Progress bar */
+  .showcase-progress {
+    margin-top: 48px; padding-right: 60px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .showcase-progress-bar {
+    flex: 1; height: 2px; background: rgba(255,255,255,0.08);
+    border-radius: 1px; overflow: hidden;
+  }
+  .showcase-progress-fill {
+    height: 100%; background: var(--red);
+    border-radius: 1px; transition: width .3s ease;
+    width: 10%;
+  }
+  .showcase-progress-label {
+    font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--mid-gray); flex-shrink: 0;
+  }
+
+  /* Showcase responsive */
+  @media (max-width: 900px) {
+    .showcase { padding: 80px 0 80px 28px; }
+    .showcase-header { padding-right: 28px; flex-direction: column; align-items: flex-start; gap: 28px; }
+    .showcase-card { width: clamp(160px, 42vw, 240px); }
+    .showcase-track { gap: 20px; padding-right: 28px; }
+    .showcase-progress { padding-right: 28px; }
+    .showcase-phone::after { opacity: 0; }
+    .showcase-info { opacity: 0; }
+    .showcase-phone { border-radius: 20px; }
+    .showcase-notch { width: 60px; height: 18px; border-radius: 0 0 10px 10px; }
   }
 
   /* FOOTER */
@@ -865,6 +1025,140 @@
   </div>
 </section>
 
+<!-- SHOWCASE — dark, horizontal carousel -->
+<section class="showcase" id="showcase">
+  <div class="showcase-header">
+    <div class="reveal">
+      <div class="section-tag" style="color:var(--red)">Portfolio</div>
+      <h2 class="showcase-headline">LANDING PAGES QUE<br><em>CONVERTEM DE VERDADE.</em></h2>
+    </div>
+    <div class="showcase-nav reveal reveal-delay-1">
+      <span class="showcase-counter"><span class="current">01</span> / 09</span>
+      <button class="showcase-arrow" id="scPrev" aria-label="Anterior">←</button>
+      <button class="showcase-arrow" id="scNext" aria-label="Próximo">→</button>
+    </div>
+  </div>
+
+  <div class="showcase-track" id="showcaseTrack">
+
+    <a href="showcase/advocacia-santos/" class="showcase-card reveal" target="_blank" rel="noopener">
+      <div class="showcase-phone">
+        <div class="showcase-notch"></div>
+        <img class="showcase-img" src="showcase/thumbnails/advocacia-santos.webp" alt="Advocacia Santos LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+      </div>
+      <div class="showcase-label">
+        <div class="showcase-label-name">ADVOCACIA SANTOS</div>
+        <div class="showcase-label-segment">Jurídico</div>
+      </div>
+    </a>
+
+    <a href="showcase/techsolve/" class="showcase-card reveal reveal-delay-1" target="_blank" rel="noopener">
+      <div class="showcase-phone">
+        <div class="showcase-notch"></div>
+        <img class="showcase-img" src="showcase/thumbnails/techsolve.webp" alt="TechSolve TI LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+      </div>
+      <div class="showcase-label">
+        <div class="showcase-label-name">TECHSOLVE TI</div>
+        <div class="showcase-label-segment">Tecnologia</div>
+      </div>
+    </a>
+
+    <a href="showcase/primegente/" class="showcase-card reveal reveal-delay-3" target="_blank" rel="noopener">
+      <div class="showcase-phone">
+        <div class="showcase-notch"></div>
+        <img class="showcase-img" src="showcase/thumbnails/primegente.webp" alt="PrimeGente RH LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+      </div>
+      <div class="showcase-label">
+        <div class="showcase-label-name">PRIMEGENTE RH</div>
+        <div class="showcase-label-segment">RH</div>
+      </div>
+    </a>
+
+    <a href="showcase/atlasseguros/" class="showcase-card reveal" target="_blank" rel="noopener">
+      <div class="showcase-phone">
+        <div class="showcase-notch"></div>
+        <img class="showcase-img" src="showcase/thumbnails/atlasseguros.webp" alt="Atlas Seguros LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+      </div>
+      <div class="showcase-label">
+        <div class="showcase-label-name">ATLAS SEGUROS</div>
+        <div class="showcase-label-segment">Seguros</div>
+      </div>
+    </a>
+
+    <a href="showcase/centrosaude/" class="showcase-card reveal" target="_blank" rel="noopener">
+      <div class="showcase-phone">
+        <div class="showcase-notch"></div>
+        <img class="showcase-img" src="showcase/thumbnails/centrosaude.webp" alt="CentroSaúde LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+      </div>
+      <div class="showcase-label">
+        <div class="showcase-label-name">CENTROSAÚDE</div>
+        <div class="showcase-label-segment">Saúde</div>
+      </div>
+    </a>
+
+    <a href="showcase/contabilfoco/" class="showcase-card reveal" target="_blank" rel="noopener">
+      <div class="showcase-phone">
+        <div class="showcase-notch"></div>
+        <img class="showcase-img" src="showcase/thumbnails/contabilfoco.webp" alt="Contábil Foco LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+      </div>
+      <div class="showcase-label">
+        <div class="showcase-label-name">CONTÁBIL FOCO</div>
+        <div class="showcase-label-segment">Contabilidade</div>
+      </div>
+    </a>
+
+    <a href="showcase/contabilhorizonte/" class="showcase-card reveal" target="_blank" rel="noopener">
+      <div class="showcase-phone">
+        <div class="showcase-notch"></div>
+        <img class="showcase-img" src="showcase/thumbnails/contabilhorizonte.webp" alt="Horizonte Contabilidade LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+      </div>
+      <div class="showcase-label">
+        <div class="showcase-label-name">HORIZONTE</div>
+        <div class="showcase-label-segment">Contabilidade</div>
+      </div>
+    </a>
+
+    <a href="showcase/maxseguros/" class="showcase-card reveal" target="_blank" rel="noopener">
+      <div class="showcase-phone">
+        <div class="showcase-notch"></div>
+        <img class="showcase-img" src="showcase/thumbnails/maxseguros.webp" alt="MaxSeguros LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+      </div>
+      <div class="showcase-label">
+        <div class="showcase-label-name">MAXSEGUROS</div>
+        <div class="showcase-label-segment">Seguros</div>
+      </div>
+    </a>
+
+    <a href="showcase/procontabil/" class="showcase-card reveal" target="_blank" rel="noopener">
+      <div class="showcase-phone">
+        <div class="showcase-notch"></div>
+        <img class="showcase-img" src="showcase/thumbnails/procontabil.webp" alt="ProContabil LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+      </div>
+      <div class="showcase-label">
+        <div class="showcase-label-name">PROCONTABIL</div>
+        <div class="showcase-label-segment">Contabilidade</div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="showcase-progress reveal">
+    <div class="showcase-progress-bar">
+      <div class="showcase-progress-fill" id="scProgress"></div>
+    </div>
+    <span class="showcase-progress-label">Arraste para explorar</span>
+  </div>
+</section>
+
 <!-- FOUNDER — white -->
 <section class="founder">
   <div class="founder-inner">
@@ -909,6 +1203,7 @@
   </div>
   <div class="footer-links">
     <a href="#servicos">Serviços</a>
+    <a href="#showcase">Portfolio</a>
     <a href="#como-funciona">Como funciona</a>
     <a href="https://wa.me/5519998607474" target="_blank" rel="noopener">(19) 99860-7474</a>
   </div>
@@ -935,6 +1230,64 @@
     entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
   },{threshold:0.08});
   document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+  /* Showcase carousel */
+  (function(){
+    const track = document.getElementById('showcaseTrack');
+    if(!track) return;
+    const prev = document.getElementById('scPrev');
+    const next = document.getElementById('scNext');
+    const progress = document.getElementById('scProgress');
+    const counterEl = document.querySelector('.showcase-counter .current');
+    const cards = track.querySelectorAll('.showcase-card');
+    const total = cards.length;
+
+    function updateUI(){
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      const pct = maxScroll > 0 ? (track.scrollLeft / maxScroll) * 100 : 0;
+      if(progress) progress.style.width = Math.max(4, pct) + '%';
+      // Update counter
+      const cardW = cards[0].offsetWidth + 36;
+      const idx = Math.round(track.scrollLeft / cardW);
+      if(counterEl) counterEl.textContent = String(Math.min(idx+1, total)).padStart(2,'0');
+      // Arrow states
+      if(prev) prev.classList.toggle('disabled', track.scrollLeft <= 5);
+      if(next) next.classList.toggle('disabled', track.scrollLeft >= maxScroll - 5);
+    }
+
+    track.addEventListener('scroll', updateUI, {passive:true});
+    updateUI();
+
+    // Arrow navigation
+    function scrollBy(dir){
+      const cardW = cards[0].offsetWidth + 36;
+      track.scrollBy({left: dir * cardW, behavior:'smooth'});
+    }
+    if(prev) prev.addEventListener('click', ()=>scrollBy(-1));
+    if(next) next.addEventListener('click', ()=>scrollBy(1));
+
+    // Drag to scroll
+    let isDown=false, startX, scrollL;
+    track.addEventListener('mousedown',e=>{
+      isDown=true; track.classList.add('dragging');
+      startX=e.pageX-track.offsetLeft; scrollL=track.scrollLeft;
+    });
+    track.addEventListener('mouseleave',()=>{isDown=false; track.classList.remove('dragging');});
+    track.addEventListener('mouseup',()=>{isDown=false; track.classList.remove('dragging');});
+    track.addEventListener('mousemove',e=>{
+      if(!isDown) return; e.preventDefault();
+      const x=e.pageX-track.offsetLeft;
+      track.scrollLeft=scrollL-(x-startX)*1.2;
+    });
+
+    // Prevent click after drag
+    let dragDist=0;
+    track.addEventListener('mousedown',e=>{dragDist=0;});
+    track.addEventListener('mousemove',()=>{if(isDown)dragDist++;});
+    track.querySelectorAll('a').forEach(a=>{
+      a.addEventListener('click',e=>{if(dragDist>5)e.preventDefault();});
+    });
+  })();
 </script>
 </body>
 </html>

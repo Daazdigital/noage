@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>VitaSaúde Campinas Centro | Consulta a partir de R$ 30 — Hoje</title>
+  <meta name="description" content="Clínica médica e odontológica em Campinas Centro. 37 especialidades. Consulta clínica geral a R$ 30 com Cartão de TODOS. Agende pelo WhatsApp agora.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="#">
+  <meta name="theme-color" content="#0B9A9F">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="VitaSaúde Campinas Centro | Consulta a partir de R$ 30">
+  <meta property="og:description" content="37 especialidades. Atendimento humanizado. Agende pelo WhatsApp.">
+  <meta property="og:image" content="./images/hero-main.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+
+  <!-- Schema: MedicalClinic (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "VitaSaúde Campinas Centro",
+    "description": "Clínica médica e odontológica com 37 especialidades. Atendimento humanizado com preços acessíveis.",
+    "url": "#",
+    "telephone": "+55-31-3000-1234",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. das Flores, 100",
+      "addressLocality": "Campinas",
+      "addressRegion": "SP",
+      "postalCode": "13070-000",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "08:00",
+        "closes": "14:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "847"
+    },
+    "priceRange": "R$"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como funciona o Cartão de TODOS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O Cartão de TODOS é um cartão de desconto que reduz o valor da consulta de clínica geral para R$ 30 e demais especialidades para R$ 40. Não é plano de saúde — você paga apenas quando usa. O cartão pode ser solicitado na própria clínica ou pelo WhatsApp."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso de encaminhamento para ver um especialista?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. Você pode agendar diretamente com qualquer uma das 37 especialidades disponíveis, sem precisar de encaminhamento prévio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual o tempo de espera para a consulta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para clínica geral, normalmente temos horários disponíveis no mesmo dia ou no dia seguinte. Para especialidades, o prazo médio é de 3 a 7 dias. Você pode verificar a agenda disponível pelo WhatsApp."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A clínica aceita plano de saúde?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Atendemos por particular e com o Cartão de TODOS. Para convênios, verifique com nossa equipe os planos disponíveis em nossa unidade pelo WhatsApp."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como agendar minha consulta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A forma mais rápida é pelo WhatsApp: (31) 3000-1234. Você também pode ligar diretamente ou comparecer à unidade. Respondemos em até 30 minutos durante o horário de funcionamento."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Source+Sans+Pro:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========================================
+       DESIGN TOKENS — Light Premium / Health
+    ======================================== */
+    :root {
+      --bg:         #FAFAF8;
+      --bg-2:       #F2F2EE;
+      --surface:    #FFFFFF;
+      --surface-2:  #F8F8F4;
+      --primary:    #0B9A9F;
+      --primary-rgb:11,154,159;
+      --primary-dark:#087B80;
+      --accent:     #D53E36;
+      --accent-rgb: 213,62,54;
+      --warm:       #F59E0B;
+      --text:       #1A1A2E;
+      --text-2:     #6B6B80;
+      --border:     rgba(0,0,0,0.07);
+      --border-2:   rgba(0,0,0,0.04);
+
+      --font-display: 'Merriweather', Georgia, serif;
+      --font-body:    'Source Sans Pro', system-ui, sans-serif;
+      --font-mono:    'JetBrains Mono', monospace;
+
+      --ease-expo:   cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text); background: var(--bg);
+      line-height: 1.65; overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Noise overlay */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      z-index: 9999; pointer-events: none;
+      opacity: 0.018;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* ========================================
+       UTILITIES
+    ======================================== */
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 60px; }
+    @media (max-width: 768px) { .container { padding: 0 24px; } }
+
+    .section-tag {
+      font-family: var(--font-mono);
+      font-size: 11px; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--primary);
+      display: block; margin-bottom: 16px;
+    }
+
+    .reveal {
+      opacity: 0; transform: translateY(32px) scale(0.98);
+      transition: opacity 0.7s var(--ease-expo), transform 0.7s var(--ease-expo);
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 100ms; }
+    .reveal-delay-2 { transition-delay: 200ms; }
+    .reveal-delay-3 { transition-delay: 300ms; }
+    .reveal-delay-4 { transition-delay: 400ms; }
+
+    .mobile-only { display: none; }
+    @media (max-width: 767px) {
+      .mobile-only { display: block; }
+      .desktop-only { display: none; }
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary) 0%, #0DD3DA 100%);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* ========================================
+       NAVBAR
+    ======================================== */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 20px 60px;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: all 0.4s var(--ease-expo);
+    }
+    .navbar.scrolled {
+      background: rgba(250,250,248,0.95);
+      backdrop-filter: blur(20px) saturate(180%);
+      padding: 14px 60px;
+      box-shadow: 0 1px 0 var(--border), 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .nav-logo {
+      font-family: var(--font-display); font-size: 22px; font-weight: 700;
+      color: var(--primary-dark); text-decoration: none;
+      display: flex; align-items: center; gap: 8px; letter-spacing: -0.02em;
+    }
+    .nav-logo .heart { color: var(--accent); font-size: 18px; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: var(--text-2); text-decoration: none; font-size: 15px;
+      font-weight: 400; transition: color 0.2s ease;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .nav-phone {
+      display: flex; align-items: center; gap: 8px;
+      color: var(--text); font-size: 15px; font-weight: 600;
+      text-decoration: none;
+    }
+    .nav-phone svg { width: 16px; height: 16px; stroke: var(--primary); stroke-width: 2; fill: none; }
+    .nav-cta {
+      background: var(--primary); color: white;
+      padding: 10px 22px; border-radius: 24px; text-decoration: none;
+      font-size: 14px; font-weight: 600; white-space: nowrap;
+      transition: all 0.25s var(--ease-smooth);
+      display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+    }
+    .nav-cta:hover {
+      background: var(--primary-dark); transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(var(--primary-rgb),0.35);
+    }
+    .nav-cta svg { width: 16px; height: 16px; fill: white; flex-shrink: 0; }
+    @media (max-width: 768px) {
+      .navbar { padding: 16px 24px; }
+      .navbar.scrolled { padding: 12px 24px; }
+      .nav-links, .nav-phone { display: none; }
+    }
+    @media (max-width: 480px) {
+      .nav-cta { padding: 10px; border-radius: 50%; }
+      .nav-cta-label { display: none; }
+    }
+
+    /* ========================================
+       HERO
+    ======================================== */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center; justify-content: flex-start;
+      overflow: hidden;
+      background:
+        linear-gradient(to right, rgba(11,60,65,0.88) 40%, rgba(11,60,65,0.45) 100%),
+        url('./images/hero-main.jpg') center 30%/cover no-repeat;
+    }
+    .hero img.hero-bg {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; z-index: -1;
+      filter: contrast(1.05) saturate(0.9) brightness(0.92) sepia(0.06);
+      animation: kenburns 24s ease-in-out infinite alternate;
+    }
+    @keyframes kenburns {
+      0% { transform: scale(1) translate(0, 0); }
+      100% { transform: scale(1.07) translate(-1.5%, -1%); }
+    }
+
+    /* Atmosphere glows */
+    .hero::before {
+      content: ''; position: absolute; top: -10%; right: 10%;
+      width: 700px; height: 700px;
+      background: radial-gradient(ellipse, rgba(11,154,159,0.25) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
+    }
+    .hero::after {
+      content: ''; position: absolute; bottom: -5%; left: -5%;
+      width: 500px; height: 500px;
+      background: radial-gradient(ellipse, rgba(213,62,54,0.08) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
+    }
+
+    /* Ghost watermark */
+    .hero-ghost {
+      position: absolute; right: -60px; bottom: 40px;
+      font-family: var(--font-display); font-weight: 900;
+      font-size: clamp(100px, 16vw, 280px);
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255,255,255,0.04);
+      pointer-events: none; z-index: 0; user-select: none; white-space: nowrap;
+    }
+
+    /* Scroll indicator */
+    .scroll-indicator {
+      position: absolute; right: 60px; bottom: 80px;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      opacity: 0.45;
+    }
+    .scroll-label {
+      font-family: var(--font-mono); font-size: 10px;
+      letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.6);
+      writing-mode: vertical-rl;
+    }
+    .scroll-line {
+      width: 1px; height: 56px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.7), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; } 50% { opacity: 1; }
+    }
+    @media (max-width: 768px) { .scroll-indicator { display: none; } }
+
+    .hero-content {
+      position: relative; z-index: 1;
+      padding: 160px 0 120px; max-width: 660px; margin-right: auto;
+    }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 100px; padding: 8px 16px 8px 12px;
+      margin-bottom: 24px;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.1s both;
+    }
+    .badge-dot {
+      width: 6px; height: 6px; background: #22C55E;
+      border-radius: 50%; animation: pulse-dot 2s ease infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.8); }
+    }
+    .hero-badge span { font-size: 13px; color: rgba(255,255,255,0.95); font-weight: 500; }
+
+    .hero-eyebrow {
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 3px; text-transform: uppercase; color: #7EEFEE;
+      margin-bottom: 20px; display: block;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.2s both;
+    }
+
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(38px, 5vw, 70px);
+      font-weight: 700; line-height: 1.1;
+      letter-spacing: -0.03em; color: white;
+      margin-bottom: 24px;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.3s both;
+    }
+    .hero-headline em { font-style: italic; color: #7EEFEE; }
+
+    .hero-subheadline {
+      font-size: clamp(16px, 1.6vw, 20px); font-weight: 300;
+      color: rgba(255,255,255,0.78); line-height: 1.7; max-width: 520px;
+      margin-bottom: 40px;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.4s both;
+    }
+
+    .hero-ctas {
+      display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 56px;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.5s both;
+    }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--primary); color: white;
+      padding: 15px 28px; border-radius: 24px; font-size: 16px; font-weight: 700;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: all 0.25s var(--ease-smooth);
+      touch-action: manipulation;
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark); transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(var(--primary-rgb),0.45);
+    }
+
+    .btn-whatsapp {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(37,211,102,0.15);
+      border: 1.5px solid rgba(37,211,102,0.4);
+      color: #1DB954; padding: 15px 28px; border-radius: 24px;
+      font-size: 16px; font-weight: 700; text-decoration: none;
+      transition: all 0.25s var(--ease-smooth);
+      touch-action: manipulation;
+    }
+    .btn-whatsapp:hover {
+      background: rgba(37,211,102,0.25);
+      box-shadow: 0 8px 32px rgba(37,211,102,0.3);
+      transform: translateY(-2px);
+    }
+    .btn-whatsapp svg { width: 20px; height: 20px; fill: #25D366; }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; border: 1.5px solid rgba(255,255,255,0.25);
+      color: rgba(255,255,255,0.8); padding: 15px 28px; border-radius: 24px;
+      font-size: 16px; font-weight: 500; text-decoration: none;
+      transition: all 0.25s var(--ease-smooth);
+    }
+    .btn-ghost:hover {
+      border-color: rgba(255,255,255,0.5); color: white;
+      transform: translateY(-1px);
+    }
+    .btn-ghost-dark {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; border: 1.5px solid var(--border);
+      color: var(--text-2); padding: 14px 24px; border-radius: 24px;
+      font-size: 15px; font-weight: 500; text-decoration: none;
+      transition: all 0.25s var(--ease-smooth);
+      touch-action: manipulation;
+    }
+    .btn-ghost-dark:hover {
+      border-color: var(--primary); color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(3, auto);
+      gap: 0; width: fit-content;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 14px; overflow: hidden;
+      animation: fadeInUp 0.6s var(--ease-expo) 0.6s both;
+    }
+    .stat-item {
+      padding: 18px 28px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-number {
+      font-family: var(--font-display); font-size: 28px; font-weight: 700;
+      color: white; display: block; letter-spacing: -0.03em;
+    }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,0.6); margin-top: 4px; display: block; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ========================================
+       MARQUEE STRIP
+    ======================================== */
+    .marquee-section {
+      background: var(--primary-dark); padding: 14px 0; overflow: hidden;
+    }
+    .marquee-track {
+      display: flex; white-space: nowrap;
+      animation: marquee 35s linear infinite;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .marquee-item {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 0 36px; font-family: var(--font-mono);
+      font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+    }
+    .marquee-dot { width: 4px; height: 4px; background: rgba(255,255,255,0.5); border-radius: 50%; }
+
+    /* ========================================
+       SECTION SHARED
+    ======================================== */
+    .section-header { max-width: 640px; margin: 0 auto 64px; text-align: center; }
+    .section-header.left { margin: 0 0 64px; text-align: left; }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3.2vw, 44px); font-weight: 700;
+      line-height: 1.15; letter-spacing: -0.025em;
+      color: var(--text); margin-bottom: 16px;
+    }
+    .section-title em { font-style: italic; color: var(--primary); }
+    .section-subtitle { font-size: 18px; font-weight: 300; color: var(--text-2); line-height: 1.65; }
+
+    /* Wave / diagonal dividers */
+    .wave-divider { display: block; line-height: 0; overflow: hidden; margin: -2px 0; }
+    .wave-divider svg { display: block; width: 100%; height: 60px; }
+
+    /* ========================================
+       TRUST BAR (Social Proof)
+    ======================================== */
+    .trust-bar {
+      background: var(--surface); padding: 48px 0;
+      border-bottom: 1px solid var(--border);
+      background-image:
+        radial-gradient(circle, rgba(11,154,159,0.06) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .trust-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+    }
+    .trust-item {
+      background: var(--surface); padding: 28px 24px;
+      text-align: center; transition: background 0.2s ease;
+    }
+    .trust-item:hover { background: var(--surface-2); }
+    .trust-number {
+      font-family: var(--font-display); font-size: 34px; font-weight: 900;
+      color: var(--primary); display: block; letter-spacing: -0.04em;
+    }
+    .trust-label { font-size: 13px; color: var(--text-2); margin-top: 6px; display: block; line-height: 1.4; }
+    @media (max-width: 768px) {
+      .trust-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ========================================
+       PROBLEMA
+    ======================================== */
+    .problema-section {
+      background: var(--bg-2); padding: 120px 0;
+      background-image:
+        radial-gradient(ellipse at 90% 50%, rgba(11,154,159,0.06) 0%, transparent 50%);
+    }
+    .problema-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .problema-img {
+      border-radius: 20px; overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.12);
+      aspect-ratio: 4 / 3;
+    }
+    .problema-img img {
+      width: 100%; height: 100%; display: block;
+      object-fit: cover; object-position: center top;
+      filter: contrast(1.04) saturate(0.9) brightness(0.97) sepia(0.04);
+    }
+    .problema-text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3vw, 40px); font-weight: 700;
+      line-height: 1.15; letter-spacing: -0.025em; margin-bottom: 20px;
+    }
+    .problema-text h2 em { font-style: italic; color: var(--primary); }
+    .problema-text p { font-size: 17px; color: var(--text-2); line-height: 1.7; margin-bottom: 20px; }
+    .problema-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .problema-list li {
+      display: flex; gap: 12px; font-size: 16px;
+      color: var(--text-2); line-height: 1.5; align-items: flex-start;
+    }
+    .cross-icon { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    @media (max-width: 900px) { .problema-cols { grid-template-columns: 1fr; } }
+
+    /* ========================================
+       VIDA DEPOIS
+    ======================================== */
+    .vida-section {
+      background: var(--primary-dark); padding: 100px 0;
+      position: relative; overflow: hidden;
+    }
+    .vida-section::before {
+      content: ''; position: absolute; top: -20%; right: -10%;
+      width: 600px; height: 600px;
+      background: radial-gradient(ellipse, rgba(255,255,255,0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .vida-section::after {
+      content: ''; position: absolute; bottom: -20%; left: -5%;
+      width: 500px; height: 500px;
+      background: radial-gradient(ellipse, rgba(11,154,159,0.2) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .vida-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; position: relative; z-index: 1; }
+    .vida-copy .section-tag { color: rgba(255,255,255,0.6); }
+    .vida-copy h2 {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3vw, 40px); font-weight: 700;
+      color: white; line-height: 1.15; letter-spacing: -0.025em;
+      margin-bottom: 20px;
+    }
+    .vida-copy h2 em { font-style: italic; color: #7EEFEE; }
+    .vida-copy p { font-size: 17px; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 32px; }
+    .vida-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
+    .vida-list li {
+      display: flex; gap: 12px; font-size: 16px;
+      color: rgba(255,255,255,0.82); line-height: 1.5;
+    }
+    .check-icon { color: #7EEFEE; flex-shrink: 0; }
+    .vida-image { border-radius: 20px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.3); }
+    .vida-image img {
+      width: 100%; display: block;
+      filter: contrast(1.04) saturate(0.88) brightness(0.94) sepia(0.04);
+    }
+    .btn-vida {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: white; color: var(--primary-dark);
+      padding: 15px 28px; border-radius: 24px; font-size: 16px; font-weight: 700;
+      text-decoration: none; transition: all 0.25s var(--ease-smooth);
+    }
+    .btn-vida:hover {
+      background: rgba(255,255,255,0.9); transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+    }
+    .btn-vida svg { width: 20px; height: 20px; fill: #25D366; }
+    @media (max-width: 900px) { .vida-cols { grid-template-columns: 1fr; } }
+
+    /* ========================================
+       ESPECIALIDADES
+    ======================================== */
+    .specs-section {
+      background: var(--surface); padding: 120px 0;
+      background-image:
+        radial-gradient(circle, rgba(11,154,159,0.06) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .specs-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 40px; }
+    .spec-card {
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: 14px; padding: 24px 20px;
+      text-align: center; transition: all 0.35s var(--ease-expo);
+      cursor: default;
+    }
+    .spec-card:hover {
+      background: var(--surface); border-color: rgba(var(--primary-rgb),0.25);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+    .spec-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: rgba(var(--primary-rgb),0.08);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 14px;
+    }
+    .spec-icon svg { width: 22px; height: 22px; stroke: var(--primary); stroke-width: 1.8; fill: none; }
+    .spec-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+    .spec-card p { font-size: 13px; color: var(--text-2); line-height: 1.45; }
+    .specs-more {
+      text-align: center; font-size: 15px; color: var(--text-2);
+    }
+    .specs-more a { color: var(--primary); text-decoration: none; font-weight: 600; }
+    .specs-more a:hover { text-decoration: underline; }
+    @media (max-width: 900px) { .specs-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .specs-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+
+    /* ========================================
+       PRICING
+    ======================================== */
+    .pricing-section {
+      background: var(--bg-2); padding: 120px 0;
+      background-image:
+        radial-gradient(ellipse at 50% 0%, rgba(11,154,159,0.07) 0%, transparent 55%);
+    }
+    .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 860px; margin: 0 auto; }
+    .plan-card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: 20px; padding: 40px 36px;
+      position: relative; overflow: hidden;
+      transition: all 0.35s var(--ease-expo);
+    }
+    .plan-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    }
+    .plan-card.featured {
+      background: var(--primary-dark);
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary), 0 24px 60px rgba(var(--primary-rgb),0.25);
+      color: white;
+    }
+    .plan-badge {
+      position: absolute; top: 20px; right: 20px;
+      background: var(--warm); color: white;
+      padding: 4px 12px; border-radius: 100px;
+      font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    }
+    .plan-card.featured::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--primary), #0DD3DA);
+    }
+    .plan-name {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 3px;
+      text-transform: uppercase; margin-bottom: 16px;
+    }
+    .plan-card.featured .plan-name { color: rgba(255,255,255,0.65); }
+    .plan-card:not(.featured) .plan-name { color: var(--text-2); }
+    .plan-price {
+      font-family: var(--font-display); font-size: 56px; font-weight: 900;
+      letter-spacing: -0.04em; line-height: 1; margin-bottom: 6px;
+    }
+    .plan-card.featured .plan-price { color: white; }
+    .plan-card:not(.featured) .plan-price { color: var(--text); }
+    .plan-period { font-size: 15px; font-weight: 400; margin-bottom: 24px; }
+    .plan-card.featured .plan-period { color: rgba(255,255,255,0.65); }
+    .plan-card:not(.featured) .plan-period { color: var(--text-2); }
+    .plan-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+    .plan-features li {
+      display: flex; gap: 10px; font-size: 15px; line-height: 1.4;
+    }
+    .plan-card.featured .plan-features li { color: rgba(255,255,255,0.85); }
+    .plan-card:not(.featured) .plan-features li { color: var(--text-2); }
+    .feat-check { color: var(--primary); flex-shrink: 0; font-weight: 700; }
+    .plan-card.featured .feat-check { color: #7EEFEE; }
+    .plan-cta {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      width: 100%; padding: 15px; border-radius: 24px;
+      font-size: 15px; font-weight: 700; text-decoration: none;
+      transition: all 0.25s var(--ease-smooth); border: none; cursor: pointer;
+      touch-action: manipulation;
+    }
+    .plan-cta-primary { background: white; color: var(--primary-dark); }
+    .plan-cta-primary:hover {
+      background: rgba(255,255,255,0.9); transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .plan-cta-primary svg { fill: #25D366; width: 18px; height: 18px; }
+    .plan-cta-secondary { background: var(--primary); color: white; }
+    .plan-cta-secondary:hover {
+      background: var(--primary-dark); transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(var(--primary-rgb),0.35);
+    }
+    @media (max-width: 700px) { .pricing-grid { grid-template-columns: 1fr; } }
+
+    /* ========================================
+       TESTIMONIALS
+    ======================================== */
+    .testimonials-section {
+      background: var(--surface); padding: 120px 0;
+      background-image:
+        radial-gradient(circle, rgba(11,154,159,0.05) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .testimonial-card {
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: 18px; padding: 36px 30px;
+      display: flex; flex-direction: column; gap: 20px;
+      position: relative; overflow: hidden;
+      transition: all 0.4s var(--ease-expo);
+    }
+    .testimonial-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 2px; background: var(--primary);
+    }
+    .testimonial-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.08);
+    }
+    .testimonial-stars { color: var(--warm); font-size: 15px; letter-spacing: 2px; }
+    .testimonial-quote {
+      font-size: 16px; line-height: 1.7; color: var(--text-2);
+      font-style: italic; flex: 1;
+    }
+    .testimonial-author { display: flex; gap: 14px; align-items: center; }
+    .testimonial-avatar {
+      width: 52px; height: 52px; border-radius: 50%;
+      object-fit: cover; border: 2px solid var(--border);
+      filter: contrast(1.04) saturate(0.9) brightness(0.98);
+    }
+    .author-info h4 { font-size: 15px; font-weight: 600; color: var(--text); }
+    .author-info p { font-size: 13px; color: var(--text-2); margin-top: 2px; }
+    @media (max-width: 900px) { .testimonials-grid { grid-template-columns: 1fr; } }
+
+    /* ========================================
+       COMPARATIVO
+    ======================================== */
+    .comparativo-section { background: var(--bg-2); padding: 120px 0; }
+    .comparativo-table {
+      width: 100%; border-collapse: separate; border-spacing: 0;
+      border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+    }
+    .comparativo-table thead th {
+      padding: 18px 28px; text-align: left;
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--text-2);
+      background: var(--surface);
+    }
+    .comparativo-table thead .col-amor {
+      background: rgba(var(--primary-rgb),0.1); color: var(--primary-dark);
+    }
+    .comparativo-table tbody tr { border-top: 1px solid var(--border); }
+    .comparativo-table tbody tr:hover { background: var(--surface); }
+    .comparativo-table td { padding: 16px 28px; font-size: 15px; color: var(--text-2); }
+    .comparativo-table td:first-child { color: var(--text); font-weight: 500; }
+    .comparativo-table .col-amor {
+      color: var(--text); font-weight: 600;
+      background: rgba(var(--primary-rgb),0.05);
+    }
+    .check { color: var(--primary); }
+    .cross { color: var(--accent); opacity: 0.6; }
+
+    /* ========================================
+       RISCO / GARANTIAS
+    ======================================== */
+    .risco-section {
+      background: var(--surface); padding: 80px 0;
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      background-image:
+        radial-gradient(circle, rgba(11,154,159,0.05) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .risco-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    .risco-item { display: flex; gap: 20px; }
+    .risco-icon-wrap {
+      width: 48px; height: 48px; flex-shrink: 0; border-radius: 12px;
+      background: rgba(var(--primary-rgb),0.1);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .risco-icon-wrap svg { width: 22px; height: 22px; stroke: var(--primary); stroke-width: 1.8; fill: none; }
+    .risco-item h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+    .risco-item p { font-size: 15px; color: var(--text-2); line-height: 1.6; }
+    @media (max-width: 900px) { .risco-grid { grid-template-columns: 1fr; } }
+
+    /* ========================================
+       FAQ
+    ======================================== */
+    .faq-section {
+      background: var(--bg); padding: 120px 0;
+      background-image:
+        radial-gradient(ellipse at 20% 80%, rgba(11,154,159,0.06) 0%, transparent 50%);
+    }
+    .faq-list { max-width: 780px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 22px 0; }
+    .faq-question {
+      display: flex; justify-content: space-between; align-items: center;
+      cursor: pointer; gap: 24px;
+      font-size: 17px; font-weight: 600; color: var(--text); line-height: 1.4;
+      transition: color 0.2s ease; background: none; border: none; text-align: left; width: 100%;
+    }
+    .faq-question:hover { color: var(--primary); }
+    .faq-icon {
+      flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%;
+      border: 1.5px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.35s var(--ease-spring); color: var(--text-2);
+      font-size: 18px; font-weight: 300;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg); background: var(--primary);
+      border-color: var(--primary); color: white;
+    }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.45s var(--ease-expo), padding 0.3s ease;
+    }
+    .faq-item.active .faq-answer { max-height: 320px; padding-top: 16px; }
+    .faq-answer p { font-size: 16px; color: var(--text-2); line-height: 1.7; }
+
+    /* ========================================
+       CTA FINAL
+    ======================================== */
+    .cta-section {
+      background: var(--surface); padding: 140px 0; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .cta-section::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background-image:
+        radial-gradient(ellipse at 50% 50%, rgba(11,154,159,0.06) 0%, transparent 60%),
+        radial-gradient(circle, rgba(11,154,159,0.04) 1px, transparent 1px);
+      background-size: auto, 28px 28px;
+      pointer-events: none;
+    }
+    .cta-content { position: relative; z-index: 1; max-width: 660px; margin: 0 auto; }
+    .cta-section .section-tag { display: block; text-align: center; }
+    .cta-headline {
+      font-family: var(--font-display);
+      font-size: clamp(30px, 3.8vw, 52px); font-weight: 700;
+      line-height: 1.1; letter-spacing: -0.025em;
+      margin-bottom: 20px; color: var(--text);
+    }
+    .cta-headline em { font-style: italic; color: var(--primary); }
+    .cta-subtext { font-size: 18px; color: var(--text-2); margin-bottom: 40px; line-height: 1.6; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+    .cta-reassurance {
+      font-size: 13px; color: var(--text-2);
+      display: flex; align-items: center; justify-content: center;
+      gap: 20px; flex-wrap: wrap;
+    }
+    .cta-reassurance span { display: flex; align-items: center; gap: 6px; }
+    .cta-reassurance svg { width: 14px; height: 14px; stroke: var(--primary); stroke-width: 2; fill: none; }
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+    footer {
+      background: var(--text); padding: 64px 0 40px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px;
+    }
+    .footer-brand-name {
+      font-family: var(--font-display); font-size: 22px; font-weight: 700;
+      color: white; margin-bottom: 12px; display: block;
+    }
+    .footer-brand-name .heart { color: var(--accent); }
+    .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.7; max-width: 280px; }
+    .footer-col h4 { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.4); margin-bottom: 16px; letter-spacing: 1.5px; text-transform: uppercase; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { font-size: 14px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s ease; }
+    .footer-col ul li a:hover { color: white; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .footer-bottom p { font-size: 13px; color: rgba(255,255,255,0.35); }
+    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+
+    /* ========================================
+       MOBILE STICKY CTA
+    ======================================== */
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 998;
+      padding: 14px 20px;
+      padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+      background: rgba(250,250,248,0.97);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid var(--border);
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.08);
+      transform: translateY(100%);
+      transition: transform 0.4s var(--ease-expo);
+    }
+    .mobile-sticky-cta.visible { transform: translateY(0); }
+    @media (max-width: 768px) { .mobile-sticky-cta { display: block; } }
+    .sticky-btn {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      width: 100%; background: #25D366; color: white;
+      padding: 15px; border-radius: 12px; font-size: 16px; font-weight: 700;
+      text-decoration: none; border: none;
+    }
+    .sticky-btn svg { width: 20px; height: 20px; fill: white; }
+  
+    /* ===== MOBILE HERO FIX v3.1 ===== */
+    @media (max-width: 768px) {
+      .hero-ctas, .hero-cta {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+      }
+      .btn-primary, .btn-ghost, .btn, .btn-whatsapp,
+      .btn-secondary, .btn-primary-light, .btn-ghost-dark,
+      .btn-cta-primary, .btn-cta-ghost, .btn-vida {
+        width: 100% !important;
+        max-width: 100% !important;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .hero-inner {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+      }
+      .hero-badge {
+        max-width: calc(100vw - 2.5rem);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 11px !important;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero-ctas, .hero-cta {
+        gap: 12px;
+      }
+      .hero-inner {
+        padding-top: 5.5rem !important;
+        padding-bottom: 2.5rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      .btn-primary, .btn-ghost, .btn, .btn-whatsapp,
+      .btn-secondary, .btn-primary-light, .btn-ghost-dark,
+      .btn-cta-primary, .btn-cta-ghost, .btn-vida {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        font-size: 15px !important;
+      }
+    }
+    /* ===== END MOBILE HERO FIX ===== */
+</style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Menu principal">
+    <a href="#" class="nav-logo">
+      <span class="heart" aria-hidden="true">♥</span> VitaSaúde
+    </a>
+    <ul class="nav-links">
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#precos">Preços</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="tel:+55313000-1234" class="nav-phone desktop-only">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.84 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.75 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      (31) 3000-1234
+    </a>
+    <a href="https://wa.me/5531300001234?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" class="nav-cta" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="nav-cta-label">Agendar pelo WhatsApp</span>
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" role="main" aria-labelledby="hero-heading">
+    <div class="hero-ghost" aria-hidden="true">SAÚDE</div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-label">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>★ Premiada Reclame Aqui 2024 · Great Place to Work Certified</span>
+        </div>
+
+        <span class="hero-eyebrow">// Campinas Centro — 37 especialidades</span>
+
+        <h1 class="hero-headline" id="hero-heading">
+          <span class="desktop-only">Consulta médica <em>amanhã.</em><br>A partir de R$ 30.</span>
+          <span class="mobile-only">Consulta<br><em>amanhã.</em> R$ 30.</span>
+        </h1>
+
+        <p class="hero-subheadline">
+          Atendimento humanizado, preços acessíveis e agenda disponível hoje.<br>
+          Sem fila de espera de semanas. Sem burocracia de convênio.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="https://wa.me/5531300001234?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20para%20hoje%20ou%20amanh%C3%A3" class="btn-whatsapp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Agendar pelo WhatsApp — agora
+          </a>
+          <a href="#precos" class="btn-ghost">Ver especialidades e preços →</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-counter data-target="518" data-suffix="">518</span>
+            <span class="stat-label">Unidades no Brasil</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-counter data-target="37" data-suffix="">37</span>
+            <span class="stat-label">Especialidades</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-counter data-target="4.8" data-suffix="★">4.8★</span>
+            <span class="stat-label">847 avaliações</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="marquee-dot"></span>518 Unidades no Brasil</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>37 Especialidades</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>+1,5 Milhão de Atendimentos/Mês</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Premiada Reclame Aqui 2024</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Great Place to Work Certified</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Consulta a partir de R$ 30</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Cartão de TODOS</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>518 Unidades no Brasil</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>37 Especialidades</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>+1,5 Milhão de Atendimentos/Mês</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Premiada Reclame Aqui 2024</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Great Place to Work Certified</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Consulta a partir de R$ 30</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Cartão de TODOS</span>
+    </div>
+  </div>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar" aria-label="Números de confiança">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item reveal reveal-delay-1">
+          <span class="trust-number" data-counter data-target="518">518</span>
+          <span class="trust-label">Unidades no Brasil</span>
+        </div>
+        <div class="trust-item reveal reveal-delay-2">
+          <span class="trust-number" data-counter data-target="37">37</span>
+          <span class="trust-label">Especialidades médicas e odontológicas</span>
+        </div>
+        <div class="trust-item reveal reveal-delay-3">
+          <span class="trust-number" data-counter data-target="15" data-suffix="M+">1,5M+</span>
+          <span class="trust-label">Atendimentos por mês</span>
+        </div>
+        <div class="trust-item reveal reveal-delay-4">
+          <span class="trust-number" data-counter data-target="4.8" data-suffix="★">4.8★</span>
+          <span class="trust-label">Avaliação média dos pacientes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="background:#ffffff;">
+      <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" fill="#F2F2EE"/>
+    </svg>
+  </div>
+
+  <!-- PROBLEMA -->
+  <section class="problema-section" aria-labelledby="problema-heading">
+    <div class="container">
+      <div class="problema-cols">
+        <div class="problema-img reveal">
+          <img src="./images/feature-consultation.jpg"
+               alt="Médico em consulta com paciente em ambiente clínico acolhedor"
+               loading="lazy" width="600" height="500">
+        </div>
+        <div class="problema-text reveal reveal-delay-1">
+          <span class="section-tag">// O Problema</span>
+          <h2 id="problema-heading">Cuidar da saúde<br><em>não precisa ser difícil.</em></h2>
+          <p>Você sabe que precisa de uma consulta. Mas entre a espera de semanas pelo convênio, a burocracia e os preços de clínicas particulares, vai deixando para depois. Até que o depois chegue.</p>
+          <ul class="problema-list">
+            <li><span class="cross-icon" aria-hidden="true">✗</span> Espera de 2 a 6 semanas pelo convênio para especialidades</li>
+            <li><span class="cross-icon" aria-hidden="true">✗</span> Consultas particulares a R$ 300–600 sem aviso prévio</li>
+            <li><span class="cross-icon" aria-hidden="true">✗</span> Precisa de encaminhamento para ver qualquer especialista</li>
+            <li><span class="cross-icon" aria-hidden="true">✗</span> Clínica longe, horário rígido, atendimento impessoal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="background:#F2F2EE;">
+      <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" fill="#087B80"/>
+    </svg>
+  </div>
+
+  <!-- VIDA DEPOIS -->
+  <section class="vida-section" aria-labelledby="vida-heading">
+    <div class="container">
+      <div class="vida-cols">
+        <div class="vida-copy reveal">
+          <span class="section-tag">// Com a VitaSaúde</span>
+          <h2 id="vida-heading">Sua saúde em ordem.<br><em>Sem burocracia.</em></h2>
+          <p>Na VitaSaúde, consulta clínica geral a R$ 30 com Cartão de TODOS. Você agenda pelo WhatsApp agora e já sai com horário para esta semana. Simples, como cuidar de si mesmo deveria ser.</p>
+          <ul class="vida-list">
+            <li><span class="check-icon" aria-hidden="true">✓</span> Consulta disponível geralmente no mesmo dia ou no dia seguinte</li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> Acesso direto a 37 especialidades — sem encaminhamento</li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> Clínica no centro de Campinas, 7h às 19h de segunda a sexta</li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> Médicos que tratam você como pessoa, não como número de prontuário</li>
+          </ul>
+          <a href="https://wa.me/5531300001234?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta" class="btn-vida" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Agendar minha consulta
+          </a>
+        </div>
+        <div class="vida-image reveal reveal-delay-1">
+          <img src="./images/feature-care.jpg"
+               alt="Médica sorrindo durante atendimento humanizado em clínica VitaSaúde"
+               loading="lazy" width="600" height="600">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="background:#087B80;">
+      <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" fill="#FFFFFF"/>
+    </svg>
+  </div>
+
+  <!-- ESPECIALIDADES -->
+  <section class="specs-section" id="especialidades" aria-labelledby="specs-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Especialidades</span>
+        <h2 class="section-title" id="specs-heading">37 áreas para cuidar<br>de <em>toda a sua saúde</em></h2>
+        <p class="section-subtitle">Desde clínica geral até especialidades avançadas — tudo em uma única clínica, no centro de Campinas.</p>
+      </div>
+      <div class="specs-grid">
+        <div class="spec-card reveal reveal-delay-1">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Clínico Geral</h3>
+          <p>Atendimento primário completo. A partir de R$ 30 com Cartão de TODOS.</p>
+        </div>
+        <div class="spec-card reveal reveal-delay-2">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Cardiologia</h3>
+          <p>Saúde do coração com eletrocardiograma e avaliação cardiovascular completa.</p>
+        </div>
+        <div class="spec-card reveal reveal-delay-3">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/></svg>
+          </div>
+          <h3>Ginecologia</h3>
+          <p>Saúde da mulher com atendimento respeitoso e preventivo.</p>
+        </div>
+        <div class="spec-card reveal reveal-delay-1">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Oftalmologia</h3>
+          <p>Saúde visual completa, incluindo exames de refração e pressão ocular.</p>
+        </div>
+        <div class="spec-card reveal reveal-delay-2">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M21 12c.552 0 1-.448 1-1V7a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v4c0 .552.448 1 1 1"/><rect x="2" y="12" width="20" height="10" rx="1"/></svg>
+          </div>
+          <h3>Odontologia</h3>
+          <p>Saúde bucal completa: limpeza, restauração e avaliação preventiva.</p>
+        </div>
+        <div class="spec-card reveal reveal-delay-3" style="align-items:center; justify-content:center; display:flex; flex-direction:column; text-align:center; background: rgba(11,154,159,0.06); border-color: rgba(11,154,159,0.2);">
+          <div class="spec-icon" style="background: rgba(11,154,159,0.15);">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <h3 style="color: var(--primary);">+32 especialidades</h3>
+          <p>Pediatria, Ortopedia, Dermatologia, Neurologia e muito mais.</p>
+        </div>
+      </div>
+      <p class="specs-more reveal">Confira todas as especialidades disponíveis em nossa unidade — <a href="https://wa.me/5531300001234?text=Quero%20saber%20quais%20especialidades%20est%C3%A3o%20dispon%C3%ADveis">pergunte pelo WhatsApp</a>.</p>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="precos" aria-labelledby="precos-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Preços</span>
+        <h2 class="section-title" id="precos-heading">Consultas acessíveis.<br><em>Qualidade que você merece.</em></h2>
+        <p class="section-subtitle">Escolha a opção que mais se adapta à sua situação. Sem taxas escondidas.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="plan-card featured reveal reveal-delay-1">
+          <div class="plan-badge">Mais popular</div>
+          <div class="plan-name">Cartão de TODOS</div>
+          <div class="plan-price">R$ 30</div>
+          <div class="plan-period">clínica geral / por consulta</div>
+          <ul class="plan-features">
+            <li><span class="feat-check">✓</span> Clínica Geral: R$ 30</li>
+            <li><span class="feat-check">✓</span> Demais especialidades: R$ 40</li>
+            <li><span class="feat-check">✓</span> Acesso a 37 especialidades</li>
+            <li><span class="feat-check">✓</span> +4.000 tipos de exames com desconto</li>
+            <li><span class="feat-check">✓</span> Sem mensalidade obrigatória</li>
+            <li><span class="feat-check">✓</span> Cartão na hora, pelo WhatsApp</li>
+          </ul>
+          <a href="https://wa.me/5531300001234?text=Ol%C3%A1%2C%20quero%20o%20Cart%C3%A3o%20de%20TODOS%20e%20agendar%20uma%20consulta" class="plan-cta plan-cta-primary" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Quero o Cartão de TODOS
+          </a>
+        </div>
+        <div class="plan-card reveal reveal-delay-2">
+          <div class="plan-name">Particular</div>
+          <div class="plan-price">R$ 60</div>
+          <div class="plan-period">1ª consulta / sem cartão</div>
+          <ul class="plan-features">
+            <li><span class="feat-check">✓</span> 1ª Consulta: R$ 60</li>
+            <li><span class="feat-check">✓</span> 2ª em diante: R$ 120</li>
+            <li><span class="feat-check">✓</span> Todas as especialidades</li>
+            <li><span class="feat-check">✓</span> Sem mensalidade</li>
+            <li><span class="feat-check">✓</span> Agendamento flexível</li>
+            <li><span class="feat-check">✓</span> Notas fiscais emitidas</li>
+          </ul>
+          <a href="https://wa.me/5531300001234?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta%20particular" class="plan-cta plan-cta-secondary" target="_blank" rel="noopener">
+            Agendar consulta particular
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section" aria-labelledby="test-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Depoimentos</span>
+        <h2 class="section-title" id="test-heading">O que dizem nossos<br><em>pacientes</em></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="testimonial-quote">"Atendimento excelente! O médico foi muito atencioso e resolveu todas as minhas dúvidas. Preço justo e localização perfeita no centro de Campinas. Recomendo muito."</blockquote>
+          <div class="testimonial-author">
+            <img src="./images/testimonial-patient-01.jpg" alt="Mariana Costa, paciente desde 2023" class="testimonial-avatar" loading="lazy" width="52" height="52">
+            <div class="author-info">
+              <h4>Mariana Costa</h4>
+              <p>Paciente desde 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="testimonial-quote">"Levei minha mãe para consulta de rotina e fiquei impressionado com a estrutura. Equipe super profissional e ambiente acolhedor. Voltaremos com certeza."</blockquote>
+          <div class="testimonial-author">
+            <img src="./images/testimonial-patient-02.jpg" alt="Pedro Henrique, paciente desde 2024" class="testimonial-avatar" loading="lazy" width="52" height="52">
+            <div class="author-info">
+              <h4>Pedro Henrique</h4>
+              <p>Paciente desde 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-3">
+          <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="testimonial-quote">"O Cartão de TODOS é sensacional! R$ 30 na clínica geral e acesso a todas as especialidades. Fui ao cardiologista sem precisar de encaminhamento. Recomendo demais!"</blockquote>
+          <div class="testimonial-author">
+            <img src="./images/testimonial-patient-03.jpg" alt="Fernanda Lima, paciente desde 2022" class="testimonial-avatar" loading="lazy" width="52" height="52">
+            <div class="author-info">
+              <h4>Fernanda Lima</h4>
+              <p>Paciente desde 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGONAL DIVIDER -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="background:#FFFFFF;">
+      <path d="M0,0 L1440,60 L1440,0 Z" fill="#F2F2EE"/>
+    </svg>
+  </div>
+
+  <!-- COMPARATIVO -->
+  <section class="comparativo-section" aria-labelledby="comp-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Comparativo</span>
+        <h2 class="section-title" id="comp-heading">VitaSaúde vs.<br><em>as alternativas</em></h2>
+        <p class="section-subtitle">Entenda a diferença na prática — porque saúde acessível não deveria ser exceção.</p>
+      </div>
+      <div class="reveal reveal-delay-1" style="overflow-x: auto;">
+        <table class="comparativo-table" aria-label="Comparativo entre VitaSaúde, convênio e particular">
+          <thead>
+            <tr>
+              <th>Critério</th>
+              <th class="col-amor">VitaSaúde</th>
+              <th>Convênio Tradicional</th>
+              <th>Particular Comum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Preço da consulta (clínica geral)</td>
+              <td class="col-amor"><span class="check">✓</span> R$ 30 c/ Cartão de TODOS</td>
+              <td>Mensalidade R$ 200–600+</td>
+              <td>R$ 200–400 por consulta</td>
+            </tr>
+            <tr>
+              <td>Tempo de espera para consulta</td>
+              <td class="col-amor"><span class="check">✓</span> Mesmo dia ou amanhã</td>
+              <td>2 a 6 semanas</td>
+              <td>Varia (geralmente dias)</td>
+            </tr>
+            <tr>
+              <td>Encaminhamento para especialista</td>
+              <td class="col-amor"><span class="check">✓</span> Não necessário</td>
+              <td><span class="cross">✗</span> Obrigatório</td>
+              <td><span class="check">✓</span> Não necessário</td>
+            </tr>
+            <tr>
+              <td>Vínculo / mensalidade</td>
+              <td class="col-amor"><span class="check">✓</span> Pague só quando usar</td>
+              <td><span class="cross">✗</span> Mensalidade fixa</td>
+              <td><span class="check">✓</span> Só quando usar</td>
+            </tr>
+            <tr>
+              <td>Agendamento via WhatsApp</td>
+              <td class="col-amor"><span class="check">✓</span> Sim, resposta em 30min</td>
+              <td><span class="cross">✗</span> App ou telefone</td>
+              <td>Varia por clínica</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVERSÃO DE RISCO -->
+  <section class="risco-section" aria-label="Sem riscos e garantias">
+    <div class="container">
+      <div class="risco-grid">
+        <div class="risco-item reveal reveal-delay-1">
+          <div class="risco-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3>Sem mensalidade</h3>
+            <p>O Cartão de TODOS não tem mensalidade obrigatória. Você paga apenas quando usa. Sem surpresas na fatura.</p>
+          </div>
+        </div>
+        <div class="risco-item reveal reveal-delay-2">
+          <div class="risco-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.84 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.75 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <h3>Resposta em 30 minutos</h3>
+            <p>Mande mensagem pelo WhatsApp e receba confirmação de horário em até 30 minutos durante o horário de funcionamento.</p>
+          </div>
+        </div>
+        <div class="risco-item reveal reveal-delay-3">
+          <div class="risco-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h3>4.8 ★ no Google — 847 avaliações</h3>
+            <p>Nossa avaliação no Google é construída consulta a consulta por pacientes reais. Você pode conferir antes de vir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="background:#FFFFFF;">
+      <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" fill="#FAFAF8"/>
+    </svg>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// FAQ</span>
+        <h2 class="section-title" id="faq-heading">Dúvidas que todo<br><em>paciente tem</em></h2>
+      </div>
+      <div class="faq-list" role="list">
+
+        <div class="faq-item reveal" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Como funciona o Cartão de TODOS?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>O Cartão de TODOS é um cartão de desconto que reduz a consulta de clínica geral para R$ 30 e demais especialidades para R$ 40. Não é plano de saúde — você paga apenas quando usa. O cartão pode ser solicitado pelo WhatsApp agora mesmo, antes da sua primeira consulta.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Preciso de encaminhamento para ver um especialista?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Não. Você pode agendar diretamente com qualquer uma das 37 especialidades disponíveis, sem precisar de encaminhamento prévio. Basta entrar em contato pelo WhatsApp e solicitar o especialista desejado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Qual o tempo de espera para a consulta?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Para clínica geral, temos habitualmente horários disponíveis no mesmo dia ou no dia seguinte. Para especialidades, o prazo médio é de 3 a 7 dias. Você pode verificar a disponibilidade real da agenda pelo WhatsApp antes de se deslocar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-3" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            A clínica aceita plano de saúde?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Atendemos por particular e com o Cartão de TODOS. Para convênios, verifique com nossa equipe os planos disponíveis em nossa unidade pelo WhatsApp — a disponibilidade pode variar por especialidade.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-4" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Como agendar minha consulta?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>A forma mais rápida é pelo WhatsApp: clique em qualquer botão desta página e você será direcionado diretamente. Respondemos em até 30 minutos durante o horário de funcionamento. Você também pode ligar para (31) 3000-1234 ou comparecer à unidade na Av. das Flores, 100 — Campinas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-content">
+        <span class="section-tag">// Próximo passo</span>
+        <h2 class="cta-headline" id="cta-heading">Sua consulta está<br>a uma mensagem<br><em>de distância.</em></h2>
+        <p class="cta-subtext">Mande "quero agendar" no WhatsApp e receba um horário disponível em 30 minutos. Sem formulários. Sem filas.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/5531300001234?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta" class="btn-primary" target="_blank" rel="noopener" style="border-radius:24px;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Agendar agora pelo WhatsApp
+          </a>
+          <a href="tel:+55313000-1234" class="btn-ghost-dark">(31) 3000-1234</a>
+        </div>
+        <div class="cta-reassurance">
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Sem mensalidade
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Resposta em 30min
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            4.8★ no Google
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-brand-name"><span class="heart" aria-hidden="true">♥</span> VitaSaúde</span>
+          <p>Rede de clínicas médicas e odontológicas comprometida com o cuidado humanizado e acessível. 518 unidades no Brasil.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Especialidades</h4>
+          <ul>
+            <li><a href="#">Clínico Geral</a></li>
+            <li><a href="#">Cardiologia</a></li>
+            <li><a href="#">Oftalmologia</a></li>
+            <li><a href="#">Odontologia</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#">Agendamento</a></li>
+            <li><a href="#">Exames</a></li>
+            <li><a href="#">Cartão de TODOS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="tel:+55313000-1234">(31) 3000-1234</a></li>
+            <li><a href="#">Av. das Flores, 100</a></li>
+            <li><a href="#">Campinas, SP</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 VitaSaúde · CNPJ: 00.000.000/0001-00 · VITASAÚDE LTDA</p>
+        <p>Política de Privacidade · Termos de Uso</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-sticky-cta" id="mobileCTA" aria-label="Agendar consulta pelo WhatsApp">
+    <a href="https://wa.me/5531300001234?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta" class="sticky-btn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Agendar consulta — WhatsApp
+    </a>
+  </div>
+
+  <script>
+    // ===== NAVBAR SCROLL =====
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    // ===== REVEAL ON SCROLL =====
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ===== ANIMATED COUNTERS =====
+    function animateCounter(el) {
+      const target = parseFloat(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      const prefix = el.dataset.prefix || '';
+      const duration = 1600;
+      const start = performance.now();
+      const ease = t => 1 - Math.pow(1 - t, 4);
+      const update = (now) => {
+        const p = Math.min((now - start) / duration, 1);
+        const v = ease(p) * target;
+        el.textContent = prefix + (Number.isInteger(target)
+          ? Math.floor(v).toLocaleString('pt-BR')
+          : v.toFixed(1)) + suffix;
+        if (p < 1) requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    }
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && !e.target.dataset.animated) {
+          e.target.dataset.animated = 'true';
+          animateCounter(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-counter]').forEach(el => counterObs.observe(el));
+
+    // ===== FAQ ACCORDION =====
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('active');
+        document.querySelectorAll('.faq-item.active').forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // ===== MOBILE STICKY CTA =====
+    const mobileCTA = document.getElementById('mobileCTA');
+    const finalCTA = document.querySelector('.cta-section');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      if (scrolled > 0.25) mobileCTA.classList.add('visible');
+      if (finalCTA && finalCTA.getBoundingClientRect().top < window.innerHeight * 0.8) {
+        mobileCTA.classList.remove('visible');
+      }
+    }, { passive: true });
+  </script>
+</body>
+</html>
