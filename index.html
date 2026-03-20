@@ -515,8 +515,8 @@
   .showcase-arrow.disabled { opacity: 0.25; pointer-events: none; }
 
   .showcase-track {
-    display: flex; gap: 36px; align-items: flex-end;
-    overflow-x: auto; scroll-behavior: smooth;
+    display: flex; gap: 36px; align-items: flex-start;
+    overflow-x: auto; overflow-y: hidden; scroll-behavior: smooth;
     scrollbar-width: none; -ms-overflow-style: none;
     padding-right: 60px;
     cursor: grab;
@@ -527,8 +527,6 @@
   .showcase-card {
     flex: 0 0 auto; width: clamp(220px, 20vw, 300px);
     position: relative; text-decoration: none;
-    /* Reserve space for the upward lift so the track height never shifts */
-    padding-top: 8px;
   }
 
   /* Phone mockup frame */
@@ -539,12 +537,11 @@
     background: #1A1817;
     border: 3px solid #2A2725;
     box-shadow: 0 8px 40px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,255,255,0.04);
-    transition: border-color .35s ease, transform .4s cubic-bezier(.25,.46,.45,.94);
-    will-change: transform;
+    transition: border-color .35s ease, box-shadow .4s ease;
   }
   .showcase-card:hover .showcase-phone {
     border-color: rgba(230,49,39,0.35);
-    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(230,49,39,0.12);
   }
 
   /* Notch */
