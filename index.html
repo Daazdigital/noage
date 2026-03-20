@@ -515,7 +515,7 @@
   .showcase-arrow.disabled { opacity: 0.25; pointer-events: none; }
 
   .showcase-track {
-    display: flex; gap: 36px; align-items: flex-start;
+    display: flex; gap: 36px; align-items: flex-end;
     overflow-x: auto; scroll-behavior: smooth;
     scrollbar-width: none; -ms-overflow-style: none;
     padding-right: 60px;
@@ -527,6 +527,8 @@
   .showcase-card {
     flex: 0 0 auto; width: clamp(220px, 20vw, 300px);
     position: relative; text-decoration: none;
+    /* Reserve space for the upward lift so the track height never shifts */
+    padding-top: 8px;
   }
 
   /* Phone mockup frame */
