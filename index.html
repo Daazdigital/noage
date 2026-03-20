@@ -277,18 +277,20 @@
     letter-spacing: 2px; color: var(--white); margin-bottom: 64px; max-width: 640px; line-height: 1.05;
   }
   .steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: #1F1D1C; }
-  .step { background: var(--black); padding: 44px 32px; }
+  .step { background: var(--black); padding: 44px 32px; position: relative; overflow: hidden; }
+  .step-icon { position: absolute; top: -4px; right: -4px; width: 110px; height: 110px; opacity: 0.22; pointer-events: none; }
+  .step-icon svg { width: 100%; height: 100%; stroke: var(--red); stroke-width: 1.2; fill: none; }
   .step-num {
     font-family: var(--font-display); font-size: 64px; letter-spacing: 2px;
-    color: transparent; -webkit-text-stroke: 1px #252220;
-    line-height: 1; margin-bottom: 28px;
+    color: transparent; -webkit-text-stroke: 2px rgba(230,49,39,0.4);
+    line-height: 1; margin-bottom: 28px; position: relative; z-index: 1;
   }
-  .step-divider { width: 28px; height: 2px; background: var(--red); margin-bottom: 20px; }
+  .step-divider { width: 28px; height: 2px; background: var(--red); margin-bottom: 20px; position: relative; z-index: 1; }
   .step-title {
     font-family: var(--font-display); font-size: 22px; letter-spacing: 1px;
-    color: var(--white); margin-bottom: 12px;
+    color: var(--white); margin-bottom: 12px; position: relative; z-index: 1;
   }
-  .step-desc { font-size: 14px; color: var(--mid-gray); line-height: 1.7; }
+  .step-desc { font-size: 14px; color: var(--mid-gray); line-height: 1.7; position: relative; z-index: 1; }
 
   /* COMPARE — offwhite */
   .compare { background: var(--offwhite); }
@@ -888,24 +890,28 @@
   </div>
   <div class="steps">
     <div class="step reveal">
+      <div class="step-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg></div>
       <div class="step-num">01</div>
       <div class="step-divider"></div>
       <div class="step-title">VOCÊ DESCREVE</div>
       <p class="step-desc">Conta o que precisa em texto, áudio ou formulário. Sem template complicado. Sem briefing de 40 campos.</p>
     </div>
     <div class="step reveal reveal-delay-1">
+      <div class="step-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
       <div class="step-num">02</div>
       <div class="step-divider"></div>
       <div class="step-title">A NOAGE PRODUZ</div>
       <p class="step-desc">AI + curadoria humana trabalham juntos. Velocidade de máquina com julgamento de especialista.</p>
     </div>
     <div class="step reveal reveal-delay-2">
+      <div class="step-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
       <div class="step-num">03</div>
       <div class="step-divider"></div>
       <div class="step-title">VOCÊ RECEBE</div>
       <p class="step-desc">Entrega em até 24 horas. Pronto pra usar ou pronto pra ajustar — você escolhe.</p>
     </div>
     <div class="step reveal reveal-delay-3">
+      <div class="step-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
       <div class="step-num">04</div>
       <div class="step-divider"></div>
       <div class="step-title">ITERA E APROVA</div>

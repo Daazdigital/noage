@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#E63127">
+<title>NOAGE — Planos e Preços | Sites e Landing Pages</title>
+<meta name="description" content="Landing page essencial a partir de R$99/mês. Site institucional completo a partir de R$499/mês. Sem contrato, cancele quando quiser.">
+<link rel="canonical" href="https://noage.com.br/precos">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0D0D0D;
+    --white: #FFFFFF;
+    --red: #E63127;
+    --red-light: #FF6B63;
+    --red-dark: #B8201A;
+    --red-rgb: 230,49,39;
+    --offwhite: #F5F2EE;
+    --warm-gray: #E8E4DF;
+    --mid-gray: #9B9590;
+    --charcoal: #2A2725;
+    --dark-surface: #1A1817;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--offwhite); color: var(--charcoal); font-family: var(--font-body); font-weight: 400; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; }
+  button { cursor: pointer; border: none; background: none; font-family: inherit; }
+  a { text-decoration: none; color: inherit; }
+
+  /* NAV */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 24px 60px; background: rgba(245,242,238,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--warm-gray); }
+  .logo { display: inline-flex; align-items: center; }
+  .logo img { height: 44px; width: auto; display: block; }
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+  .nav-link { font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--charcoal); transition: color 0.2s; }
+  .nav-link:hover { color: var(--red); }
+  .nav-cta { background: var(--red); color: var(--white); font-family: var(--font-body); font-weight: 700; font-size: 13px; letter-spacing: 0.5px; padding: 11px 24px; border-radius: 4px; text-transform: uppercase; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--red-dark); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--charcoal); transition: all 0.3s; }
+  .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+  /* HERO */
+  .pricing-hero { padding: 160px 60px 80px; text-align: center; background: var(--offwhite); position: relative; }
+  .pricing-hero::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(0,0,0,0.02) 1px, transparent 1px); background-size: 28px 28px; pointer-events: none; }
+  .pricing-hero > * { position: relative; z-index: 1; }
+  .pricing-eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .pricing-eyebrow::before { content: '//'; opacity: 0.5; }
+  .pricing-headline { font-family: var(--font-display); font-size: clamp(44px, 6vw, 80px); letter-spacing: 3px; line-height: 0.95; color: var(--black); margin-bottom: 20px; }
+  .pricing-headline .red { color: var(--red); }
+  .pricing-sub { font-size: 17px; line-height: 1.7; color: var(--mid-gray); max-width: 560px; margin: 0 auto; }
+
+  /* PRICING CARDS */
+  .pricing-section { padding: 0 60px 100px; position: relative; }
+  .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 960px; margin: 0 auto; }
+  .pricing-card { background: var(--white); border: 1px solid var(--warm-gray); border-radius: 16px; padding: 48px 40px; position: relative; overflow: hidden; transition: transform 0.3s var(--ease-expo), box-shadow 0.3s var(--ease-smooth); }
+  .pricing-card:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(0,0,0,0.08); }
+  .pricing-card.featured { background: var(--dark-surface); border-color: var(--red); }
+  .pricing-card.featured::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--red); }
+  .pricing-badge { display: inline-block; font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px; }
+  .pricing-card:not(.featured) .pricing-badge { background: var(--red-muted); color: var(--red); }
+  .pricing-card.featured .pricing-badge { background: rgba(230,49,39,0.2); color: var(--red-light); }
+  .pricing-plan-name { font-family: var(--font-display); font-size: 28px; letter-spacing: 1.5px; margin-bottom: 12px; }
+  .pricing-card:not(.featured) .pricing-plan-name { color: var(--black); }
+  .pricing-card.featured .pricing-plan-name { color: var(--white); }
+  .pricing-plan-desc { font-size: 15px; line-height: 1.65; margin-bottom: 32px; }
+  .pricing-card:not(.featured) .pricing-plan-desc { color: var(--mid-gray); }
+  .pricing-card.featured .pricing-plan-desc { color: rgba(255,255,255,0.6); }
+
+  .pricing-price-row { margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--warm-gray); }
+  .pricing-card.featured .pricing-price-row { border-bottom-color: rgba(255,255,255,0.1); }
+  .pricing-amount { font-family: var(--font-display); font-size: clamp(48px, 5vw, 64px); letter-spacing: 2px; line-height: 1; }
+  .pricing-card:not(.featured) .pricing-amount { color: var(--black); }
+  .pricing-card.featured .pricing-amount { color: var(--white); }
+  .pricing-amount .currency { font-size: 0.5em; vertical-align: super; margin-right: 4px; }
+  .pricing-period { font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--mid-gray); margin-top: 8px; }
+  .pricing-total { font-size: 13px; color: var(--mid-gray); margin-top: 4px; }
+
+  .pricing-features { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
+  .pricing-features li { font-size: 14px; display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+  .pricing-card:not(.featured) .pricing-features li { color: var(--charcoal); }
+  .pricing-card.featured .pricing-features li { color: rgba(255,255,255,0.85); }
+  .pricing-features li svg { flex-shrink: 0; margin-top: 2px; }
+
+  .pricing-cta { display: block; width: 100%; text-align: center; font-family: var(--font-body); font-weight: 700; font-size: 14px; padding: 16px 24px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; transition: background 0.2s, transform 0.2s; touch-action: manipulation; }
+  .pricing-card:not(.featured) .pricing-cta { background: var(--black); color: var(--white); }
+  .pricing-card:not(.featured) .pricing-cta:hover { background: var(--red); }
+  .pricing-card.featured .pricing-cta { background: var(--red); color: var(--white); }
+  .pricing-card.featured .pricing-cta:hover { background: var(--red-dark); }
+
+  .pricing-note { text-align: center; margin-top: 16px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; }
+  .pricing-card:not(.featured) .pricing-note { color: var(--mid-gray); }
+  .pricing-card.featured .pricing-note { color: rgba(255,255,255,0.4); }
+
+  /* WHAT'S INCLUDED */
+  .included-section { background: var(--white); padding: 100px 60px; }
+  .included-headline { font-family: var(--font-display); font-size: clamp(32px, 4vw, 48px); letter-spacing: 2px; color: var(--black); margin-bottom: 48px; text-align: center; }
+  .included-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 960px; margin: 0 auto; }
+  .included-item { text-align: center; padding: 32px 24px; }
+  .included-icon { width: 56px; height: 56px; background: var(--red-muted); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+  .included-title { font-family: var(--font-display); font-size: 20px; letter-spacing: 1px; color: var(--black); margin-bottom: 8px; }
+  .included-desc { font-size: 14px; color: var(--mid-gray); line-height: 1.6; }
+
+  /* GUARANTEE */
+  .guarantee-section { background: var(--dark-surface); padding: 80px 60px; text-align: center; }
+  .guarantee-inner { max-width: 640px; margin: 0 auto; }
+  .guarantee-headline { font-family: var(--font-display); font-size: clamp(32px, 4vw, 48px); letter-spacing: 2px; color: var(--white); margin-bottom: 20px; }
+  .guarantee-headline em { color: var(--red); font-style: normal; }
+  .guarantee-body { font-size: 16px; line-height: 1.75; color: var(--mid-gray); margin-bottom: 32px; }
+  .guarantee-items { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+  .guarantee-item { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--mid-gray); }
+
+  /* CTA */
+  .pricing-final-cta { background: var(--offwhite); padding: 80px 60px; text-align: center; }
+  .pricing-final-headline { font-family: var(--font-display); font-size: clamp(36px, 4.5vw, 56px); letter-spacing: 2px; color: var(--black); margin-bottom: 20px; }
+  .pricing-final-headline .red { color: var(--red); }
+  .pricing-final-sub { font-size: 16px; color: var(--mid-gray); line-height: 1.7; margin-bottom: 32px; }
+  .pricing-final-btn { background: var(--red); color: var(--white); font-family: var(--font-body); font-weight: 700; font-size: 14px; padding: 18px 40px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; transition: background 0.2s; display: inline-flex; align-items: center; gap: 10px; touch-action: manipulation; }
+  .pricing-final-btn:hover { background: var(--red-dark); }
+  .pricing-final-note { margin-top: 14px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--mid-gray); }
+
+  /* FOOTER */
+  footer { background: var(--dark-surface); padding: 48px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #252220; }
+  .footer-logo img { height: 26px; width: auto; display: block; filter: brightness(0) invert(1); }
+  .footer-tagline { font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--mid-gray); margin-top: 6px; }
+  .footer-links { display: flex; gap: 28px; }
+  .footer-links a { font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--mid-gray); transition: color 0.2s; }
+  .footer-links a:hover { color: var(--white); }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+  .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.75s var(--ease-expo), transform 0.75s var(--ease-expo); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.12s; }
+  .reveal-delay-2 { transition-delay: 0.24s; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    nav { padding: 20px 28px; }
+    .nav-links { display: none; position: fixed; inset: 0; top: 60px; background: var(--offwhite); flex-direction: column; align-items: center; justify-content: center; gap: 32px; z-index: 8000; }
+    .nav-links.open { display: flex; }
+    .nav-links .nav-link { font-size: 14px; }
+    .hamburger { display: flex; }
+    .nav-cta-desktop { display: none; }
+    .pricing-hero, section, .included-section, .guarantee-section, .pricing-final-cta, footer { padding-left: 28px; padding-right: 28px; }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 480px; }
+    .included-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 20px; text-align: center; }
+    .footer-links { flex-wrap: wrap; justify-content: center; }
+    .guarantee-items { flex-direction: column; align-items: center; }
+  }
+  /* MINI TESTIMONIALS */
+  .mini-proof { background: var(--offwhite); padding: 72px 60px; }
+  .mini-proof-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 32px; text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .mini-proof-label::before { content: '//'; opacity: 0.5; }
+  .mini-proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 960px; margin: 0 auto; }
+  .mini-card { background: var(--white); border: 1px solid var(--warm-gray); border-radius: 10px; padding: 28px 24px; position: relative; overflow: hidden; }
+  .mini-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--red), transparent); }
+  .mini-stars { display: flex; gap: 2px; margin-bottom: 12px; }
+  .mini-star { color: var(--red); font-size: 10px; }
+  .mini-quote { font-size: 14px; line-height: 1.65; color: var(--charcoal); font-style: italic; margin-bottom: 16px; }
+  .mini-author { display: flex; align-items: center; gap: 10px; }
+  .mini-avatar { width: 36px; height: 36px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+  .mini-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .mini-name { font-family: var(--font-display); font-size: 13px; letter-spacing: 1px; color: var(--black); }
+  .mini-role { font-family: var(--font-mono); font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--mid-gray); }
+
+  @media (max-width: 900px) {
+    .mini-proof { padding: 60px 28px; }
+    .mini-proof-grid { grid-template-columns: 1fr; max-width: 480px; }
+  }
+
+  @media (max-width: 480px) {
+    .pricing-hero { padding: 140px 20px 60px; }
+    .pricing-section { padding: 0 20px 60px; }
+    .pricing-card { padding: 36px 28px; }
+    .mini-proof { padding: 48px 20px; }
+  }
+
+  /* FLOATING WHATSAPP */
+  .whatsapp-float { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.35); z-index: 9500; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s; touch-action: manipulation; }
+  .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+  .whatsapp-float svg { width: 28px; height: 28px; fill: #FFFFFF; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo"><img src="images/index/logo.webp" alt="NOAGE"></a>
+  <div class="nav-links">
+    <a href="sites-e-landing-pages.html" class="nav-link">Servi&ccedil;os</a>
+    <a href="sites-e-landing-pages.html#portfolio" class="nav-link">Portfolio</a>
+    <a href="sites-e-landing-pages.html#faq" class="nav-link">FAQ</a>
+  </div>
+  <a href="https://wa.me/5519998607474?text=Ol%C3%A1%2C%20vi%20os%20planos%20e%20quero%20come%C3%A7ar" target="_blank" rel="noopener" class="nav-cta nav-cta-desktop">Falar no WhatsApp</a>
+  <button class="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<div class="pricing-hero">
+  <p class="pricing-eyebrow reveal">Planos e pre&ccedil;os</p>
+  <h1 class="pricing-headline reveal">INVISTA NO QUE<br><span class="red">CONVERTE.</span></h1>
+  <p class="pricing-sub reveal">Pre&ccedil;o justo, entrega r&aacute;pida, qualidade premium. Sem surpresa, sem contrato de fidelidade. Cancele quando quiser.</p>
+</div>
+
+<!-- PRICING CARDS -->
+<section class="pricing-section">
+  <div class="pricing-grid">
+
+    <!-- ESSENCIAL -->
+    <div class="pricing-card reveal">
+      <span class="pricing-badge">Essencial</span>
+      <div class="pricing-plan-name">LANDING PAGE ESSENCIAL</div>
+      <p class="pricing-plan-desc">P&aacute;gina de capta&ccedil;&atilde;o com 1 a 3 se&ccedil;&otilde;es. Ideal para capturar leads, validar ofertas ou lan&ccedil;ar servi&ccedil;os rapidamente.</p>
+
+      <div class="pricing-price-row">
+        <div class="pricing-amount"><span class="currency">R$</span>99<span style="font-size:0.5em">/m&ecirc;s</span></div>
+        <div class="pricing-period">Por 3 meses &middot; Total R$297</div>
+        <div class="pricing-total">Cancele a qualquer momento</div>
+      </div>
+
+      <ul class="pricing-features">
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Hero section de alto impacto</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> CTA estrat&eacute;gico de convers&atilde;o</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Formul&aacute;rio de captura de leads</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Se&ccedil;&atilde;o de depoimentos</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Cria&ccedil;&atilde;o de copy/textos</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Google Analytics 4</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Google Tag Manager</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 100% responsivo (mobile-first)</li>
+      </ul>
+
+      <a href="https://wa.me/5519998607474?text=Ol%C3%A1%2C%20quero%20contratar%20a%20Landing%20Page%20Essencial" target="_blank" rel="noopener" class="pricing-cta">Quero minha landing page</a>
+      <p class="pricing-note">Entrega em 24&ndash;48h &middot; Revis&otilde;es ilimitadas</p>
+    </div>
+
+    <!-- COMPLETA -->
+    <div class="pricing-card featured reveal reveal-delay-1">
+      <span class="pricing-badge">Mais popular</span>
+      <div class="pricing-plan-name">P&Aacute;GINA INSTITUCIONAL COMPLETA</div>
+      <p class="pricing-plan-desc">Site completo com at&eacute; 15 p&aacute;ginas. Personaliza&ccedil;&atilde;o total de design, conte&uacute;do e estrutura para presen&ccedil;a digital robusta.</p>
+
+      <div class="pricing-price-row">
+        <div class="pricing-amount"><span class="currency">R$</span>499<span style="font-size:0.5em">/m&ecirc;s</span></div>
+        <div class="pricing-period">Por 3 meses &middot; Total R$1.497</div>
+        <div class="pricing-total">Cancele a qualquer momento</div>
+      </div>
+
+      <ul class="pricing-features">
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Tudo da Landing Page Essencial</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> At&eacute; 15 p&aacute;ginas personalizadas</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Personaliza&ccedil;&atilde;o completa de design</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> SEO on-page em todas as p&aacute;ginas</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Integra&ccedil;&atilde;o WhatsApp + redes sociais</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Google Analytics 4 + GTM</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Revis&otilde;es ilimitadas</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Suporte priorit&aacute;rio</li>
+      </ul>
+
+      <a href="https://wa.me/5519998607474?text=Ol%C3%A1%2C%20quero%20contratar%20a%20P%C3%A1gina%20Institucional%20Completa" target="_blank" rel="noopener" class="pricing-cta">Quero meu site completo</a>
+      <p class="pricing-note">Entrega em 5&ndash;10 dias &middot; Revis&otilde;es ilimitadas</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MINI TESTIMONIALS -->
+<section class="mini-proof">
+  <div class="mini-proof-label reveal">Quem j&aacute; confiou</div>
+  <div class="mini-proof-grid">
+    <div class="mini-card reveal">
+      <div class="mini-stars"><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span></div>
+      <p class="mini-quote">&ldquo;Faz acontecer r&aacute;pido, &eacute; orientado a a&ccedil;&atilde;o e experimenta&ccedil;&atilde;o. Deixou um legado real no nosso time.&rdquo;</p>
+      <div class="mini-author">
+        <div class="mini-avatar"><img src="images/testimonials/Natanael.png" alt="Natanael Santos" loading="lazy"></div>
+        <div>
+          <div class="mini-name">NATANAEL SANTOS</div>
+          <div class="mini-role">CEO &mdash; Seventech</div>
+        </div>
+      </div>
+    </div>
+    <div class="mini-card reveal reveal-delay-1">
+      <div class="mini-stars"><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span></div>
+      <p class="mini-quote">&ldquo;Entrega consistentemente acima do esperado, sempre com qualidade e dentro do prazo.&rdquo;</p>
+      <div class="mini-author">
+        <div class="mini-avatar"><img src="images/testimonials/Leandro.png" alt="Leandro Trevisan" loading="lazy"></div>
+        <div>
+          <div class="mini-name">LEANDRO TREVISAN</div>
+          <div class="mini-role">CEO &mdash; Somnis</div>
+        </div>
+      </div>
+    </div>
+    <div class="mini-card reveal reveal-delay-2">
+      <div class="mini-stars"><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span></div>
+      <p class="mini-quote">&ldquo;Entendeu nosso neg&oacute;cio a fundo e entregou resultados reais. Parceiro estrat&eacute;gico.&rdquo;</p>
+      <div class="mini-author">
+        <div class="mini-avatar"><img src="images/testimonials/Julia.png" alt="Julia Soriano" loading="lazy"></div>
+        <div>
+          <div class="mini-name">JULIA SORIANO</div>
+          <div class="mini-role">Fundadora &mdash; Guerini e Soriano</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE ESTÁ INCLUÍDO -->
+<section class="included-section">
+  <h2 class="included-headline reveal">O QUE EST&Aacute; INCLU&Iacute;DO EM TODOS OS PLANOS</h2>
+  <div class="included-grid">
+    <div class="included-item reveal">
+      <div class="included-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <div class="included-title">DESIGN PREMIUM</div>
+      <p class="included-desc">Cada p&aacute;gina &eacute; &uacute;nica. Design moderno, profissional e alinhado &agrave; identidade do seu neg&oacute;cio.</p>
+    </div>
+    <div class="included-item reveal reveal-delay-1">
+      <div class="included-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      </div>
+      <div class="included-title">COPY ESTRAT&Eacute;GICO</div>
+      <p class="included-desc">Textos escritos para converter. Headline, CTA, objection handling &mdash; tudo pensado para o seu p&uacute;blico.</p>
+    </div>
+    <div class="included-item reveal reveal-delay-2">
+      <div class="included-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <div class="included-title">ANALYTICS + GTM</div>
+      <p class="included-desc">Google Analytics 4 e Tag Manager configurados. Saiba quem visita, de onde vem e o que faz.</p>
+    </div>
+    <div class="included-item reveal">
+      <div class="included-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+      </div>
+      <div class="included-title">MOBILE-FIRST</div>
+      <p class="included-desc">Projetado primeiro para celular. Funciona perfeitamente em qualquer dispositivo e tamanho de tela.</p>
+    </div>
+    <div class="included-item reveal reveal-delay-1">
+      <div class="included-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div class="included-title">REVIS&Otilde;ES ILIMITADAS</div>
+      <p class="included-desc">Ajustamos at&eacute; voc&ecirc; aprovar. Sem limite de rodadas, sem custo adicional por altera&ccedil;&atilde;o.</p>
+    </div>
+    <div class="included-item reveal reveal-delay-2">
+      <div class="included-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <div class="included-title">ENTREGA R&Aacute;PIDA</div>
+      <p class="included-desc">LPs em 24&ndash;48h. Sites completos em 5&ndash;10 dias. 10x mais r&aacute;pido que qualquer ag&ecirc;ncia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="guarantee-section">
+  <div class="guarantee-inner reveal">
+    <h2 class="guarantee-headline">RISCO <em>ZERO.</em></h2>
+    <p class="guarantee-body">Voc&ecirc; n&atilde;o precisa confiar de olhos fechados. Cancele quando quiser, sem multa. Revis&otilde;es ilimitadas at&eacute; ficar perfeito. Se n&atilde;o fizer sentido, voc&ecirc; sai sem pagar mais nada.</p>
+    <div class="guarantee-items">
+      <div class="guarantee-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        Sem contrato de fidelidade
+      </div>
+      <div class="guarantee-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        Cancele quando quiser
+      </div>
+      <div class="guarantee-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        Revis&otilde;es ilimitadas
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="pricing-final-cta">
+  <h2 class="pricing-final-headline reveal">PRONTO PRA TER A P&Aacute;GINA QUE SEU<br><span class="red">NEG&Oacute;CIO MERECE?</span></h2>
+  <p class="pricing-final-sub reveal">Descreva o que voc&ecirc; precisa. A gente responde em horas e come&ccedil;a a produzir no mesmo dia.</p>
+  <a href="https://wa.me/5519998607474?text=Ol%C3%A1%2C%20quero%20come%C3%A7ar%20meu%20projeto%20com%20a%20NOAGE" target="_blank" rel="noopener" class="pricing-final-btn reveal">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Falar no WhatsApp
+  </a>
+  <p class="pricing-final-note reveal">Sem compromisso &middot; Resposta em at&eacute; 2h</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-logo"><img src="images/index/logo.webp" alt="NOAGE"></div>
+    <div class="footer-tagline">Marketing que funciona. Sem ag&ecirc;ncia.</div>
+  </div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="sites-e-landing-pages.html">Servi&ccedil;os</a>
+    <a href="sites-e-landing-pages.html#portfolio">Portfolio</a>
+    <a href="https://wa.me/5519998607474" target="_blank" rel="noopener">(19) 99860-7474</a>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/5519998607474?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20pre%C3%A7os%20e%20quero%20saber%20mais" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // Hamburger
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    this.classList.toggle('active');
+    this.setAttribute('aria-expanded', this.classList.contains('active'));
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+
+  // Reveal on scroll
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
