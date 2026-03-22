@@ -232,21 +232,6 @@
   .step-title { font-family: var(--font-display); font-size: 22px; letter-spacing: 1px; color: var(--white); margin-bottom: 12px; position: relative; z-index: 1; }
   .step-desc { font-size: 14px; color: var(--mid-gray); line-height: 1.7; position: relative; z-index: 1; }
 
-  /* Desktop browser-chrome mockup cards */
-  .showcase-card--desktop { width: clamp(800px, 77vw, 1100px); }
-  .showcase-desktop { position: relative; border-radius: 10px 10px 6px 6px; overflow: hidden; background: #1A1817; border: 2px solid #2A2725; box-shadow: 0 8px 40px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,255,255,0.04); transition: border-color .35s ease, box-shadow .4s ease; display: flex; flex-direction: column; height: clamp(476px, 43.3vw, 649px); }
-  .showcase-card:hover .showcase-desktop { border-color: rgba(230,49,39,0.35); box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(230,49,39,0.12); }
-  .showcase-browser-bar { background: #252220; padding: 10px 14px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); }
-  .showcase-browser-dots { display: flex; gap: 5px; flex-shrink: 0; }
-  .showcase-browser-dots span { width: 8px; height: 8px; border-radius: 50%; }
-  .showcase-browser-dots span:nth-child(1) { background: #FF5F57; }
-  .showcase-browser-dots span:nth-child(2) { background: #FEBC2E; }
-  .showcase-browser-dots span:nth-child(3) { background: #28C840; }
-  .showcase-browser-url { flex: 1; background: rgba(255,255,255,0.05); border-radius: 4px; padding: 4px 10px; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.5px; color: var(--mid-gray); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .showcase-desktop-img { display: block; width: 100%; flex: 1; min-height: 0; object-fit: cover; object-position: top; }
-  .showcase-desktop::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(to top, rgba(13,13,13,0.9) 0%, transparent 100%); pointer-events: none; z-index: 1; opacity: 0; transition: opacity .35s ease; }
-  .showcase-card:hover .showcase-desktop::after { opacity: 1; }
-
   /* SHOWCASE */
   .showcase { background: var(--dark-surface); padding: 100px 0 100px 60px; overflow: hidden; position: relative; }
   .showcase-header { display: flex; justify-content: space-between; align-items: flex-end; padding-right: 60px; margin-bottom: 56px; }
@@ -280,6 +265,21 @@
   .showcase-progress-bar { flex: 1; height: 2px; background: rgba(255,255,255,0.08); border-radius: 1px; overflow: hidden; }
   .showcase-progress-fill { height: 100%; background: var(--red); border-radius: 1px; transition: width 0.3s ease; width: 10%; }
   .showcase-progress-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--mid-gray); flex-shrink: 0; }
+
+  /* Desktop browser-chrome mockup cards */
+  .showcase-card--desktop { width: clamp(800px, 77vw, 1100px); }
+  .showcase-desktop { position: relative; border-radius: 10px 10px 6px 6px; overflow: hidden; background: #1A1817; border: 2px solid #2A2725; box-shadow: 0 8px 40px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,255,255,0.04); transition: border-color .35s ease, box-shadow .4s ease; display: flex; flex-direction: column; height: clamp(476px, 43.3vw, 649px); }
+  .showcase-card:hover .showcase-desktop { border-color: rgba(230,49,39,0.35); box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(230,49,39,0.12); }
+  .showcase-browser-bar { background: #252220; padding: 10px 14px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .showcase-browser-dots { display: flex; gap: 5px; flex-shrink: 0; }
+  .showcase-browser-dots span { width: 8px; height: 8px; border-radius: 50%; }
+  .showcase-browser-dots span:nth-child(1) { background: #FF5F57; }
+  .showcase-browser-dots span:nth-child(2) { background: #FEBC2E; }
+  .showcase-browser-dots span:nth-child(3) { background: #28C840; }
+  .showcase-browser-url { flex: 1; background: rgba(255,255,255,0.05); border-radius: 4px; padding: 4px 10px; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.5px; color: var(--mid-gray); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .showcase-desktop-img { display: block; width: 100%; flex: 1; min-height: 0; object-fit: cover; object-position: top; }
+  .showcase-desktop::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(to top, rgba(13,13,13,0.9) 0%, transparent 100%); pointer-events: none; z-index: 1; opacity: 0; transition: opacity .35s ease; }
+  .showcase-card:hover .showcase-desktop::after { opacity: 1; }
 
   /* COMPARE */
   .compare { background: var(--offwhite); }
@@ -347,8 +347,6 @@
   .founder-divider { width: 40px; height: 3px; background: var(--red); margin-bottom: 28px; }
   .founder-bio { font-size: 16px; line-height: 1.8; color: var(--mid-gray); margin-bottom: 32px; }
   .founder-bio strong { color: var(--charcoal); font-weight: 500; }
-  .founder-linkedin { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--charcoal); border-bottom: 1px solid var(--warm-gray); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
-  .founder-linkedin:hover { color: var(--red); border-color: var(--red); }
   .founder-logos { margin-top: 44px; padding-top: 32px; border-top: 1px solid var(--warm-gray); }
   .founder-logos-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--mid-gray); margin-bottom: 16px; display: block; }
   .founder-logos img { max-width: 100%; height: auto; max-height: 72px; opacity: 0.45; filter: grayscale(1); transition: opacity 0.25s; }
@@ -915,7 +913,6 @@
       <div class="founder-divider"></div>
       <p class="founder-bio">Estrategista de produto e marketing que construiu carreira liderando times e lan&ccedil;ando produtos em empresas como <strong>iFood, Ambev, P&G, Conta Azul e 3 Cora&ccedil;&otilde;es</strong>. Formado em Engenharia Mec&acirc;nica pela UNICAMP, com MBA pela University of Strathclyde (UK).</p>
       <p class="founder-bio">Na NOAGE, combina experi&ecirc;ncia de grandes empresas com intelig&ecirc;ncia artificial para entregar <strong>marketing de alto n&iacute;vel sem o overhead de uma ag&ecirc;ncia tradicional</strong>.</p>
-      <a href="https://www.linkedin.com/in/avelarfernando/" target="_blank" rel="noopener" class="founder-linkedin">Conectar no LinkedIn &rarr;</a>
       <div class="founder-logos">
         <span class="founder-logos-label">Experi&ecirc;ncia em</span>
         <picture>
