@@ -137,7 +137,7 @@
   .hero-eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 28px; animation: fadeUp 0.6s var(--ease-expo) 0.2s both; }
   .hero-headline { font-family: var(--font-display); font-size: clamp(52px, 8vw, 120px); letter-spacing: 3px; line-height: 0.95; color: var(--white); margin-bottom: 36px; animation: fadeUp 0.6s var(--ease-expo) 0.3s both; }
   .hero-headline .red { color: var(--red); text-shadow: 0 2px 24px rgba(230,49,39,0.45); }
-  .hero-sub { max-width: 520px; font-size: 17px; line-height: 1.7; color: rgba(255,255,255,0.75); margin-bottom: 44px; animation: fadeUp 0.6s var(--ease-expo) 0.4s both; }
+  .hero-sub { max-width: 520px; font-size: 17px; line-height: 1.7; color: rgba(255,255,255,0.75); margin-bottom: 44px; text-align: left; align-self: flex-start; animation: fadeUp 0.6s var(--ease-expo) 0.4s both; }
   .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; animation: fadeUp 0.6s var(--ease-expo) 0.5s both; }
   .btn-primary { background: var(--red); color: var(--white); font-family: var(--font-body); font-weight: 700; font-size: 14px; padding: 16px 32px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; transition: background 0.2s; display: inline-block; touch-action: manipulation; }
   .btn-primary:hover { background: var(--red-dark); }
@@ -231,6 +231,21 @@
   .step-divider { width: 28px; height: 2px; background: var(--red); margin-bottom: 20px; position: relative; z-index: 1; }
   .step-title { font-family: var(--font-display); font-size: 22px; letter-spacing: 1px; color: var(--white); margin-bottom: 12px; position: relative; z-index: 1; }
   .step-desc { font-size: 14px; color: var(--mid-gray); line-height: 1.7; position: relative; z-index: 1; }
+
+  /* Desktop browser-chrome mockup cards */
+  .showcase-card--desktop { width: clamp(800px, 77vw, 1100px); }
+  .showcase-desktop { position: relative; border-radius: 10px 10px 6px 6px; overflow: hidden; background: #1A1817; border: 2px solid #2A2725; box-shadow: 0 8px 40px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,255,255,0.04); transition: border-color .35s ease, box-shadow .4s ease; display: flex; flex-direction: column; height: clamp(476px, 43.3vw, 649px); }
+  .showcase-card:hover .showcase-desktop { border-color: rgba(230,49,39,0.35); box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(230,49,39,0.12); }
+  .showcase-browser-bar { background: #252220; padding: 10px 14px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .showcase-browser-dots { display: flex; gap: 5px; flex-shrink: 0; }
+  .showcase-browser-dots span { width: 8px; height: 8px; border-radius: 50%; }
+  .showcase-browser-dots span:nth-child(1) { background: #FF5F57; }
+  .showcase-browser-dots span:nth-child(2) { background: #FEBC2E; }
+  .showcase-browser-dots span:nth-child(3) { background: #28C840; }
+  .showcase-browser-url { flex: 1; background: rgba(255,255,255,0.05); border-radius: 4px; padding: 4px 10px; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.5px; color: var(--mid-gray); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .showcase-desktop-img { display: block; width: 100%; flex: 1; min-height: 0; object-fit: cover; object-position: top; }
+  .showcase-desktop::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(to top, rgba(13,13,13,0.9) 0%, transparent 100%); pointer-events: none; z-index: 1; opacity: 0; transition: opacity .35s ease; }
+  .showcase-card:hover .showcase-desktop::after { opacity: 1; }
 
   /* SHOWCASE */
   .showcase { background: var(--dark-surface); padding: 100px 0 100px 60px; overflow: hidden; position: relative; }
@@ -439,10 +454,13 @@
     .showcase { padding: 80px 0 80px 28px; }
     .showcase-header { padding-right: 28px; flex-direction: column; align-items: flex-start; gap: 28px; }
     .showcase-card { width: clamp(160px, 42vw, 240px); }
+    .showcase-card--desktop { width: clamp(500px, 148vw, 720px); }
+    .showcase-desktop { height: clamp(346px, 90.9vw, 519px); }
     .showcase-track { gap: 20px; padding-right: 28px; }
     .showcase-progress { padding-right: 28px; }
     .showcase-phone { border-radius: 20px; }
     .showcase-notch { width: 60px; height: 18px; border-radius: 0 0 10px 10px; }
+    .nav-cta { font-size: 11px; padding: 8px 14px; letter-spacing: 0; }
     .founder-logos { text-align: center; }
     .founder-logos img { max-height: none; width: 100%; height: auto; }
     .founder-logos-label { text-align: center; }
@@ -703,48 +721,87 @@
       <h2 class="showcase-headline">LANDING PAGES QUE<br><em>CONVERTEM DE VERDADE.</em></h2>
     </div>
     <div class="showcase-nav reveal reveal-delay-1">
-      <span class="showcase-counter"><span class="current">01</span> / 09</span>
+      <span class="showcase-counter"><span class="current">01</span> / 12</span>
       <button class="showcase-arrow" id="scPrev" aria-label="Anterior">&larr;</button>
       <button class="showcase-arrow" id="scNext" aria-label="Pr&oacute;ximo">&rarr;</button>
     </div>
   </div>
   <div class="showcase-track" id="showcaseTrack">
-    <a href="showcase/advocacia-santos/" class="showcase-card reveal" target="_blank" rel="noopener">
-      <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/advocacia-santos.webp" alt="Advocacia Santos LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
-      <div class="showcase-label"><div class="showcase-label-name">ADVOCACIA SANTOS</div><div class="showcase-label-segment">Jur&iacute;dico</div></div>
-    </a>
-    <a href="showcase/techsolve/" class="showcase-card reveal reveal-delay-1" target="_blank" rel="noopener">
-      <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/techsolve.webp" alt="TechSolve TI LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
-      <div class="showcase-label"><div class="showcase-label-name">TECHSOLVE TI</div><div class="showcase-label-segment">Tecnologia</div></div>
-    </a>
-    <a href="showcase/primegente/" class="showcase-card reveal reveal-delay-2" target="_blank" rel="noopener">
-      <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/primegente.webp" alt="PrimeGente RH LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
-      <div class="showcase-label"><div class="showcase-label-name">PRIMEGENTE RH</div><div class="showcase-label-segment">RH</div></div>
-    </a>
-    <a href="showcase/atlasseguros/" class="showcase-card reveal" target="_blank" rel="noopener">
-      <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/atlasseguros.webp" alt="Atlas Seguros LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
-      <div class="showcase-label"><div class="showcase-label-name">ATLAS SEGUROS</div><div class="showcase-label-segment">Seguros</div></div>
-    </a>
+
     <a href="showcase/centrosaude/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/centrosaude.webp" alt="CentroSaúde LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
       <div class="showcase-label"><div class="showcase-label-name">CENTROSA&Uacute;DE</div><div class="showcase-label-segment">Sa&uacute;de</div></div>
     </a>
+
+    <a href="https://seventechoficial.com/" class="showcase-card showcase-card--desktop reveal reveal-delay-1" target="_blank" rel="noopener">
+      <div class="showcase-desktop">
+        <div class="showcase-browser-bar">
+          <div class="showcase-browser-dots"><span></span><span></span><span></span></div>
+          <div class="showcase-browser-url">seventechoficial.com</div>
+        </div>
+        <img class="showcase-desktop-img" src="showcase/thumbnails/seventech-lp-desktop.webp" alt="Seventech LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div>
+      </div>
+      <div class="showcase-label"><div class="showcase-label-name">SEVENTECH</div><div class="showcase-label-segment">RH &amp; Benef&iacute;cios</div></div>
+    </a>
+
+    <a href="showcase/techsolve/" class="showcase-card reveal reveal-delay-2" target="_blank" rel="noopener">
+      <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/techsolve.webp" alt="TechSolve TI LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
+      <div class="showcase-label"><div class="showcase-label-name">TECHSOLVE TI</div><div class="showcase-label-segment">Tecnologia</div></div>
+    </a>
+
+    <a href="https://daazdigital.com/" class="showcase-card showcase-card--desktop reveal reveal-delay-3" target="_blank" rel="noopener">
+      <div class="showcase-desktop">
+        <div class="showcase-browser-bar">
+          <div class="showcase-browser-dots"><span></span><span></span><span></span></div>
+          <div class="showcase-browser-url">daazdigital.com</div>
+        </div>
+        <img class="showcase-desktop-img" src="showcase/thumbnails/daaz-digital-desktop.webp" alt="Daaz Digital" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div>
+      </div>
+      <div class="showcase-label"><div class="showcase-label-name">DAAZ DIGITAL</div><div class="showcase-label-segment">Marketing Digital</div></div>
+    </a>
+
+    <a href="showcase/somnis-consulting/" class="showcase-card reveal" target="_blank" rel="noopener">
+      <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/somnis-consulting.webp" alt="Somnis Consulting LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
+      <div class="showcase-label"><div class="showcase-label-name">SOMNIS CONSULTING</div><div class="showcase-label-segment">Consultoria RH</div></div>
+    </a>
+
+    <a href="showcase/primegente/" class="showcase-card reveal reveal-delay-1" target="_blank" rel="noopener">
+      <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/primegente.webp" alt="PrimeGente RH LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
+      <div class="showcase-label"><div class="showcase-label-name">PRIMEGENTE RH</div><div class="showcase-label-segment">RH</div></div>
+    </a>
+
+    <a href="showcase/atlasseguros/" class="showcase-card reveal" target="_blank" rel="noopener">
+      <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/atlasseguros.webp" alt="Atlas Seguros LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
+      <div class="showcase-label"><div class="showcase-label-name">ATLAS SEGUROS</div><div class="showcase-label-segment">Seguros</div></div>
+    </a>
+
     <a href="showcase/contabilfoco/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/contabilfoco.webp" alt="Contábil Foco LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
       <div class="showcase-label"><div class="showcase-label-name">CONT&Aacute;BIL FOCO</div><div class="showcase-label-segment">Contabilidade</div></div>
     </a>
+
     <a href="showcase/contabilhorizonte/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/contabilhorizonte.webp" alt="Horizonte Contabilidade LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
       <div class="showcase-label"><div class="showcase-label-name">HORIZONTE</div><div class="showcase-label-segment">Contabilidade</div></div>
     </a>
+
     <a href="showcase/maxseguros/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/maxseguros.webp" alt="MaxSeguros LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
       <div class="showcase-label"><div class="showcase-label-name">MAXSEGUROS</div><div class="showcase-label-segment">Seguros</div></div>
     </a>
+
     <a href="showcase/procontabil/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/procontabil.webp" alt="ProContabil LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
       <div class="showcase-label"><div class="showcase-label-name">PROCONTABIL</div><div class="showcase-label-segment">Contabilidade</div></div>
     </a>
+
+    <a href="showcase/advocacia-santos/" class="showcase-card reveal" target="_blank" rel="noopener">
+      <div class="showcase-phone"><div class="showcase-notch"></div><img class="showcase-img" src="showcase/thumbnails/advocacia-santos.webp" alt="Advocacia Santos LP" loading="lazy"><div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">&nearr;</span></span></div></div>
+      <div class="showcase-label"><div class="showcase-label-name">ADVOCACIA SANTOS</div><div class="showcase-label-segment">Jur&iacute;dico</div></div>
+    </a>
+
   </div>
   <div class="showcase-progress reveal">
     <div class="showcase-progress-bar"><div class="showcase-progress-fill" id="scProgress"></div></div>
