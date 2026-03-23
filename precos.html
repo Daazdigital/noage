@@ -198,6 +198,38 @@
     .mini-proof { padding: 48px 20px; }
   }
 
+  /* FREE LP BANNER */
+  .free-lp-section { background: var(--dark-surface); padding: 80px 60px; text-align: center; position: relative; overflow: hidden; }
+  .free-lp-section::before { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.012) 10px, rgba(255,255,255,0.012) 11px); pointer-events: none; }
+  .free-lp-section::after { content: ''; position: absolute; top: -120px; right: -120px; width: 480px; height: 480px; background: radial-gradient(ellipse, rgba(230,49,39,0.12) 0%, transparent 65%); pointer-events: none; }
+  .free-lp-inner { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; }
+  .free-lp-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.35); border-radius: 100px; padding: 8px 20px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #4ADE80; margin-bottom: 28px; }
+  .free-lp-badge-dot { width: 6px; height: 6px; background: #22C55E; border-radius: 50%; flex-shrink: 0; animation: free-lp-pulse 2s ease-in-out infinite; }
+  @keyframes free-lp-pulse { 0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34,197,94,0.5); } 50% { opacity: 0.8; box-shadow: 0 0 0 7px rgba(34,197,94,0); } }
+  .free-lp-headline { font-family: var(--font-display); font-size: clamp(44px, 6vw, 80px); letter-spacing: 3px; line-height: 0.95; color: var(--white); margin-bottom: 20px; }
+  .free-lp-red { color: var(--red); }
+  .free-lp-sub { font-size: 17px; line-height: 1.75; color: rgba(255,255,255,0.5); max-width: 580px; margin: 0 auto 52px; }
+  .free-lp-steps { display: flex; align-items: stretch; justify-content: center; gap: 0; margin-bottom: 48px; flex-wrap: nowrap; }
+  .free-lp-step { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 28px 20px 24px; text-align: center; flex: 1 1 0; min-width: 0; max-width: 240px; transition: background 0.25s; }
+  .free-lp-step:hover { background: rgba(255,255,255,0.07); }
+  .free-lp-step-num { display: block; font-family: var(--font-display); font-size: 42px; letter-spacing: 2px; color: var(--red); line-height: 1; margin-bottom: 12px; }
+  .free-lp-step-text { font-size: 13px; line-height: 1.6; color: rgba(255,255,255,0.6); word-break: keep-all; }
+  .free-lp-arrow { display: flex; align-items: center; justify-content: center; padding: 0 10px; color: rgba(255,255,255,0.18); font-size: 20px; flex-shrink: 0; }
+  .free-lp-btn { display: inline-flex; align-items: center; gap: 12px; background: #25D366; color: var(--white); font-family: var(--font-body); font-weight: 700; font-size: 15px; padding: 18px 44px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; transition: background 0.2s, transform 0.25s var(--ease-expo); touch-action: manipulation; }
+  .free-lp-btn:hover { background: #1DAA52; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(37,211,102,0.3); }
+  .free-lp-note { margin-top: 14px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.25); }
+  @media (max-width: 900px) {
+    .free-lp-section { padding: 60px 28px !important; }
+    .free-lp-steps { flex-direction: column !important; align-items: stretch !important; gap: 8px !important; width: 100%; }
+    .free-lp-step { max-width: 100% !important; width: 100% !important; flex: none !important; padding: 24px 20px !important; }
+    .free-lp-arrow { transform: rotate(90deg); padding: 0; height: 28px; }
+  }
+  @media (max-width: 480px) {
+    .free-lp-section { padding: 48px 20px !important; }
+    .free-lp-btn { width: 100% !important; justify-content: center; }
+    .free-lp-sub { font-size: 15px; margin-bottom: 36px; }
+  }
+
   /* FLOATING WHATSAPP */
   .whatsapp-float { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.35); z-index: 9500; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s; touch-action: manipulation; }
   .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
@@ -257,7 +289,6 @@
         <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Se&ccedil;&atilde;o de depoimentos</li>
         <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Cria&ccedil;&atilde;o de copy/textos</li>
         <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Google Analytics 4</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Google Tag Manager</li>
         <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 100% responsivo (mobile-first)</li>
       </ul>
 
@@ -358,7 +389,7 @@
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M9 12l2 2 4-4"/></svg>
       </div>
       <div class="included-title">ANALYTICS</div>
-      <p class="included-desc">Google Analytics 4 e Tag Manager configurados. Saiba quem visita, de onde vem e o que faz.</p>
+      <p class="included-desc">Google Analytics 4 configurado. Saiba quem visita, de onde vem e o que faz.</p>
     </div>
     <div class="included-item reveal">
       <div class="included-icon">
@@ -381,6 +412,39 @@
       <div class="included-title">ENTREGA R&Aacute;PIDA</div>
       <p class="included-desc">LPs em 24&ndash;48h. Sites completos em 5&ndash;10 dias. 10x mais r&aacute;pido que qualquer ag&ecirc;ncia.</p>
     </div>
+  </div>
+</section>
+
+<!-- LP GRATUITA BANNER -->
+<section class="free-lp-section">
+  <div class="free-lp-inner">
+    <div class="free-lp-badge reveal">
+      <span class="free-lp-badge-dot"></span>
+      GRÁTIS · SEM COMPROMISSO
+    </div>
+    <h2 class="free-lp-headline reveal">ANTES DE DECIDIR,<br>VEJA <span class="free-lp-red">NA PRÁTICA.</span></h2>
+    <p class="free-lp-sub reveal">Criamos uma página de vendas personalizada pro seu negócio — sem nenhum custo. Só nos conte em 3 minutos o que você faz e deixa a gente mostrar a qualidade do nosso trabalho.</p>
+    <div class="free-lp-steps reveal">
+      <div class="free-lp-step">
+        <span class="free-lp-step-num">01</span>
+        <span class="free-lp-step-text">Fale com a Noage pelo WhatsApp</span>
+      </div>
+      <div class="free-lp-arrow">&#8594;</div>
+      <div class="free-lp-step">
+        <span class="free-lp-step-num">02</span>
+        <span class="free-lp-step-text">Nos conte sobre o seu negócio em 3 minutos</span>
+      </div>
+      <div class="free-lp-arrow">&#8594;</div>
+      <div class="free-lp-step">
+        <span class="free-lp-step-num">03</span>
+        <span class="free-lp-step-text">Receba sua landing page de teste personalizada</span>
+      </div>
+    </div>
+    <a href="https://wa.me/551931740212?text=Oi%21%20Gostaria%20de%20receber%20uma%20landing%20page%20de%20teste%20gratuita" target="_blank" rel="noopener" class="free-lp-btn reveal">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Quero minha LP gratuita
+    </a>
+    <p class="free-lp-note reveal">100% gratuito &middot; Sem compromisso &middot; Entrega em 48h</p>
   </div>
 </section>
 
