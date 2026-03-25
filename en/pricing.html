@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -12,11 +12,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#E63127">
-<title>NOAGE — Planos e Preços | Sites e Landing Pages</title>
-<meta name="description" content="Landing page essencial por R$299 em 3x. Site institucional completo por R$1.499 em 3x. Pagamento único parcelado, sem assinatura, revisões ilimitadas.">
-<link rel="canonical" href="https://noage.com.br/precos">
+<title>NOAGE — Plans & Pricing | Landing Pages & Websites</title>
+<meta name="description" content="Essential landing page for $60. Full institutional website for $300. Single payment, no subscription. Unlimited revisions.">
+<link rel="canonical" href="https://noage.com.br/en/pricing">
 <link rel="alternate" hreflang="pt-BR" href="https://noage.com.br/precos">
-<link rel="alternate" hreflang="en" href="https://noage.com.br/en/pricing.html">
+<link rel="alternate" hreflang="en" href="https://noage.com.br/en/pricing">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -28,6 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     --red-light: #FF6B63;
     --red-dark: #B8201A;
     --red-rgb: 230,49,39;
+    --red-muted: rgba(230,49,39,0.07);
     --offwhite: #F5F2EE;
     --warm-gray: #E8E4DF;
     --mid-gray: #9B9590;
@@ -51,18 +52,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 24px 60px; background: rgba(245,242,238,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--warm-gray); }
   .logo { display: inline-flex; align-items: center; }
   .logo img { height: 44px; width: auto; display: block; }
+  .nav-right { display: flex; align-items: center; gap: 32px; }
   .nav-links { display: flex; align-items: center; gap: 32px; }
   .nav-link { font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--charcoal); transition: color 0.2s; }
   .nav-link:hover { color: var(--red); }
+  .lang-switcher { font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; display: flex; align-items: center; gap: 6px; }
+  .lang-switcher a { color: var(--mid-gray); transition: color .2s; padding: 4px 0; }
+  .lang-switcher a:hover { color: var(--charcoal); }
+  .lang-switcher .active { color: var(--charcoal); font-weight: 500; border-bottom: 1px solid var(--charcoal); }
+  .lang-sep { color: var(--warm-gray); }
   .nav-cta { background: var(--red); color: var(--white); font-family: var(--font-body); font-weight: 700; font-size: 13px; letter-spacing: 0.5px; padding: 11px 24px; border-radius: 4px; text-transform: uppercase; transition: background 0.2s; }
   .nav-cta:hover { background: var(--red-dark); }
-  .nav-right { display: flex; align-items: center; gap: 16px; }
-  .lang-switcher { display: flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
-  .lang-switcher a { color: var(--mid-gray); transition: color 0.2s; text-decoration: none; }
-  .lang-switcher a:hover { color: var(--red); }
-  .lang-switcher a.active { color: var(--charcoal); font-weight: 500; }
-  .lang-sep { color: var(--mid-gray); opacity: 0.4; }
-  @media (max-width: 900px) { .lang-switcher { display: none; } }
   .hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
   .hamburger span { display: block; width: 24px; height: 2px; background: var(--charcoal); transition: all 0.3s; }
   .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
@@ -163,21 +163,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .reveal-delay-1 { transition-delay: 0.12s; }
   .reveal-delay-2 { transition-delay: 0.24s; }
 
-  /* RESPONSIVE */
-  @media (max-width: 900px) {
-    nav { padding: 20px 28px; }
-    .nav-links { display: none; position: fixed; inset: 0; top: 60px; background: var(--offwhite); flex-direction: column; align-items: center; justify-content: center; gap: 32px; z-index: 8000; }
-    .nav-links.open { display: flex; }
-    .nav-links .nav-link { font-size: 14px; }
-    .hamburger { display: flex; }
-    .nav-cta-desktop { display: none; }
-    .pricing-hero, section, .included-section, .guarantee-section, .pricing-final-cta, footer { padding-left: 28px; padding-right: 28px; }
-    .pricing-grid { grid-template-columns: 1fr; max-width: 480px; }
-    .included-grid { grid-template-columns: 1fr; }
-    footer { flex-direction: column; gap: 20px; text-align: center; }
-    .footer-links { flex-wrap: wrap; justify-content: center; }
-    .guarantee-items { flex-direction: column; align-items: center; }
-  }
   /* MINI TESTIMONIALS */
   .mini-proof { background: var(--offwhite); padding: 72px 60px; }
   .mini-proof-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 32px; text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px; }
@@ -193,18 +178,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .mini-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .mini-name { font-family: var(--font-display); font-size: 13px; letter-spacing: 1px; color: var(--black); }
   .mini-role { font-family: var(--font-mono); font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--mid-gray); }
-
-  @media (max-width: 900px) {
-    .mini-proof { padding: 60px 28px; }
-    .mini-proof-grid { grid-template-columns: 1fr; max-width: 480px; }
-  }
-
-  @media (max-width: 480px) {
-    .pricing-hero { padding: 140px 20px 60px; }
-    .pricing-section { padding: 0 20px 60px; }
-    .pricing-card { padding: 36px 28px; }
-    .mini-proof { padding: 48px 20px; }
-  }
 
   /* FREE LP BANNER */
   .free-lp-section { background: var(--dark-surface); padding: 80px 60px; text-align: center; position: relative; overflow: hidden; }
@@ -226,22 +199,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .free-lp-btn { display: inline-flex; align-items: center; gap: 12px; background: #25D366; color: var(--white); font-family: var(--font-body); font-weight: 700; font-size: 15px; padding: 18px 44px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; transition: background 0.2s, transform 0.25s var(--ease-expo); touch-action: manipulation; }
   .free-lp-btn:hover { background: #1DAA52; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(37,211,102,0.3); }
   .free-lp-note { margin-top: 14px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.25); }
+
+  /* FLOATING WHATSAPP */
+  .whatsapp-float { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.35); z-index: 9500; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s; touch-action: manipulation; }
+  .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+  .whatsapp-float svg { width: 28px; height: 28px; fill: #FFFFFF; }
+
+  /* RESPONSIVE */
   @media (max-width: 900px) {
+    nav { padding: 20px 28px; }
+    .nav-links { display: none; position: fixed; inset: 0; top: 60px; background: var(--offwhite); flex-direction: column; align-items: center; justify-content: center; gap: 32px; z-index: 8000; }
+    .nav-links.open { display: flex; }
+    .nav-links .nav-link { font-size: 14px; }
+    .hamburger { display: flex; }
+    .nav-cta-desktop { display: none; }
+    .lang-switcher { display: none; }
+    .pricing-hero, section, .included-section, .guarantee-section, .pricing-final-cta, footer { padding-left: 28px; padding-right: 28px; }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 480px; }
+    .included-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 20px; text-align: center; }
+    .footer-links { flex-wrap: wrap; justify-content: center; }
+    .guarantee-items { flex-direction: column; align-items: center; }
+    .mini-proof { padding: 60px 28px; }
+    .mini-proof-grid { grid-template-columns: 1fr; max-width: 480px; }
     .free-lp-section { padding: 60px 28px !important; }
     .free-lp-steps { flex-direction: column !important; align-items: stretch !important; gap: 8px !important; width: 100%; }
     .free-lp-step { max-width: 100% !important; width: 100% !important; flex: none !important; padding: 24px 20px !important; }
     .free-lp-arrow { transform: rotate(90deg); padding: 0; height: 28px; }
   }
   @media (max-width: 480px) {
+    .pricing-hero { padding: 140px 20px 60px; }
+    .pricing-section { padding: 0 20px 60px; }
+    .pricing-card { padding: 36px 28px; }
+    .mini-proof { padding: 48px 20px; }
     .free-lp-section { padding: 48px 20px !important; }
     .free-lp-btn { width: 100% !important; justify-content: center; }
     .free-lp-sub { font-size: 15px; margin-bottom: 36px; }
   }
-
-  /* FLOATING WHATSAPP */
-  .whatsapp-float { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.35); z-index: 9500; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s; touch-action: manipulation; }
-  .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
-  .whatsapp-float svg { width: 28px; height: 28px; fill: #FFFFFF; }
 </style>
 
 <!-- Privacy-friendly analytics by Plausible -->
@@ -259,19 +253,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- NAV -->
 <nav>
-  <a href="index.html" class="logo"><img src="images/index/logo.webp" alt="NOAGE"></a>
-  <div class="nav-links">
-    <a href="sites-e-landing-pages.html" class="nav-link">Servi&ccedil;os</a>
-    <a href="sites-e-landing-pages.html#portfolio" class="nav-link">Portfolio</a>
-    <a href="sites-e-landing-pages.html#faq" class="nav-link">FAQ</a>
-  </div>
+  <a href="../" class="logo"><img src="../images/index/logo.webp" alt="NOAGE"></a>
   <div class="nav-right">
-    <div class="lang-switcher">
-      <a href="#" class="active">PT</a>
-      <span class="lang-sep">/</span>
-      <a href="en/pricing.html">EN</a>
+    <div class="nav-links">
+      <a href="sites.html" class="nav-link">Services</a>
+      <a href="sites.html#portfolio" class="nav-link">Portfolio</a>
+      <a href="sites.html#faq" class="nav-link">FAQ</a>
     </div>
-    <a href="https://wa.me/5519998607474?text=Ol%C3%A1%2C%20vi%20os%20planos%20e%20quero%20come%C3%A7ar" target="_blank" rel="noopener" class="nav-cta nav-cta-desktop">Falar no WhatsApp</a>
+    <div class="lang-switcher">
+      <a href="../precos.html">PT</a>
+      <span class="lang-sep">/</span>
+      <a href="#" class="active">EN</a>
+    </div>
+    <a href="https://wa.me/5519998607474?text=Hi%2C%20I%20saw%20the%20plans%20and%20would%20like%20to%20get%20started" target="_blank" rel="noopener" class="nav-cta nav-cta-desktop">Talk on WhatsApp</a>
   </div>
   <button class="hamburger" aria-label="Menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -280,66 +274,66 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- HERO -->
 <div class="pricing-hero">
-  <p class="pricing-eyebrow reveal">Planos e pre&ccedil;os</p>
-  <h1 class="pricing-headline reveal">INVISTA NO QUE<br><span class="red">CONVERTE.</span></h1>
-  <p class="pricing-sub reveal">Pre&ccedil;o justo, entrega r&aacute;pida, qualidade premium. Pagamento &uacute;nico parcelado &mdash; sem assinatura, sem surpresa.</p>
+  <p class="pricing-eyebrow reveal">Plans &amp; pricing</p>
+  <h1 class="pricing-headline reveal">INVEST IN WHAT<br><span class="red">CONVERTS.</span></h1>
+  <p class="pricing-sub reveal">Fair price, fast delivery, premium quality. Single payment &mdash; no subscription, no surprises.</p>
 </div>
 
 <!-- PRICING CARDS -->
 <section class="pricing-section">
   <div class="pricing-grid">
 
-    <!-- ESSENCIAL -->
+    <!-- ESSENTIAL -->
     <div class="pricing-card reveal">
-      <span class="pricing-badge">Essencial</span>
-      <div class="pricing-plan-name">LANDING PAGE ESSENCIAL</div>
-      <p class="pricing-plan-desc">P&aacute;gina de capta&ccedil;&atilde;o com 1 a 3 se&ccedil;&otilde;es. Ideal para capturar leads, validar ofertas ou lan&ccedil;ar servi&ccedil;os rapidamente.</p>
+      <span class="pricing-badge">Essential</span>
+      <div class="pricing-plan-name">ESSENTIAL LANDING PAGE</div>
+      <p class="pricing-plan-desc">Conversion page with 1 to 3 sections. Perfect for capturing leads, validating offers, or launching services fast.</p>
 
       <div class="pricing-price-row">
-        <div class="pricing-amount"><span class="currency">R$</span>299</div>
-        <div class="pricing-period">Em 3x de R$99,67 &middot; Sem juros</div>
-        <div class="pricing-total">Pagamento &uacute;nico parcelado</div>
+        <div class="pricing-amount"><span class="currency">$</span>60</div>
+        <div class="pricing-period">Single payment &middot; No subscription</div>
+        <div class="pricing-total">Pay once, keep forever</div>
       </div>
 
       <ul class="pricing-features">
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Hero section de alto impacto</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> CTA estrat&eacute;gico de convers&atilde;o</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Formul&aacute;rio de captura de leads</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Se&ccedil;&atilde;o de depoimentos</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Cria&ccedil;&atilde;o de copy/textos</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> High-impact hero section</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Strategic conversion CTA</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Lead capture form</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Testimonials section</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Copywriting included</li>
         <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Google Analytics 4</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 100% responsivo (mobile-first)</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 100% responsive (mobile-first)</li>
       </ul>
 
-      <a href="https://wa.me/5519998607474?text=Ol%C3%A1%2C%20quero%20contratar%20a%20Landing%20Page%20Essencial" target="_blank" rel="noopener" class="pricing-cta">Quero minha landing page</a>
-      <p class="pricing-note">Entrega em 24&ndash;48h &middot; Revis&otilde;es ilimitadas</p>
+      <a href="https://wa.me/5519998607474?text=Hi%2C%20I%20want%20the%20Essential%20Landing%20Page" target="_blank" rel="noopener" class="pricing-cta">Get my landing page</a>
+      <p class="pricing-note">Delivery in 24&ndash;48h &middot; Unlimited revisions</p>
     </div>
 
-    <!-- COMPLETA -->
+    <!-- COMPLETE -->
     <div class="pricing-card featured reveal reveal-delay-1">
-      <span class="pricing-badge">Mais popular</span>
-      <div class="pricing-plan-name">P&Aacute;GINA INSTITUCIONAL COMPLETA</div>
-      <p class="pricing-plan-desc">Site completo com at&eacute; 15 p&aacute;ginas. Personaliza&ccedil;&atilde;o total de design, conte&uacute;do e estrutura para presen&ccedil;a digital robusta.</p>
+      <span class="pricing-badge">Most popular</span>
+      <div class="pricing-plan-name">FULL INSTITUTIONAL WEBSITE</div>
+      <p class="pricing-plan-desc">Complete site with up to 15 pages. Full design, content, and structure customization for a robust digital presence.</p>
 
       <div class="pricing-price-row">
-        <div class="pricing-amount"><span class="currency">R$</span>1.499</div>
-        <div class="pricing-period">Em 3x de R$499,67 &middot; Sem juros</div>
-        <div class="pricing-total">Pagamento &uacute;nico parcelado</div>
+        <div class="pricing-amount"><span class="currency">$</span>300</div>
+        <div class="pricing-period">Single payment &middot; No subscription</div>
+        <div class="pricing-total">Pay once, keep forever</div>
       </div>
 
       <ul class="pricing-features">
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Tudo da Landing Page Essencial</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> At&eacute; 15 p&aacute;ginas personalizadas</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Personaliza&ccedil;&atilde;o completa de design</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> SEO on-page em todas as p&aacute;ginas</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Integra&ccedil;&atilde;o WhatsApp + redes sociais</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Everything in Essential Landing Page</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Up to 15 custom pages</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Full design customization</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> On-page SEO across all pages</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> WhatsApp + social media integration</li>
         <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Google Analytics 4</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Revis&otilde;es ilimitadas</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Suporte priorit&aacute;rio</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Unlimited revisions</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Priority support</li>
       </ul>
 
-      <a href="https://wa.me/5519998607474?text=Ol%C3%A1%2C%20quero%20contratar%20a%20P%C3%A1gina%20Institucional%20Completa" target="_blank" rel="noopener" class="pricing-cta">Quero meu site completo</a>
-      <p class="pricing-note">Entrega em 5&ndash;10 dias &middot; Revis&otilde;es ilimitadas</p>
+      <a href="https://wa.me/5519998607474?text=Hi%2C%20I%20want%20the%20Full%20Institutional%20Website" target="_blank" rel="noopener" class="pricing-cta">Get my complete website</a>
+      <p class="pricing-note">Delivery in 5&ndash;10 days &middot; Unlimited revisions</p>
     </div>
 
   </div>
@@ -347,13 +341,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- MINI TESTIMONIALS -->
 <section class="mini-proof">
-  <div class="mini-proof-label reveal">Quem j&aacute; confiou</div>
+  <div class="mini-proof-label reveal">Who already trusted us</div>
   <div class="mini-proof-grid">
     <div class="mini-card reveal">
       <div class="mini-stars"><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span></div>
-      <p class="mini-quote">&ldquo;Faz acontecer r&aacute;pido, &eacute; orientado a a&ccedil;&atilde;o e experimenta&ccedil;&atilde;o. Deixou um legado real no nosso time.&rdquo;</p>
+      <p class="mini-quote">&ldquo;Makes things happen fast, driven by action and experimentation. Left a real legacy in our team.&rdquo;</p>
       <div class="mini-author">
-        <div class="mini-avatar"><img src="images/testimonials/Natanael.png" alt="Natanael Santos" loading="lazy"></div>
+        <div class="mini-avatar"><img src="../images/testimonials/Natanael.png" alt="Natanael Santos" loading="lazy"></div>
         <div>
           <div class="mini-name">NATANAEL SANTOS</div>
           <div class="mini-role">CEO &mdash; Seventech</div>
@@ -362,9 +356,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="mini-card reveal reveal-delay-1">
       <div class="mini-stars"><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span></div>
-      <p class="mini-quote">&ldquo;Entrega consistentemente acima do esperado, sempre com qualidade e dentro do prazo.&rdquo;</p>
+      <p class="mini-quote">&ldquo;Consistently delivers above expectations, always with quality and on time.&rdquo;</p>
       <div class="mini-author">
-        <div class="mini-avatar"><img src="images/testimonials/Leandro.png" alt="Leandro Trevisan" loading="lazy"></div>
+        <div class="mini-avatar"><img src="../images/testimonials/Leandro.png" alt="Leandro Trevisan" loading="lazy"></div>
         <div>
           <div class="mini-name">LEANDRO TREVISAN</div>
           <div class="mini-role">CEO &mdash; Somnis</div>
@@ -373,154 +367,154 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="mini-card reveal reveal-delay-2">
       <div class="mini-stars"><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span><span class="mini-star">&#9733;</span></div>
-      <p class="mini-quote">&ldquo;Entendeu nosso neg&oacute;cio a fundo e entregou resultados reais. Parceiro estrat&eacute;gico.&rdquo;</p>
+      <p class="mini-quote">&ldquo;Understood our business deeply and delivered real results. A true strategic partner.&rdquo;</p>
       <div class="mini-author">
-        <div class="mini-avatar"><img src="images/testimonials/Julia.png" alt="Julia Soriano" loading="lazy"></div>
+        <div class="mini-avatar"><img src="../images/testimonials/Julia.png" alt="Julia Soriano" loading="lazy"></div>
         <div>
           <div class="mini-name">JULIA SORIANO</div>
-          <div class="mini-role">Fundadora &mdash; Guerini e Soriano</div>
+          <div class="mini-role">Founder &mdash; Guerini &amp; Soriano</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- O QUE ESTÁ INCLUÍDO -->
+<!-- WHAT'S INCLUDED -->
 <section class="included-section">
-  <h2 class="included-headline reveal">O QUE EST&Aacute; INCLU&Iacute;DO EM TODOS OS PLANOS</h2>
+  <h2 class="included-headline reveal">WHAT'S INCLUDED IN ALL PLANS</h2>
   <div class="included-grid">
     <div class="included-item reveal">
       <div class="included-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
       </div>
-      <div class="included-title">DESIGN PREMIUM</div>
-      <p class="included-desc">Cada p&aacute;gina &eacute; &uacute;nica. Design moderno, profissional e alinhado &agrave; identidade do seu neg&oacute;cio.</p>
+      <div class="included-title">PREMIUM DESIGN</div>
+      <p class="included-desc">Every page is unique. Modern, professional design aligned with your brand identity.</p>
     </div>
     <div class="included-item reveal reveal-delay-1">
       <div class="included-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
       </div>
-      <div class="included-title">COPY ESTRAT&Eacute;GICO</div>
-      <p class="included-desc">Textos escritos para converter. Headline, CTA, objection handling &mdash; tudo pensado para o seu p&uacute;blico.</p>
+      <div class="included-title">STRATEGIC COPY</div>
+      <p class="included-desc">Copy written to convert. Headline, CTA, objection handling — all crafted for your audience.</p>
     </div>
     <div class="included-item reveal reveal-delay-2">
       <div class="included-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M9 12l2 2 4-4"/></svg>
       </div>
       <div class="included-title">ANALYTICS</div>
-      <p class="included-desc">Google Analytics 4 configurado. Saiba quem visita, de onde vem e o que faz.</p>
+      <p class="included-desc">Google Analytics 4 fully set up. Know who visits, where they come from, and what they do.</p>
     </div>
     <div class="included-item reveal">
       <div class="included-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
       </div>
       <div class="included-title">MOBILE-FIRST</div>
-      <p class="included-desc">Projetado primeiro para celular. Funciona perfeitamente em qualquer dispositivo e tamanho de tela.</p>
+      <p class="included-desc">Designed for mobile first. Works flawlessly on any device and screen size.</p>
     </div>
     <div class="included-item reveal reveal-delay-1">
       <div class="included-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
       </div>
-      <div class="included-title">REVIS&Otilde;ES ILIMITADAS</div>
-      <p class="included-desc">Ajustamos at&eacute; voc&ecirc; aprovar. Sem limite de rodadas, sem custo adicional por altera&ccedil;&atilde;o.</p>
+      <div class="included-title">UNLIMITED REVISIONS</div>
+      <p class="included-desc">We adjust until you approve. No limit on rounds, no extra cost per change.</p>
     </div>
     <div class="included-item reveal reveal-delay-2">
       <div class="included-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E63127" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
       </div>
-      <div class="included-title">ENTREGA R&Aacute;PIDA</div>
-      <p class="included-desc">LPs em 24&ndash;48h. Sites completos em 5&ndash;10 dias. 10x mais r&aacute;pido que qualquer ag&ecirc;ncia.</p>
+      <div class="included-title">FAST DELIVERY</div>
+      <p class="included-desc">Landing pages in 24&ndash;48h. Complete sites in 5&ndash;10 days. 10x faster than any agency.</p>
     </div>
   </div>
 </section>
 
-<!-- LP GRATUITA BANNER -->
+<!-- FREE LP BANNER -->
 <section class="free-lp-section">
   <div class="free-lp-inner">
     <div class="free-lp-badge reveal">
       <span class="free-lp-badge-dot"></span>
-      GRÁTIS · SEM COMPROMISSO
+      FREE &middot; NO COMMITMENT
     </div>
-    <h2 class="free-lp-headline reveal">ANTES DE DECIDIR,<br>VEJA <span class="free-lp-red">NA PRÁTICA.</span></h2>
-    <p class="free-lp-sub reveal">Criamos uma página de vendas personalizada pro seu negócio — sem nenhum custo. Só nos conte em 3 minutos o que você faz e deixa a gente mostrar a qualidade do nosso trabalho.</p>
+    <h2 class="free-lp-headline reveal">BEFORE YOU DECIDE,<br>SEE IT <span class="free-lp-red">IN ACTION.</span></h2>
+    <p class="free-lp-sub reveal">We build a custom landing page for your business — at no cost. Just tell us in 3 minutes what you do and let us show you the quality of our work.</p>
     <div class="free-lp-steps reveal">
       <div class="free-lp-step">
         <span class="free-lp-step-num">01</span>
-        <span class="free-lp-step-text">Fale com a Noage pelo WhatsApp</span>
+        <span class="free-lp-step-text">Message NOAGE on WhatsApp</span>
       </div>
       <div class="free-lp-arrow">&#8594;</div>
       <div class="free-lp-step">
         <span class="free-lp-step-num">02</span>
-        <span class="free-lp-step-text">Nos conte sobre o seu negócio em 3 minutos</span>
+        <span class="free-lp-step-text">Tell us about your business in 3 minutes</span>
       </div>
       <div class="free-lp-arrow">&#8594;</div>
       <div class="free-lp-step">
         <span class="free-lp-step-num">03</span>
-        <span class="free-lp-step-text">Receba sua landing page de teste personalizada</span>
+        <span class="free-lp-step-text">Receive your personalized test landing page</span>
       </div>
     </div>
-    <a href="https://wa.me/551931740212?text=Oi%21%20Gostaria%20de%20receber%20uma%20landing%20page%20de%20teste%20gratuita" target="_blank" rel="noopener" class="free-lp-btn reveal">
+    <a href="https://wa.me/5519998607474?text=Hi%21%20I%27d%20like%20to%20receive%20a%20free%20test%20landing%20page" target="_blank" rel="noopener" class="free-lp-btn reveal">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Quero minha LP gratuita
+      Get my free landing page
     </a>
-    <p class="free-lp-note reveal">100% gratuito &middot; Sem compromisso &middot; Entrega em 48h</p>
+    <p class="free-lp-note reveal">100% free &middot; No commitment &middot; Delivered in 48h</p>
   </div>
 </section>
 
-<!-- GARANTIA -->
+<!-- GUARANTEE -->
 <section class="guarantee-section">
   <div class="guarantee-inner reveal">
-    <h2 class="guarantee-headline">RISCO <em>ZERO.</em></h2>
-    <p class="guarantee-body">Voc&ecirc; paga uma vez e fica com o resultado para sempre. Revis&otilde;es ilimitadas at&eacute; ficar exatamente como voc&ecirc; imaginou. Sem assinatura, sem cobran&ccedil;a recorrente, sem surpresa.</p>
+    <h2 class="guarantee-headline">ZERO <em>RISK.</em></h2>
+    <p class="guarantee-body">You pay once and own the result forever. Unlimited revisions until it&rsquo;s exactly as you imagined. No subscription, no recurring charges, no surprises.</p>
     <div class="guarantee-items">
       <div class="guarantee-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-        Pagamento &uacute;nico
+        Single payment
       </div>
       <div class="guarantee-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-        Sem assinatura
+        No subscription
       </div>
       <div class="guarantee-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-        Revis&otilde;es ilimitadas
+        Unlimited revisions
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA FINAL -->
+<!-- FINAL CTA -->
 <section class="pricing-final-cta">
-  <h2 class="pricing-final-headline reveal">PRONTO PRA TER A P&Aacute;GINA QUE SEU<br><span class="red">NEG&Oacute;CIO MERECE?</span></h2>
-  <p class="pricing-final-sub reveal">Descreva o que voc&ecirc; precisa. A gente responde em horas e come&ccedil;a a produzir no mesmo dia.</p>
-  <a href="https://wa.me/5519998607474?text=Ol%C3%A1%2C%20quero%20come%C3%A7ar%20meu%20projeto%20com%20a%20NOAGE" target="_blank" rel="noopener" class="pricing-final-btn reveal">
+  <h2 class="pricing-final-headline reveal">READY TO HAVE THE PAGE YOUR<br><span class="red">BUSINESS DESERVES?</span></h2>
+  <p class="pricing-final-sub reveal">Tell us what you need. We respond within hours and start producing the same day.</p>
+  <a href="https://wa.me/5519998607474?text=Hi%2C%20I%20want%20to%20start%20my%20project%20with%20NOAGE" target="_blank" rel="noopener" class="pricing-final-btn reveal">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    Falar no WhatsApp
+    Talk on WhatsApp
   </a>
-  <p class="pricing-final-note reveal">Sem compromisso &middot; Resposta em at&eacute; 2h</p>
+  <p class="pricing-final-note reveal">No commitment &middot; Response within 2h</p>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div>
-    <div class="footer-logo"><img src="images/index/logo.webp" alt="NOAGE"></div>
-    <div class="footer-tagline">Marketing que funciona. Sem ag&ecirc;ncia.</div>
+    <div class="footer-logo"><img src="../images/index/logo.webp" alt="NOAGE"></div>
+    <div class="footer-tagline">Marketing that works. No agency.</div>
   </div>
   <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="sites-e-landing-pages.html">Servi&ccedil;os</a>
-    <a href="sites-e-landing-pages.html#portfolio">Portfolio</a>
+    <a href="../en/">Home</a>
+    <a href="sites.html">Services</a>
+    <a href="sites.html#portfolio">Portfolio</a>
     <a href="https://wa.me/5519998607474" target="_blank" rel="noopener">(19) 99860-7474</a>
   </div>
 </footer>
 
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/5519998607474?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20pre%C3%A7os%20e%20quero%20saber%20mais" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+<a href="https://wa.me/5519998607474?text=Hi%2C%20I%20saw%20the%20pricing%20page%20and%20want%20to%20know%20more" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Talk to us on WhatsApp">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
 <script>
-  // Hamburger
+  // Hamburger menu
   document.querySelector('.hamburger').addEventListener('click', function() {
     this.classList.toggle('active');
     this.setAttribute('aria-expanded', this.classList.contains('active'));

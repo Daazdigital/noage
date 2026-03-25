@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -11,7 +11,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NOAGE — Marketing que funciona. Sem agência.</title>
+<title>NOAGE — Marketing that works. No agency.</title>
+<meta name="description" content="Fast delivery, real quality, fair price. Landing pages, decks, copy and social media — no agency overhead, no unnecessary meetings, no BS.">
+<link rel="canonical" href="https://noage.com.br/en/">
 <link rel="alternate" hreflang="pt-BR" href="https://noage.com.br/">
 <link rel="alternate" hreflang="en" href="https://noage.com.br/en/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,6 +81,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .logo img {
     height: 44px; width: auto; display: block;
   }
+  .nav-right {
+    display: flex; align-items: center; gap: 20px;
+  }
+  .lang-switcher {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px;
+    text-transform: uppercase; text-decoration: none;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .lang-switcher a {
+    color: var(--mid-gray); text-decoration: none; transition: color .2s;
+    padding: 4px 0;
+  }
+  .lang-switcher a:hover { color: var(--charcoal); }
+  .lang-switcher .active { color: var(--charcoal); font-weight: 500; border-bottom: 1px solid var(--charcoal); }
+  .lang-sep { color: var(--warm-gray); }
   .nav-cta {
     background: var(--red); color: var(--white);
     font-family: var(--font-body); font-weight: 700; font-size: 13px;
@@ -87,16 +104,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-transform: uppercase; transition: background .2s; text-decoration: none;
   }
   .nav-cta:hover { background: var(--red-dark); }
-  .nav-right { display: flex; align-items: center; gap: 16px; }
-  .lang-switcher { display: flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
-  .lang-switcher a { color: rgba(255,255,255,0.5); transition: color 0.2s; text-decoration: none; }
-  nav.scrolled .lang-switcher a { color: var(--mid-gray); }
-  .lang-switcher a:hover { color: var(--red); }
-  .lang-switcher a.active { color: var(--white); font-weight: 500; }
-  nav.scrolled .lang-switcher a.active { color: var(--charcoal); }
-  .lang-sep { color: rgba(255,255,255,0.25); }
-  nav.scrolled .lang-sep { color: var(--mid-gray); opacity: 0.4; }
-  @media (max-width: 900px) { .lang-switcher { display: none; } }
 
   /* HERO — dark section */
   .hero {
@@ -104,7 +111,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     justify-content: flex-end; padding: 0 60px 80px;
     position: relative; overflow: hidden;
     background: var(--black);
-    background-image: url('images/index/hero-bg.webp');
+    background-image: url('../images/index/hero-bg.webp');
     background-size: cover;
     background-position: center;
     mix-blend-mode: normal;
@@ -237,7 +244,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-transform: uppercase; color: var(--mid-gray);
   }
 
-  /* SERVICES — IMG 04: strip em ambas as telas */
+  /* SERVICES */
   .services { background: var(--white); }
   .services-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 56px; align-items: end; }
   .services-visual { display: block; margin: 0 -60px 56px; overflow: hidden; }
@@ -273,10 +280,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   .service-item:hover .service-arrow { color: var(--red); transform: translate(3px,-3px); }
 
-  /* HOW — IMG 03: background no desktop, strip no mobile */
+  /* HOW */
   .how {
     background: var(--black);
-    background-image: url('images/index/img-03-trabalho.webp');
+    background-image: url('../images/index/img-03-trabalho.webp');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -291,7 +298,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   .how > * { position: relative; z-index: 1; }
   .how .section-tag { color: var(--red); }
-  /* strip: oculto no desktop */
   .how-visual { display: none; }
   .how-headline {
     font-family: var(--font-display); font-size: clamp(38px, 4.5vw, 64px);
@@ -347,10 +353,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .compare-table tr:last-child td.agency-col { border-radius: 0 0 6px 0; }
   .check { color: var(--red); font-size: 13px; margin-right: 6px; }
 
-  /* PROOF + CTA — IMG 05 */
+  /* PROOF + CTA */
   .proof { background: var(--white); }
   .cta-section {
-    background-image: url('images/index/img-05-conquista.webp') !important;
+    background-image: url('../images/index/img-05-conquista.webp') !important;
     background-size: cover !important;
     background-position: center top !important;
     position: relative;
@@ -445,7 +451,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   .testi-author-row { display: flex; align-items: center; gap: 14px; }
 
-  /* Overlapping avatar group: person + logo */
   .testi-avatar-group { display: flex; align-items: center; flex-shrink: 0; }
   .testi-avatar-person {
     width: 64px; height: 64px; border-radius: 50%; overflow: hidden; flex-shrink: 0;
@@ -583,7 +588,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     object-fit: cover; object-position: top;
   }
 
-  /* Subtle gradient at bottom of phone on hover */
   .showcase-phone::after {
     content: '';
     position: absolute; bottom: 0; left: 0; right: 0; height: 35%;
@@ -594,7 +598,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   .showcase-card:hover .showcase-phone::after { opacity: 1; }
 
-  /* "Ver projeto" pinned to bottom */
   .showcase-info {
     position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
     padding: 0 0 24px; text-align: center;
@@ -782,13 +785,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .nav-cta { font-size: 11px; padding: 8px 14px; letter-spacing: 0; }
     .manifesto-grid, .services-header, .cta-section, .founder-inner { grid-template-columns:1fr; gap:40px; }
     .steps { grid-template-columns:1fr 1fr; }
-    /* IMG 03: no mobile vira strip, remove background */
     .how { background-image: none; }
     .how::before { display: none; }
     .how > * { position: static; }
     .how-visual { display: block; margin: 0 -28px 48px; overflow: hidden; }
     .how-visual img { width: 100%; height: 280px; object-fit: cover; object-position: center; display: block; }
-    /* IMG 04: strip em ambas as telas, só ajusta altura e margem no mobile */
     .services-visual { margin: 0 -28px 48px; }
     .services-visual img { height: 280px; }
     .testimonials-v2 { grid-template-columns:1fr; grid-template-rows:auto; }
@@ -807,6 +808,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     footer { flex-direction:column; gap:20px; text-align:center; }
     .footer-links { flex-wrap:wrap; justify-content:center; }
     .compare-table th, .compare-table td { padding:12px 14px; font-size:13px; }
+    .lang-switcher { display: none; }
   }
   @media (max-width:600px) {
     .steps { grid-template-columns:1fr; }
@@ -832,30 +834,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="logo"><img src="images/index/logo.webp" alt="NOAGE"></a>
+  <a href="../" class="logo"><img src="../images/index/logo.webp" alt="NOAGE"></a>
   <div class="nav-right">
     <div class="lang-switcher">
-      <a href="#" class="active">PT</a>
+      <a href="../">PT</a>
       <span class="lang-sep">/</span>
-      <a href="en/">EN</a>
+      <a href="#" class="active">EN</a>
     </div>
-    <a href="#contato" class="nav-cta">Começar agora</a>
+    <a href="#contact" class="nav-cta">Get started</a>
   </div>
 </nav>
 
 <!-- HERO — dark -->
 <section class="hero">
   <div class="hero-bg-text">NOAGE</div>
-  <p class="hero-eyebrow">// A não-agência</p>
+  <p class="hero-eyebrow">// The non-agency</p>
   <h1 class="hero-headline">
     MARKETING<br>
-    <span class="outline">QUE FUNCIONA.</span><br>
-    <span class="red">SEM AGÊNCIA.</span>
+    <span class="outline">THAT WORKS.</span><br>
+    <span class="red">NO AGENCY.</span>
   </h1>
-  <p class="hero-sub">Você merecia isso há muito tempo — entrega rápida, qualidade real, preço justo. Sem reuniões desnecessárias, sem processo inflado, sem enrolação.</p>
+  <p class="hero-sub">You've deserved this for a long time — fast delivery, real quality, fair price. No unnecessary meetings, no inflated process, no BS.</p>
   <div class="hero-actions">
-    <a href="#servicos" class="btn-primary">Ver o que fazemos</a>
-    <a href="#como-funciona" class="btn-ghost">Como funciona →</a>
+    <a href="#services" class="btn-primary">See what we do</a>
+    <a href="#how-it-works" class="btn-ghost">How it works →</a>
   </div>
   <div class="hero-scroll">
     <div class="scroll-line"></div>
@@ -867,19 +869,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="marquee-strip">
   <div class="marquee-inner">
     <span class="marquee-item">Landing Pages</span><span class="marquee-dot">—</span>
-    <span class="marquee-item">Apresentações Comerciais</span><span class="marquee-dot">—</span>
+    <span class="marquee-item">Sales Decks</span><span class="marquee-dot">—</span>
     <span class="marquee-item">Copywriting</span><span class="marquee-dot">—</span>
     <span class="marquee-item">Social Media</span><span class="marquee-dot">—</span>
-    <span class="marquee-item">Identidade Visual</span><span class="marquee-dot">—</span>
-    <span class="marquee-item">Tráfego Pago</span><span class="marquee-dot">—</span>
+    <span class="marquee-item">Visual Identity</span><span class="marquee-dot">—</span>
+    <span class="marquee-item">Paid Traffic</span><span class="marquee-dot">—</span>
     <span class="marquee-item">SEO</span><span class="marquee-dot">—</span>
     <span class="marquee-item">Email Marketing</span><span class="marquee-dot">—</span>
     <span class="marquee-item">Landing Pages</span><span class="marquee-dot">—</span>
-    <span class="marquee-item">Apresentações Comerciais</span><span class="marquee-dot">—</span>
+    <span class="marquee-item">Sales Decks</span><span class="marquee-dot">—</span>
     <span class="marquee-item">Copywriting</span><span class="marquee-dot">—</span>
     <span class="marquee-item">Social Media</span><span class="marquee-dot">—</span>
-    <span class="marquee-item">Identidade Visual</span><span class="marquee-dot">—</span>
-    <span class="marquee-item">Tráfego Pago</span><span class="marquee-dot">—</span>
+    <span class="marquee-item">Visual Identity</span><span class="marquee-dot">—</span>
+    <span class="marquee-item">Paid Traffic</span><span class="marquee-dot">—</span>
     <span class="marquee-item">SEO</span><span class="marquee-dot">—</span>
     <span class="marquee-item">Email Marketing</span><span class="marquee-dot">—</span>
   </div>
@@ -890,16 +892,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="manifesto-grid">
     <div class="reveal">
       <div class="section-tag">Manifesto</div>
-      <h2 class="manifesto-headline">CHEGA DE PAGAR PELO <em>PROCESSO.</em> PAGUE PELO <em>RESULTADO.</em></h2>
+      <h2 class="manifesto-headline">STOP PAYING FOR THE <em>PROCESS.</em> PAY FOR THE <em>RESULT.</em></h2>
       <div class="manifesto-divider"></div>
       <div class="manifesto-body">
-        <p>Agências tradicionais foram construídas para cobrar por hora, por reunião, por aprovação. Quanto mais lento o processo, mais elas faturam. <strong>Isso não é parceria. É conflito de interesses.</strong></p>
-        <p>A NOAGE foi construída ao contrário. Usamos inteligência artificial para eliminar o overhead e entregar em horas o que antes levava semanas — com qualidade que você vai querer mostrar.</p>
-        <p><strong>Sem sócio gerente que some após o contrato. Sem redator júnior entregando trabalho de sênior. Sem relatório de vaidade no fim do mês.</strong> Só entrega, resultado e transparência.</p>
+        <p>Traditional agencies were built to charge by the hour, by the meeting, by the approval. The slower the process, the more they earn. <strong>That's not a partnership. That's a conflict of interest.</strong></p>
+        <p>NOAGE was built the other way around. We use artificial intelligence to eliminate overhead and deliver in hours what used to take weeks — with quality you'll actually want to show off.</p>
+        <p><strong>No managing partner who disappears after signing. No junior copywriter doing senior work. No vanity reports at the end of the month.</strong> Just delivery, results, and transparency.</p>
       </div>
     </div>
     <div class="manifesto-image reveal reveal-delay-1">
-      <img src="images/index/img-02-decisao.webp" alt="A Decisão">
+      <img src="../images/index/img-02-decisao.webp" alt="The Decision">
     </div>
   </div>
 </section>
@@ -907,142 +909,142 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- STATS — dark surface -->
 <div class="stats-section">
   <div class="stats-row">
-    <div class="stat reveal"><div class="stat-number">24H</div><div class="stat-label">Prazo médio de entrega</div></div>
-    <div class="stat reveal reveal-delay-1"><div class="stat-number">3×</div><div class="stat-label">Mais barato que agência</div></div>
-    <div class="stat reveal reveal-delay-2"><div class="stat-number">0</div><div class="stat-label">Reuniões obrigatórias</div></div>
-    <div class="stat reveal reveal-delay-3"><div class="stat-number" style="font-family:var(--font-body)">∞</div><div class="stat-label">Revisões incluídas</div></div>
+    <div class="stat reveal"><div class="stat-number">24H</div><div class="stat-label">Avg. delivery time</div></div>
+    <div class="stat reveal reveal-delay-1"><div class="stat-number">3×</div><div class="stat-label">Cheaper than an agency</div></div>
+    <div class="stat reveal reveal-delay-2"><div class="stat-number">0</div><div class="stat-label">Required meetings</div></div>
+    <div class="stat reveal reveal-delay-3"><div class="stat-number" style="font-family:var(--font-body)">∞</div><div class="stat-label">Revisions included</div></div>
   </div>
 </div>
 
 <!-- SERVICES — white -->
-<section class="services" id="servicos">
+<section class="services" id="services">
   <div class="services-visual reveal">
-    <img src="images/index/img-04-resultado.webp" alt="O Resultado">
+    <img src="../images/index/img-04-resultado_eng.webp" alt="The Result">
   </div>
   <div class="services-header">
     <div>
-      <div class="section-tag reveal">O que fazemos</div>
-      <h2 class="services-headline reveal">TUDO QUE SEU NEGÓCIO PRECISA COMUNICAR.</h2>
+      <div class="section-tag reveal">What we do</div>
+      <h2 class="services-headline reveal">EVERYTHING YOUR BUSINESS NEEDS TO COMMUNICATE.</h2>
     </div>
-    <p class="services-desc reveal reveal-delay-1">Quatro frentes de entrega, uma única parceria. Sem contratos longos, sem pacotes engessados.</p>
+    <p class="services-desc reveal reveal-delay-1">Four delivery tracks, one single partnership. No long contracts, no rigid packages.</p>
   </div>
   <div class="service-list">
     <div class="service-item reveal">
       <span class="service-num">01</span>
       <span class="service-name">LANDING PAGES</span>
-      <span class="service-desc">Páginas que convertem visitante em cliente. Design impecável, copy estratégico, entrega em 24h.</span>
+      <span class="service-desc">Pages that turn visitors into customers. Flawless design, strategic copy, delivered in 24h.</span>
       <span class="service-arrow">↗</span>
     </div>
     <div class="service-item reveal reveal-delay-1">
       <span class="service-num">02</span>
-      <span class="service-name">APRESENTAÇÕES COMERCIAIS</span>
-      <span class="service-desc">Decks que vendem antes do pitch terminar. Narrativa clara, visual poderoso, argumento irresistível.</span>
+      <span class="service-name">SALES DECKS</span>
+      <span class="service-desc">Decks that sell before the pitch is over. Clear narrative, powerful visuals, irresistible argument.</span>
       <span class="service-arrow">↗</span>
     </div>
     <div class="service-item reveal reveal-delay-2">
       <span class="service-num">03</span>
-      <span class="service-name">CONTEÚDO & COPYWRITING</span>
-      <span class="service-desc">Textos para redes, blog, email e anúncios. Voz única, mensagem certa, na hora certa.</span>
+      <span class="service-name">CONTENT & COPYWRITING</span>
+      <span class="service-desc">Copy for social, blog, email, and ads. Unique voice, right message, right time.</span>
       <span class="service-arrow">↗</span>
     </div>
     <div class="service-item reveal reveal-delay-3">
       <span class="service-num">04</span>
       <span class="service-name">SOCIAL MEDIA & VISUAL</span>
-      <span class="service-desc">Identidade visual, posts, stories e peças. Marca que as pessoas param pra olhar.</span>
+      <span class="service-desc">Visual identity, posts, stories, and creatives. A brand people actually stop to look at.</span>
       <span class="service-arrow">↗</span>
     </div>
   </div>
 </section>
 
 <!-- HOW — dark -->
-<section class="how" id="como-funciona">
-  <div class="section-tag reveal" style="color:var(--red)">Como funciona</div>
-  <h2 class="how-headline reveal">SEM REUNIÃO DE KICKOFF.<br>SEM PROPOSTA EM PDF.<br>DIRETO AO PONTO.</h2>
+<section class="how" id="how-it-works">
+  <div class="section-tag reveal" style="color:var(--red)">How it works</div>
+  <h2 class="how-headline reveal">NO KICKOFF MEETING.<br>NO PDF PROPOSAL.<br>STRAIGHT TO THE POINT.</h2>
   <div class="how-visual reveal">
-    <img src="images/index/img-03-trabalho.webp" alt="O Trabalho">
+    <img src="../images/index/img-03-trabalho.webp" alt="The Work">
   </div>
   <div class="steps">
     <div class="step reveal">
       <div class="step-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg></div>
       <div class="step-num">01</div>
       <div class="step-divider"></div>
-      <div class="step-title">VOCÊ DESCREVE</div>
-      <p class="step-desc">Conta o que precisa em texto, áudio ou formulário. Sem template complicado. Sem briefing de 40 campos.</p>
+      <div class="step-title">YOU DESCRIBE</div>
+      <p class="step-desc">Tell us what you need via text, audio, or a simple form. No complicated template. No 40-field brief.</p>
     </div>
     <div class="step reveal reveal-delay-1">
       <div class="step-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
       <div class="step-num">02</div>
       <div class="step-divider"></div>
-      <div class="step-title">A NOAGE PRODUZ</div>
-      <p class="step-desc">AI + curadoria humana trabalham juntos. Velocidade de máquina com julgamento de especialista.</p>
+      <div class="step-title">NOAGE PRODUCES</div>
+      <p class="step-desc">AI + human curation work together. Machine speed with expert judgment.</p>
     </div>
     <div class="step reveal reveal-delay-2">
       <div class="step-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
       <div class="step-num">03</div>
       <div class="step-divider"></div>
-      <div class="step-title">VOCÊ RECEBE</div>
-      <p class="step-desc">Entrega em até 24 horas. Pronto pra usar ou pronto pra ajustar — você escolhe.</p>
+      <div class="step-title">YOU RECEIVE</div>
+      <p class="step-desc">Delivered within 24 hours. Ready to use or ready to tweak — your call.</p>
     </div>
     <div class="step reveal reveal-delay-3">
       <div class="step-icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
       <div class="step-num">04</div>
       <div class="step-divider"></div>
-      <div class="step-title">ITERA E APROVA</div>
-      <p class="step-desc">Revisões ilimitadas até ficar exatamente como você imaginou. Sem custo extra, sem cara feia.</p>
+      <div class="step-title">ITERATE & APPROVE</div>
+      <p class="step-desc">Unlimited revisions until it's exactly as you imagined. No extra cost, no pushback.</p>
     </div>
   </div>
 </section>
 
 <!-- COMPARE — offwhite -->
 <section class="compare">
-  <div class="section-tag reveal">Comparativo</div>
-  <h2 class="compare-headline reveal">NOAGE VS. AGÊNCIA TRADICIONAL</h2>
-  <p class="compare-sub reveal">A diferença é clara. O resultado também.</p>
+  <div class="section-tag reveal">Comparison</div>
+  <h2 class="compare-headline reveal">NOAGE VS. TRADITIONAL AGENCY</h2>
+  <p class="compare-sub reveal">The difference is clear. So are the results.</p>
   <table class="compare-table reveal">
     <thead>
       <tr>
         <th></th>
         <th class="noage-col">NOAGE</th>
-        <th class="agency-col">Agência tradicional</th>
+        <th class="agency-col">Traditional agency</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>Prazo de entrega</td><td class="noage-col"><span class="check">✦</span>24 a 48 horas</td><td class="agency-col">7 a 30 dias</td></tr>
-      <tr><td>Preço</td><td class="noage-col"><span class="check">✦</span>Acessível para PMEs</td><td class="agency-col">Retainer mensal alto</td></tr>
-      <tr><td>Transparência</td><td class="noage-col"><span class="check">✦</span>Total, desde o início</td><td class="agency-col">Proposta de 40 slides</td></tr>
-      <tr><td>Revisões</td><td class="noage-col"><span class="check">✦</span>Ilimitadas</td><td class="agency-col">Limitadas por contrato</td></tr>
-      <tr><td>Contrato mínimo</td><td class="noage-col"><span class="check">✦</span>Nenhum</td><td class="agency-col">6 a 12 meses</td></tr>
-      <tr><td>Reuniões</td><td class="noage-col"><span class="check">✦</span>Zero</td><td class="agency-col">Semanais, quinzenais...</td></tr>
-      <tr><td>Quem executa</td><td class="noage-col"><span class="check">✦</span>AI + especialista sênior</td><td class="agency-col">Júnior, às vezes</td></tr>
+      <tr><td>Delivery time</td><td class="noage-col"><span class="check">✦</span>24 to 48 hours</td><td class="agency-col">7 to 30 days</td></tr>
+      <tr><td>Price</td><td class="noage-col"><span class="check">✦</span>Affordable for SMBs</td><td class="agency-col">High monthly retainer</td></tr>
+      <tr><td>Transparency</td><td class="noage-col"><span class="check">✦</span>Full, from day one</td><td class="agency-col">40-slide proposal</td></tr>
+      <tr><td>Revisions</td><td class="noage-col"><span class="check">✦</span>Unlimited</td><td class="agency-col">Limited by contract</td></tr>
+      <tr><td>Minimum contract</td><td class="noage-col"><span class="check">✦</span>None</td><td class="agency-col">6 to 12 months</td></tr>
+      <tr><td>Meetings</td><td class="noage-col"><span class="check">✦</span>Zero</td><td class="agency-col">Weekly, biweekly…</td></tr>
+      <tr><td>Who executes</td><td class="noage-col"><span class="check">✦</span>AI + senior specialist</td><td class="agency-col">Junior, sometimes</td></tr>
     </tbody>
   </table>
 </section>
 
 <!-- SHOWCASE — dark, horizontal carousel -->
-<section class="showcase" id="showcase">
+<section class="showcase" id="portfolio">
   <div class="showcase-header">
     <div class="reveal">
       <div class="section-tag" style="color:var(--red)">Portfolio</div>
-      <h2 class="showcase-headline">LANDING PAGES QUE<br><em>CONVERTEM DE VERDADE.</em></h2>
+      <h2 class="showcase-headline">LANDING PAGES THAT<br><em>ACTUALLY CONVERT.</em></h2>
     </div>
     <div class="showcase-nav reveal reveal-delay-1">
       <span class="showcase-counter"><span class="current">01</span> / 12</span>
-      <button class="showcase-arrow" id="scPrev" aria-label="Anterior">←</button>
-      <button class="showcase-arrow" id="scNext" aria-label="Próximo">→</button>
+      <button class="showcase-arrow" id="scPrev" aria-label="Previous">←</button>
+      <button class="showcase-arrow" id="scNext" aria-label="Next">→</button>
     </div>
   </div>
 
   <div class="showcase-track" id="showcaseTrack">
 
-    <a href="showcase/centrosaude/" class="showcase-card reveal" target="_blank" rel="noopener">
+    <a href="../showcase/centrosaude/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone">
         <div class="showcase-notch"></div>
-        <img class="showcase-img" src="showcase/thumbnails/centrosaude.webp" alt="CentroSaúde LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-img" src="../showcase/thumbnails/centrosaude.webp" alt="CentroSaúde LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">CENTROSAÚDE</div>
-        <div class="showcase-label-segment">Saúde</div>
+        <div class="showcase-label-segment">Healthcare</div>
       </div>
     </a>
 
@@ -1052,24 +1054,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="showcase-browser-dots"><span></span><span></span><span></span></div>
           <div class="showcase-browser-url">seventechoficial.com</div>
         </div>
-        <img class="showcase-desktop-img" src="showcase/thumbnails/seventech-lp-desktop.webp" alt="Seventech LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-desktop-img" src="../showcase/thumbnails/seventech-lp-desktop.webp" alt="Seventech LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">SEVENTECH</div>
-        <div class="showcase-label-segment">RH & Benefícios</div>
+        <div class="showcase-label-segment">HR & Benefits</div>
       </div>
     </a>
 
-    <a href="showcase/techsolve/" class="showcase-card reveal reveal-delay-2" target="_blank" rel="noopener">
+    <a href="../showcase/techsolve/" class="showcase-card reveal reveal-delay-2" target="_blank" rel="noopener">
       <div class="showcase-phone">
         <div class="showcase-notch"></div>
-        <img class="showcase-img" src="showcase/thumbnails/techsolve.webp" alt="TechSolve TI LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-img" src="../showcase/thumbnails/techsolve.webp" alt="TechSolve TI LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">TECHSOLVE TI</div>
-        <div class="showcase-label-segment">Tecnologia</div>
+        <div class="showcase-label-segment">Technology</div>
       </div>
     </a>
 
@@ -1079,108 +1081,108 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="showcase-browser-dots"><span></span><span></span><span></span></div>
           <div class="showcase-browser-url">daazdigital.com</div>
         </div>
-        <img class="showcase-desktop-img" src="showcase/thumbnails/daaz-digital-desktop.webp" alt="Daaz Digital" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-desktop-img" src="../showcase/thumbnails/daaz-digital-desktop.webp" alt="Daaz Digital" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">DAAZ DIGITAL</div>
-        <div class="showcase-label-segment">Marketing Digital</div>
+        <div class="showcase-label-segment">Digital Marketing</div>
       </div>
     </a>
 
-    <a href="showcase/somnis-consulting/" class="showcase-card reveal" target="_blank" rel="noopener">
+    <a href="../showcase/somnis-consulting/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone">
         <div class="showcase-notch"></div>
-        <img class="showcase-img" src="showcase/thumbnails/somnis-consulting.webp" alt="Somnis Consulting LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-img" src="../showcase/thumbnails/somnis-consulting.webp" alt="Somnis Consulting LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">SOMNIS CONSULTING</div>
-        <div class="showcase-label-segment">Consultoria RH</div>
+        <div class="showcase-label-segment">HR Consulting</div>
       </div>
     </a>
 
-    <a href="showcase/primegente/" class="showcase-card reveal reveal-delay-1" target="_blank" rel="noopener">
+    <a href="../showcase/primegente/" class="showcase-card reveal reveal-delay-1" target="_blank" rel="noopener">
       <div class="showcase-phone">
         <div class="showcase-notch"></div>
-        <img class="showcase-img" src="showcase/thumbnails/primegente.webp" alt="PrimeGente RH LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-img" src="../showcase/thumbnails/primegente.webp" alt="PrimeGente RH LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">PRIMEGENTE RH</div>
-        <div class="showcase-label-segment">RH</div>
+        <div class="showcase-label-segment">HR</div>
       </div>
     </a>
 
-    <a href="showcase/atlasseguros/" class="showcase-card reveal" target="_blank" rel="noopener">
+    <a href="../showcase/atlasseguros/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone">
         <div class="showcase-notch"></div>
-        <img class="showcase-img" src="showcase/thumbnails/atlasseguros.webp" alt="Atlas Seguros LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-img" src="../showcase/thumbnails/atlasseguros.webp" alt="Atlas Seguros LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">ATLAS SEGUROS</div>
-        <div class="showcase-label-segment">Seguros</div>
+        <div class="showcase-label-segment">Insurance</div>
       </div>
     </a>
 
-    <a href="showcase/contabilfoco/" class="showcase-card reveal" target="_blank" rel="noopener">
+    <a href="../showcase/contabilfoco/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone">
         <div class="showcase-notch"></div>
-        <img class="showcase-img" src="showcase/thumbnails/contabilfoco.webp" alt="Contábil Foco LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-img" src="../showcase/thumbnails/contabilfoco.webp" alt="Contábil Foco LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">CONTÁBIL FOCO</div>
-        <div class="showcase-label-segment">Contabilidade</div>
+        <div class="showcase-label-segment">Accounting</div>
       </div>
     </a>
 
-    <a href="showcase/contabilhorizonte/" class="showcase-card reveal" target="_blank" rel="noopener">
+    <a href="../showcase/contabilhorizonte/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone">
         <div class="showcase-notch"></div>
-        <img class="showcase-img" src="showcase/thumbnails/contabilhorizonte.webp" alt="Horizonte Contabilidade LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-img" src="../showcase/thumbnails/contabilhorizonte.webp" alt="Horizonte Contabilidade LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">HORIZONTE</div>
-        <div class="showcase-label-segment">Contabilidade</div>
+        <div class="showcase-label-segment">Accounting</div>
       </div>
     </a>
 
-    <a href="showcase/maxseguros/" class="showcase-card reveal" target="_blank" rel="noopener">
+    <a href="../showcase/maxseguros/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone">
         <div class="showcase-notch"></div>
-        <img class="showcase-img" src="showcase/thumbnails/maxseguros.webp" alt="MaxSeguros LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-img" src="../showcase/thumbnails/maxseguros.webp" alt="MaxSeguros LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">MAXSEGUROS</div>
-        <div class="showcase-label-segment">Seguros</div>
+        <div class="showcase-label-segment">Insurance</div>
       </div>
     </a>
 
-    <a href="showcase/procontabil/" class="showcase-card reveal" target="_blank" rel="noopener">
+    <a href="../showcase/procontabil/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone">
         <div class="showcase-notch"></div>
-        <img class="showcase-img" src="showcase/thumbnails/procontabil.webp" alt="ProContabil LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-img" src="../showcase/thumbnails/procontabil.webp" alt="ProContabil LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">PROCONTABIL</div>
-        <div class="showcase-label-segment">Contabilidade</div>
+        <div class="showcase-label-segment">Accounting</div>
       </div>
     </a>
 
-    <a href="showcase/advocacia-santos/" class="showcase-card reveal" target="_blank" rel="noopener">
+    <a href="../showcase/advocacia-santos/" class="showcase-card reveal" target="_blank" rel="noopener">
       <div class="showcase-phone">
         <div class="showcase-notch"></div>
-        <img class="showcase-img" src="showcase/thumbnails/advocacia-santos.webp" alt="Advocacia Santos LP" loading="lazy">
-        <div class="showcase-info"><span class="showcase-link">Ver projeto <span class="arrow">↗</span></span></div>
+        <img class="showcase-img" src="../showcase/thumbnails/advocacia-santos.webp" alt="Advocacia Santos LP" loading="lazy">
+        <div class="showcase-info"><span class="showcase-link">View project <span class="arrow">↗</span></span></div>
       </div>
       <div class="showcase-label">
         <div class="showcase-label-name">ADVOCACIA SANTOS</div>
-        <div class="showcase-label-segment">Jurídico</div>
+        <div class="showcase-label-segment">Legal</div>
       </div>
     </a>
 
@@ -1190,18 +1192,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="showcase-progress-bar">
       <div class="showcase-progress-fill" id="scProgress"></div>
     </div>
-    <span class="showcase-progress-label">Arraste para explorar</span>
+    <span class="showcase-progress-label">Drag to explore</span>
   </div>
 </section>
 
 <!-- PROOF — white -->
 <section class="proof">
-  <div class="section-tag reveal">Resultados reais</div>
-  <h2 class="proof-headline reveal">CLIENTES QUE PARARAM DE PERDER TEMPO.</h2>
+  <div class="section-tag reveal">Real results</div>
+  <h2 class="proof-headline reveal">CLIENTS WHO STOPPED WASTING TIME.</h2>
 
   <!-- Trust bar -->
   <div class="proof-trust-bar reveal">
-    <span class="proof-trust-label">Confiam na NOAGE</span>
+    <span class="proof-trust-label">Trusted by</span>
     <div class="proof-companies">
       <span class="proof-company">SEVENTECH</span>
       <span class="proof-company-divider">—</span>
@@ -1222,16 +1224,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="testi-star">★</span><span class="testi-star">★</span>
           <span class="testi-star">★</span>
         </div>
-        <p class="testi-quote-text">"Fernando se tornou um parceiro estratégico essencial. Seu olhar afiado para produto, aliado a um rigor analítico elevado, nos fez avaliar oportunidades com mais critério — eliminando as que não se sustentavam. Ele faz acontecer rápido, é orientado a ação e experimentação. Acelerou iniciativas que estavam travadas e deixou um legado real: nosso time hoje pensa e opera de forma diferente."</p>
+        <p class="testi-quote-text">"Fernando became an essential strategic partner. His sharp product lens, combined with a high analytical rigor, helped us evaluate opportunities with greater discipline — cutting the ones that didn't hold up. He makes things happen fast, driven by action and experimentation. He accelerated initiatives that were stuck and left a real legacy: our team now thinks and operates differently."</p>
       </div>
       <div class="testi-author-row">
         <div class="testi-avatar-group">
-          <div class="testi-avatar-person"><img src="images/testimonials/Natanael.png" alt="Natanael Santos"></div>
-          <div class="testi-avatar-logo"><img src="images/testimonials/Logo Seventech.webp" alt="Seventech"></div>
+          <div class="testi-avatar-person"><img src="../images/testimonials/Natanael.png" alt="Natanael Santos"></div>
+          <div class="testi-avatar-logo"><img src="../images/testimonials/Logo Seventech.webp" alt="Seventech"></div>
         </div>
         <div>
           <div class="testi-name">NATANAEL SANTOS</div>
-          <div class="testi-role">Fundador & CEO — Seventech</div>
+          <div class="testi-role">Founder & CEO — Seventech</div>
         </div>
       </div>
     </div>
@@ -1243,11 +1245,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="testi-star">★</span><span class="testi-star">★</span>
         <span class="testi-star">★</span>
       </div>
-      <p class="testi-quote-text">"Fernando é extremamente sagaz na compreensão das demandas, captando rapidamente a essência e as prioridades de cada desafio. Entrega consistentemente acima do esperado, sempre com qualidade e dentro do prazo. Sua capacidade de alinhar estratégia e execução faz dele um parceiro altamente confiável e diferenciado."</p>
+      <p class="testi-quote-text">"Fernando is extremely sharp at understanding what's needed, quickly grasping the essence and priorities of each challenge. He consistently delivers above expectations, always with quality and on time. His ability to align strategy and execution makes him a highly reliable and differentiated partner."</p>
       <div class="testi-author-row">
         <div class="testi-avatar-group">
-          <div class="testi-avatar-person"><img src="images/testimonials/Leandro.png" alt="Leandro Trevisan"></div>
-          <div class="testi-avatar-logo"><img src="images/testimonials/Logo Somnis.jpeg" alt="Somnis"></div>
+          <div class="testi-avatar-person"><img src="../images/testimonials/Leandro.png" alt="Leandro Trevisan"></div>
+          <div class="testi-avatar-logo"><img src="../images/testimonials/Logo Somnis.jpeg" alt="Somnis"></div>
         </div>
         <div>
           <div class="testi-name">LEANDRO TREVISAN</div>
@@ -1263,15 +1265,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="testi-star">★</span><span class="testi-star">★</span>
         <span class="testi-star">★</span>
       </div>
-      <p class="testi-quote-text">"Entendeu nosso negócio a fundo e entregou resultados reais. Mais que um consultor, foi um parceiro estratégico do escritório."</p>
+      <p class="testi-quote-text">"He understood our business deeply and delivered real results. More than a consultant, he was a strategic partner for the firm."</p>
       <div class="testi-author-row">
         <div class="testi-avatar-group">
-          <div class="testi-avatar-person"><img src="images/testimonials/Julia.png" alt="Julia Soriano"></div>
-          <div class="testi-avatar-logo"><img src="images/testimonials/Logo Guerini e Soriano.png" alt="Guerini e Soriano"></div>
+          <div class="testi-avatar-person"><img src="../images/testimonials/Julia.png" alt="Julia Soriano"></div>
+          <div class="testi-avatar-logo"><img src="../images/testimonials/Logo Guerini e Soriano.png" alt="Guerini e Soriano"></div>
         </div>
         <div>
           <div class="testi-name">JULIA SORIANO</div>
-          <div class="testi-role">Fundadora — Guerini e Soriano Advocacia</div>
+          <div class="testi-role">Founder — Guerini e Soriano Law Firm</div>
         </div>
       </div>
     </div>
@@ -1283,19 +1285,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="founder">
   <div class="founder-inner">
     <div class="founder-photo-frame reveal">
-      <img src="images/fernando-portrait.webp" alt="Fernando Avelar">
+      <img src="../images/fernando-portrait.webp" alt="Fernando Avelar">
     </div>
     <div class="reveal reveal-delay-1">
-      <div class="section-tag">Quem está por trás</div>
-      <h2 class="founder-headline">LIDERADO POR<br><em>FERNANDO AVELAR.</em></h2>
+      <div class="section-tag">Who's behind it</div>
+      <h2 class="founder-headline">LED BY<br><em>FERNANDO AVELAR.</em></h2>
       <div class="founder-divider"></div>
-      <p class="founder-bio">Estrategista de produto e marketing que construiu carreira liderando times e lançando produtos em empresas como <strong>iFood, Ambev, P&G, Conta Azul e 3 Corações</strong>. Formado em Engenharia Mecânica pela UNICAMP, com MBA pela University of Strathclyde (UK).</p>
-      <p class="founder-bio">Na NOAGE, combina a experiência de grandes empresas com inteligência artificial para entregar <strong>marketing de alto nível sem o overhead de uma agência tradicional</strong>. Velocidade, qualidade e transparência — sem enrolação.</p>
+      <p class="founder-bio">Product and marketing strategist who built his career leading teams and launching products at companies like <strong>iFood, Ambev, P&G, Conta Azul, and 3 Corações</strong>. Mechanical Engineering degree from UNICAMP, MBA from the University of Strathclyde (UK).</p>
+      <p class="founder-bio">At NOAGE, he combines big-company experience with artificial intelligence to deliver <strong>high-level marketing without the overhead of a traditional agency</strong>. Speed, quality, and transparency — no fluff.</p>
       <div class="founder-logos">
-        <span class="founder-logos-label">Experiência em</span>
+        <span class="founder-logos-label">Experience at</span>
         <picture>
-          <source media="(max-width: 767px)" srcset="images/brand-logos-new-mobile.png">
-          <img src="images/brand-logos.webp" alt="iFood, Ambev, P&G, Conta Azul, 3 Corações">
+          <source media="(max-width: 767px)" srcset="../images/brand-logos-new-mobile.png">
+          <img src="../images/brand-logos.webp" alt="iFood, Ambev, P&G, Conta Azul, 3 Corações">
         </picture>
       </div>
     </div>
@@ -1303,27 +1305,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- CTA — dark -->
-<section class="cta-section" id="contato">
+<section class="cta-section" id="contact">
   <div>
-    <h2 class="cta-headline">PRONTO PRA PARAR DE PAGAR<br><span class="red">POR PROCESSO?</span></h2>
+    <h2 class="cta-headline">READY TO STOP PAYING<br><span class="red">FOR PROCESS?</span></h2>
   </div>
   <div>
-    <p class="cta-body">Descreva o que você precisa agora. Sem formulário de 20 campos, sem reunião de diagnóstico, sem proposta que demora 5 dias. A gente responde em horas.</p>
-    <a href="https://wa.me/5519998607474" target="_blank" rel="noopener" class="btn-cta">Falar no WhatsApp</a>
-    <p class="cta-note">Sem compromisso · Sem contrato mínimo</p>
+    <p class="cta-body">Tell us what you need. No 20-field form, no diagnostic meeting, no proposal that takes 5 days. We respond within hours.</p>
+    <a href="https://wa.me/5519998607474" target="_blank" rel="noopener" class="btn-cta">Talk on WhatsApp</a>
+    <p class="cta-note">No commitment · No minimum contract</p>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div>
-    <div class="footer-logo"><img src="images/index/logo.webp" alt="NOAGE"></div>
-    <div class="footer-tagline">Marketing que funciona. Sem agência.</div>
+    <div class="footer-logo"><img src="../images/index/logo.webp" alt="NOAGE"></div>
+    <div class="footer-tagline">Marketing that works. No agency.</div>
   </div>
   <div class="footer-links">
-    <a href="#servicos">Serviços</a>
-    <a href="#showcase">Portfolio</a>
-    <a href="#como-funciona">Como funciona</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#how-it-works">How it works</a>
     <a href="https://wa.me/5519998607474" target="_blank" rel="noopener">(19) 99860-7474</a>
   </div>
 </footer>
@@ -1365,11 +1367,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const maxScroll = track.scrollWidth - track.clientWidth;
       const pct = maxScroll > 0 ? (track.scrollLeft / maxScroll) * 100 : 0;
       if(progress) progress.style.width = Math.max(4, pct) + '%';
-      // Update counter
       const cardW = cards[0].offsetWidth + 36;
       const idx = Math.round(track.scrollLeft / cardW);
       if(counterEl) counterEl.textContent = String(Math.min(idx+1, total)).padStart(2,'0');
-      // Arrow states
       if(prev) prev.classList.toggle('disabled', track.scrollLeft <= 5);
       if(next) next.classList.toggle('disabled', track.scrollLeft >= maxScroll - 5);
     }
@@ -1377,7 +1377,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     track.addEventListener('scroll', updateUI, {passive:true});
     updateUI();
 
-    // Arrow navigation
     function scrollBy(dir){
       const cardW = cards[0].offsetWidth + 36;
       track.scrollBy({left: dir * cardW, behavior:'smooth'});
@@ -1385,7 +1384,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if(prev) prev.addEventListener('click', ()=>scrollBy(-1));
     if(next) next.addEventListener('click', ()=>scrollBy(1));
 
-    // Drag to scroll
     let isDown=false, startX, scrollL;
     track.addEventListener('mousedown',e=>{
       isDown=true; track.classList.add('dragging');
@@ -1399,7 +1397,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       track.scrollLeft=scrollL-(x-startX)*1.2;
     });
 
-    // Prevent click after drag
     let dragDist=0;
     track.addEventListener('mousedown',e=>{dragDist=0;});
     track.addEventListener('mousemove',()=>{if(isDown)dragDist++;});
